@@ -134,3 +134,12 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 body {
   font-family: "Work Sans", sans-serif; }
+
+ul, li, a {
+  text-decoration: none;
+  color: inherit; }
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff; }
