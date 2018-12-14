@@ -147,10 +147,23 @@ ul, li, a {
   text-decoration: none;
   color: inherit; }
 
-#container {
-  width: 100vw;
+#icon-container {
   height: 100vh;
-  background-color: #ffffff; }
+  width: 25%;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly; }
 
 .draggable {
   display: inline-block;
@@ -164,17 +177,32 @@ ul, li, a {
     background-color: #ffffff; }
 
 .window {
+  text-align: center;
   display: inline-block;
-  height: 100px;
-  width: 100px;
-  background-color: grey;
-  color: grey;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  height: 200px;
+  width: 200px;
+  border: 1px solid #363535;
+  background-color: #ffffff;
+  z-index: 10;
+  position: absolute;
+  left: 45%;
+  top: 40%;
+  display: none;
+  overflow: hidden; }
+  .window h2 {
+    border: 5px double #363535;
+    margin: 0; }
+    .window h2 button {
+      position: absolute;
+      left: 0; }
+  .window .content {
+    background-color: #eeeeee;
+    height: 100%; }
+
+footer {
+  background-color: #eeeeee;
+  border-top: 1px solid #363535;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center; }

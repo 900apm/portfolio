@@ -1,24 +1,34 @@
 $(document).ready(function () {
 
   $(".draggable")
-    .draggable({
-      scroll: true,
-      cursor: "grab",
-      containment: "main"
-    })
+  .draggable({
+    scroll: true,
+    cursor: "grab",
+    containment: "main"
+  })
+    
     .on("click", function () {
-      div = document.createElement('div');
-      // adding new window to DOM
-      $(div).addClass("window");
-      $("#container").append(div);
-      // functionality for window
-      $(".window").draggable({
-        scroll: true,
-        cursor: "grab",
-        containment: "main"
-      }).resizable();
+      $(".window").show()
     }); 
+  
+  $(".window")
+  .draggable({ 
+    containment: "main",
+    // do not drag content
+    cancel: ".content"
+  })
+  .resizable({
+    containment: "main"
+  });
 
+  $(".close")
+  .on("click", function () {
+    $(".window").hide()
+  }); 
+
+  // $(".content").draggable({ cancel: '' })
+
+// document ready closing tag
 });
 
 

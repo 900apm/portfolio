@@ -17,10 +17,20 @@ ul, li, a {
   color: inherit;
 }
 
-#container{
-  width: 100vw;
+main{
+  // width: 100vw;
+  // height: 100vh;
+  // background-color: $primary-color;
+}
+
+#icon-container{
   height: 100vh;
+  width: 25%;
   background-color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .draggable{
@@ -37,14 +47,38 @@ ul, li, a {
   }
 }
 
-.window{
+.window,{
+  text-align: center;
   display: inline-block;
-  height: 100px;
-  width: 100px;
-  background-color: grey;
-  color: grey;
-  // z-index: 10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 200px;
+  width: 200px;
+  border: 1px solid $teritary-color;
+  background-color: $primary-color;
+  z-index: 10;
+  position: absolute;
+  left: 45%;
+  top: 40%;
+  display: none;
+  overflow: hidden;
+  h2{
+    border: 5px double $teritary-color;
+    margin: 0;
+    button{
+      position: absolute;
+      left: 0;
+    }
+  }
+  .content{
+    background-color: $secondary-color;
+    height: 100%;
+  }
+}
+
+footer{
+  background-color: $secondary-color;
+  border-top: 1px solid $teritary-color;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
