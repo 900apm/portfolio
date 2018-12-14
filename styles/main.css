@@ -190,14 +190,23 @@ ul, li, a {
   display: none;
   overflow: hidden; }
   .window h2 {
-    border: 5px double #363535;
     margin: 0; }
-    .window h2 button {
+    .window h2 .close, .window h2 .enlarge {
+      background-color: #ffffff;
       position: absolute;
-      left: 0; }
+      right: 0;
+      border: none; }
+    .window h2 .enlarge {
+      right: 20px; }
   .window .content {
     background-color: #eeeeee;
     height: 100%; }
+
+.fullscreen {
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0; }
 
 footer {
   background-color: #eeeeee;
@@ -205,4 +214,5 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  z-index: 30; }

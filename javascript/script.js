@@ -8,7 +8,7 @@ $(document).ready(function () {
   })
     
     .on("click", function () {
-      $(".window").show()
+      $(".window").show().removeClass("fullscreen")
     }); 
   
   $(".window")
@@ -24,9 +24,13 @@ $(document).ready(function () {
   $(".close")
   .on("click", function () {
     $(".window").hide()
+  });
+
+  $(".enlarge")
+  .on("click", function () {
+    $(".window").toggleClass("fullscreen");
   }); 
 
-  // $(".content").draggable({ cancel: '' })
 
 // document ready closing tag
 });
