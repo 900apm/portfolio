@@ -17,11 +17,11 @@ ul, li, a {
   color: inherit;
 }
 
-main{
-  // width: 100vw;
-  // height: 100vh;
-  // background-color: $primary-color;
-}
+// main{
+//   // width: 100vw;
+//   // height: 100vh;
+//   // background-color: $primary-color;
+// }
 
 #icon-container{
   height: 100vh;
@@ -48,43 +48,62 @@ main{
 }
 
 .window,{
-  text-align: center;
-  display: inline-block;
-  height: 200px;
-  width: 200px;
-  border: 1px solid $teritary-color;
-  background-color: $primary-color;
   z-index: 10;
+  display: inline-block;
+  height: 300px;
+  width: 300px;
+  border: 1px solid $teritary-color;
+  background-color: $secondary-color;
   position: absolute;
-  left: 45%;
-  top: 40%;
+  left: 40%;
+  top: 30%;
   display: none;
   overflow: hidden;
   h2{
-    // border: 5px double $teritary-color;
+    text-align: center;
+    font-weight: 600;
+    border-bottom: 1px solid $teritary-color;
+    background-color: $primary-color;
     margin: 0;
+    padding: 5px 0;
+    &:hover{
+      cursor: grab;
+    }
     .close, .enlarge{
       background-color: $primary-color;
       position: absolute;
       right: 0;
       border: none;
     }
-    .enlarge{
-      right: 20px;
-    }
+    // .enlarge{
+    //   right: 20px;
+    // }
   }
   .content{
+    overflow-y: scroll;
     background-color: $secondary-color;
-    height: 100%;
+    height: 90%;
+    padding: 0 10%;
   }
 }
 
-.fullscreen{
-  height: 100vh;
-  width: 100vw;
-  top: 0;
-  left: 0;
+.reset-window{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  left: 45%;
+  top: 40%;
 }
+
+// .fullscreen{
+//   position: fixed;
+//   height: 100%;
+//   width: 100%;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+// }
 
 footer{
   background-color: $secondary-color;

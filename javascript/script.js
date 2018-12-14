@@ -8,7 +8,7 @@ $(document).ready(function () {
   })
     
     .on("click", function () {
-      $(".window").show().removeClass("fullscreen")
+      $(".window").show()
     }); 
   
   $(".window")
@@ -17,19 +17,22 @@ $(document).ready(function () {
     // do not drag content
     cancel: ".content"
   })
+
   .resizable({
     containment: "main"
   });
 
+  // close button on window
   $(".close")
   .on("click", function () {
     $(".window").hide()
   });
 
-  $(".enlarge")
-  .on("click", function () {
-    $(".window").toggleClass("fullscreen");
-  }); 
+  // fullscreen button on window
+  // $(".enlarge")
+  // .on("click", function () {
+  //   $(".window").toggleClass("fullscreen");
+  // }); 
 
 
 // document ready closing tag
