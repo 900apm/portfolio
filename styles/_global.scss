@@ -1,5 +1,15 @@
+html{
+  font-size: 62.5%;
+}
+
 body{
   font-family: $primary-font;
+}
+
+p{
+  font-size: 1.4rem;
+  margin: 0;
+  padding: 0.2rem;
 }
 
 ul, li, a {
@@ -14,8 +24,27 @@ ul, li, a {
 }
 
 .draggable{
-  height: 50px;
-  width: 50px;
-  background-color: $secondary-color;
-  position: relative;
+  display: inline-block;
+  text-align: center;
+  z-index: 1;
+  i{
+    font-size: 4.5rem;
+    font-weight: normal;
+    -webkit-text-stroke: 2.3px $primary-color;
+  }
+  p{
+    background-color: $primary-color;
+  }
+}
+
+.window{
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background-color: grey;
+  color: grey;
+  // z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

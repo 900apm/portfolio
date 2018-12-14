@@ -132,8 +132,16 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+html {
+  font-size: 62.5%; }
+
 body {
   font-family: "Work Sans", sans-serif; }
+
+p {
+  font-size: 1.4rem;
+  margin: 0;
+  padding: 0.2rem; }
 
 ul, li, a {
   text-decoration: none;
@@ -145,7 +153,28 @@ ul, li, a {
   background-color: #ffffff; }
 
 .draggable {
-  height: 50px;
-  width: 50px;
-  background-color: #eeeeee;
-  position: relative; }
+  display: inline-block;
+  text-align: center;
+  z-index: 1; }
+  .draggable i {
+    font-size: 4.5rem;
+    font-weight: normal;
+    -webkit-text-stroke: 2.3px #ffffff; }
+  .draggable p {
+    background-color: #ffffff; }
+
+.window {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background-color: grey;
+  color: grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
