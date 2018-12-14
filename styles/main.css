@@ -139,7 +139,13 @@ ul, li, a {
   text-decoration: none;
   color: inherit; }
 
-.container {
+#container {
   width: 100vw;
   height: 100vh;
   background-color: #ffffff; }
+
+.draggable {
+  height: 50px;
+  width: 50px;
+  background-color: #eeeeee;
+  position: relative; }

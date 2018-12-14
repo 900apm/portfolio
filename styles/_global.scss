@@ -7,8 +7,15 @@ ul, li, a {
   color: inherit;
 }
 
-.container{
+#container{
   width: 100vw;
   height: 100vh;
   background-color: $primary-color;
+}
+
+.draggable{
+  height: 50px;
+  width: 50px;
+  background-color: $secondary-color;
+  position: relative;
 }
