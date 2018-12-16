@@ -147,10 +147,12 @@ ul, li, a {
   text-decoration: none;
   color: inherit; }
 
+main, #icon-container {
+  background-color: #ffffff; }
+
 #icon-container {
   height: 100vh;
   width: 25%;
-  background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,49 +167,58 @@ ul, li, a {
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly; }
 
-.draggable {
+.top {
+  z-index: 100 !important;
+  position: relative; }
+
+.bottom {
+  z-index: 20 !important;
+  position: relative; }
+
+.sophie, .ascii, .piece {
   display: inline-block;
   text-align: center;
   z-index: 1; }
-  .draggable i {
+  .sophie i, .ascii i, .piece i {
     font-size: 4.5rem;
     font-weight: normal;
     -webkit-text-stroke: 2.3px #ffffff; }
-  .draggable p {
-    background-color: #ffffff; }
+  .sophie p, .ascii p, .piece p {
+    margin: 0;
+    padding: 0; }
 
-.window {
-  z-index: 10;
+.sophie-window, .ascii-window, .piece-window {
+  z-index: 20;
   display: inline-block;
-  height: 300px;
-  width: 300px;
+  height: 500px;
+  width: 500px;
   border: 1px solid #363535;
   background-color: #eeeeee;
   position: absolute;
-  left: 40%;
-  top: 30%;
-  display: none;
+  left: 30%;
+  top: 10%;
   overflow: hidden; }
-  .window h2 {
+  .sophie-window h2, .ascii-window h2, .piece-window h2 {
     text-align: center;
     font-weight: 600;
     border-bottom: 1px solid #363535;
     background-color: #ffffff;
     margin: 0;
     padding: 5px 0; }
-    .window h2:hover {
+    .sophie-window h2:hover, .ascii-window h2:hover, .piece-window h2:hover {
       cursor: -webkit-grab;
       cursor: grab; }
-    .window h2 .close, .window h2 .enlarge {
+    .sophie-window h2 .close, .sophie-window h2 .enlarge, .ascii-window h2 .close, .ascii-window h2 .enlarge, .piece-window h2 .close, .piece-window h2 .enlarge {
       background-color: #ffffff;
       position: absolute;
       right: 0;
       border: none; }
-  .window .content {
+    .sophie-window h2 .enlarge, .ascii-window h2 .enlarge, .piece-window h2 .enlarge {
+      right: 20px; }
+  .sophie-window .content, .sophie-window .ascii-content, .ascii-window .content, .ascii-window .ascii-content, .piece-window .content, .piece-window .ascii-content {
     overflow-y: scroll;
     background-color: #eeeeee;
-    height: 90%;
-    padding: 0 10%; }
+    height: 100%; }
 
 .reset-window {
   height: 200px;
@@ -215,6 +226,15 @@ ul, li, a {
   position: absolute;
   left: 45%;
   top: 40%; }
+
+.fullscreen {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
 
 footer {
   background-color: #eeeeee;
@@ -224,3 +244,8 @@ footer {
   width: 100%;
   text-align: center;
   z-index: 30; }
+
+iframe {
+  height: 100%;
+  width: 100%;
+  border: none; }

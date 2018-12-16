@@ -17,23 +17,26 @@ ul, li, a {
   color: inherit;
 }
 
-// main{
-//   // width: 100vw;
-//   // height: 100vh;
-//   // background-color: $primary-color;
-// }
+main, #icon-container{
+  background-color: $primary-color;
+}
+
+main{
+}
 
 #icon-container{
   height: 100vh;
   width: 25%;
-  background-color: $primary-color;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.draggable{
+.top {z-index: 100!important; position: relative}
+.bottom {z-index: 20!important; position: relative}
+
+.sophie, .ascii, .piece{
   display: inline-block;
   text-align: center;
   z-index: 1;
@@ -43,21 +46,22 @@ ul, li, a {
     -webkit-text-stroke: 2.3px $primary-color;
   }
   p{
-    background-color: $primary-color;
+    margin: 0;
+    padding: 0;
   }
 }
 
-.window,{
-  z-index: 10;
+.sophie-window, .ascii-window, .piece-window{
+  z-index: 20;
   display: inline-block;
-  height: 300px;
-  width: 300px;
+  height: 500px;
+  width: 500px;
   border: 1px solid $teritary-color;
   background-color: $secondary-color;
   position: absolute;
-  left: 40%;
-  top: 30%;
-  display: none;
+  left: 30%;
+  top: 10%;
+  // display: none;
   overflow: hidden;
   h2{
     text-align: center;
@@ -75,15 +79,15 @@ ul, li, a {
       right: 0;
       border: none;
     }
-    // .enlarge{
-    //   right: 20px;
-    // }
+    .enlarge{
+      right: 20px;
+    }
   }
-  .content{
+  .content, .ascii-content{
     overflow-y: scroll;
     background-color: $secondary-color;
-    height: 90%;
-    padding: 0 10%;
+    height: 100%;
+    // padding: 5% 10% 10% 10%;
   }
 }
 
@@ -95,15 +99,15 @@ ul, li, a {
   top: 40%;
 }
 
-// .fullscreen{
-//   position: fixed;
-//   height: 100%;
-//   width: 100%;
-//   top: 0;
-//   left: 0;
-//   bottom: 0;
-//   right: 0;
-// }
+.fullscreen{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
 
 footer{
   background-color: $secondary-color;
@@ -113,4 +117,10 @@ footer{
   width: 100%;
   text-align: center;
   z-index: 30;
+}
+
+iframe{
+  height: 100%;
+  width: 100%;
+  border: none;
 }
