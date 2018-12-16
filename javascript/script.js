@@ -76,7 +76,7 @@ $(document).ready(function () {
   .draggable({
     scroll: true,
     cursor: "grab",
-    containment: "main"
+    containment: "body"
   })
     
     .on("click", function () {
@@ -84,7 +84,7 @@ $(document).ready(function () {
         $("main").append(sophieHtml);
         $(".sophie-window")
           .draggable({ 
-            containment: "main",
+            containment: "body",
             start: function () {
               $('iframe').css('pointer-events', 'none');
             },
@@ -93,7 +93,7 @@ $(document).ready(function () {
             }
           })
           .resizable({
-            containment: "main",
+            containment: "body",
             minWidth: 320,
             minHeight: 500,
             start: function () {
@@ -120,7 +120,7 @@ $(document).ready(function () {
     .draggable({
       scroll: true,
       cursor: "grab",
-      containment: "main"
+      containment: "body"
     })
 
     .on("click", function () {
@@ -128,7 +128,7 @@ $(document).ready(function () {
         $("main").append(shutterHtml);
         $(".shutter-window")
           .draggable({
-            containment: "main",
+            containment: "body",
             start: function () {
               $('iframe').css('pointer-events', 'none');
             },
@@ -137,7 +137,7 @@ $(document).ready(function () {
             }
           })
           .resizable({
-            containment: "main",
+            containment: "body",
             minWidth: 320,
             minHeight: 500,
             start: function () {
@@ -164,7 +164,7 @@ $(document).ready(function () {
     .draggable({
       scroll: true,
       cursor: "grab",
-      containment: "main"
+      containment: "body"
     })
 
     .on("click", function () {
@@ -172,7 +172,7 @@ $(document).ready(function () {
         $("main").append(asciiHtml);
         $(".ascii-window")
           .draggable({ 
-            containment: "main",
+            containment: "body",
             start: function () {
               $('iframe').css('pointer-events', 'none');
             },
@@ -181,7 +181,7 @@ $(document).ready(function () {
             }
           })
           .resizable({
-            containment: "main",
+            containment: "body",
             minWidth: 320,
             minHeight: 500,
             start: function () {
@@ -207,15 +207,15 @@ $(document).ready(function () {
     .draggable({
       scroll: true,
       cursor: "grab",
-      containment: "main"
+      containment: "body"
     })
 
     .on("click", function () {
       if ($('.piece-window').length === 0) {
         $("main").append(pieceHtml);
         $(".piece-window")
-          .draggable({ containment: 
-            "main",
+          .draggable({ 
+            containment: "body",
             start: function () {
               $('iframe').css('pointer-events', 'none');
             },
@@ -224,7 +224,7 @@ $(document).ready(function () {
             }
           })
           .resizable({
-            containment: "main",
+            containment: "body",
             minWidth: 320,
             minHeight: 500,
             start: function () {
@@ -255,7 +255,7 @@ $(document).ready(function () {
     .draggable({
       scroll: true,
       cursor: "grab",
-      containment: "main"
+      containment: "body"
     })
 
     .on("click", function () {
@@ -263,7 +263,7 @@ $(document).ready(function () {
         $("main").append(answersHtml);
         $(".answers-window")
           .draggable({
-            containment: "main",
+            containment: "body",
             start: function () {
               $('iframe').css('pointer-events', 'none');
             },
@@ -272,7 +272,7 @@ $(document).ready(function () {
             }
           })
           .resizable({
-            containment: "main",
+            containment: "body",
             minWidth: 320,
             minHeight: 500,
             start: function () {
@@ -298,7 +298,7 @@ $(document).ready(function () {
     .draggable({
       scroll: true,
       cursor: "grab",
-      containment: "main"
+      containment: "body"
     })
 
     .on("click", function () {
@@ -306,7 +306,7 @@ $(document).ready(function () {
         $("main").append(notesHtml);
         $(".notes-window")
           .draggable({
-            containment: "main",
+            containment: "body",
             start: function () {
               $('iframe').css('pointer-events', 'none');
             },
@@ -315,7 +315,7 @@ $(document).ready(function () {
             }
           })
           .resizable({
-            containment: "main",
+            containment: "body",
             minWidth: 320,
             minHeight: 500,
             start: function () {
@@ -336,12 +336,12 @@ $(document).ready(function () {
         });
     });
 
-  // about mewindow
+  // about me window
   $(".about")
     .draggable({
       scroll: true,
       cursor: "grab",
-      containment: "main"
+      containment: "body"
     })
 
     .on("click", function () {
@@ -349,7 +349,7 @@ $(document).ready(function () {
         $("main").append(aboutHtml);
         $(".about-window")
           .draggable({
-            containment: "main",
+            containment: "body",
             start: function () {
               $('iframe').css('pointer-events', 'none');
             },
@@ -358,7 +358,7 @@ $(document).ready(function () {
             }
           })
           .resizable({
-            containment: "main",
+            containment: "body",
             minWidth: 320,
             minHeight: 500,
             start: function () {
@@ -379,6 +379,7 @@ $(document).ready(function () {
         });
     });
 
+  // clock that displays current time in AM or PM
   function showTime() {
     let date = new Date();
     let hours = date.getHours();
