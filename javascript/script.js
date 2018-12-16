@@ -28,19 +28,21 @@ $(document).ready(function () {
   })
     
     .on("click", function () {
-      $("main").append(sophiehtml);
-      $(".sophie-window")
-        .draggable({ containment: "main" })
-        .resizable({
-          containment: "main",
-          minWidth: 320,
-          minHeight: 500
+      if ($('.sophie-window').length === 0) {
+        $("main").append(sophiehtml);
+        $(".sophie-window")
+          .draggable({ containment: "main" })
+          .resizable({
+            containment: "main",
+            minWidth: 320,
+            minHeight: 500
+          })
+          
+        .on("click", function () {
+          $(this).addClass('top').removeClass('bottom');
+          $(this).siblings().removeClass('top').addClass('bottom');
         })
-        
-      .on("click", function () {
-        $(this).addClass('top').removeClass('bottom');
-        $(this).siblings().removeClass('top').addClass('bottom');
-      })
+      }
       $(".sophie-window .close")
         .on("click", function () {
           $(this).parents(".sophie-window").remove()
@@ -55,18 +57,20 @@ $(document).ready(function () {
     })
 
     .on("click", function () {
-      $("main").append(asciihtml);
-      $(".ascii-window")
-        .draggable({ containment: "main" })
-        .resizable({
-          containment: "main",
-          minWidth: 320,
-          minHeight: 500
+      if ($('.ascii-window').length === 0) {
+        $("main").append(asciihtml);
+        $(".ascii-window")
+          .draggable({ containment: "main" })
+          .resizable({
+            containment: "main",
+            minWidth: 320,
+            minHeight: 500
+          })
+        .on("click", function () {
+          $(this).addClass('top').removeClass('bottom');
+          $(this).siblings().removeClass('top').addClass('bottom');
         })
-      .on("click", function () {
-        $(this).addClass('top').removeClass('bottom');
-        $(this).siblings().removeClass('top').addClass('bottom');
-      })
+      }
       $(".ascii-window .close")
         .on("click", function () {
           $(this).parents(".ascii-window").remove()

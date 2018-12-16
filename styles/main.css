@@ -177,8 +177,7 @@ main, #icon-container {
 
 .sophie, .ascii, .piece {
   display: inline-block;
-  text-align: center;
-  z-index: 1; }
+  text-align: center; }
   .sophie i, .ascii i, .piece i {
     font-size: 4.5rem;
     font-weight: normal;
