@@ -136,7 +136,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: "Work Sans", sans-serif; }
+  font-family: "Work Sans", sans-serif;
+  overflow: hidden; }
 
 p {
   font-size: 1.4rem;
@@ -194,7 +195,7 @@ main, #icon-container {
   .icon i {
     font-size: 4.5rem;
     font-weight: normal;
-    -webkit-text-stroke: 2.3px #ffffff; }
+    -webkit-text-stroke: 2px #ffffff; }
   .icon p {
     margin: 0;
     padding: 0; }
@@ -256,14 +257,13 @@ main, #icon-container {
   left: 32.5%;
   top: 2.5%; }
 
-.fullscreen {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0; }
+.about-window {
+  height: 550px;
+  width: 600px;
+  left: 20%;
+  top: 2.5%; }
+  .about-window p {
+    padding: 5% 5% 0 5%; }
 
 footer {
   background-color: #eeeeee;

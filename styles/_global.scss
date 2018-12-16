@@ -4,6 +4,7 @@ html{
 
 body{
   font-family: $primary-font;
+  overflow: hidden;
 }
 
 p{
@@ -19,10 +20,6 @@ ul, li, a {
 
 main, #icon-container{
   background-color: $primary-color;
-}
-
-main{
-  // height: 100vh;
 }
 
 #icon-container{
@@ -49,7 +46,7 @@ main{
   i{
     font-size: 4.5rem;
     font-weight: normal;
-    -webkit-text-stroke: 2.3px $primary-color;
+    -webkit-text-stroke: 2px $primary-color;
   }
   p{
     margin: 0;
@@ -123,16 +120,26 @@ main{
   top: 2.5%;
 }
 
-
-.fullscreen{
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+.about-window{
+  height: 550px;
+  width: 600px;
+  left: 20%;
+  top: 2.5%;
+  p{
+    padding: 5% 5% 0 5%;
+  }
 }
+
+
+// .fullscreen{
+//   position: absolute;
+//   height: 100%;
+//   width: 100%;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+// }
 
 footer{
   background-color: $secondary-color;

@@ -58,6 +58,17 @@ $(document).ready(function () {
           'ajax answers'+
       '</h2>'+
     '<iframe src="https://no-name-notes.firebaseapp.com/"></iframe>'+
+  '</div>');
+
+  let aboutHtml = (
+  '<div class="about-window window">'+
+      '<h2>'+
+          '<button class="enlarge">☐</button>'+
+          '<button class="close">x</button>'+
+          'about me'+
+      '</h2>'+
+    "<p> Hello! I'm Xiaoge Deng </p>"+
+    "<p> Welcome to my site Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eaque assumenda saepe itaque illum provident explicabo voluptatem ducimus voluptatum nulla facere ipsam minus perspiciatis atque tempore dolore laudantium est, numquam exercitationem cupiditate? Eaque ullam molestias natus veritatis hic modi. Nesciunt perferendis fugiat dignissimos qui corrupti porro sint tenetur laudantium deleniti, amet recusandae minus quis est veritatis placeat facilis. Odit amet quidem, maiores dicta aperiam dolorum modi nihil perferendis in corrupti consectetur rem quia ipsum, nesciunt sed consequuntur illum quibusdam laborum eos ipsam! Animi dignissimos saepe veniam? Odit ullam aperiam culpa reprehenderit a debitis laudantium, veritatis voluptatem beatae inventore voluptates? Ea. </p>"+
   '</div>'); 
   
   // sophie window
@@ -322,6 +333,49 @@ $(document).ready(function () {
       $(".notes-window .close")
         .on("click", function () {
           $(this).parents(".notes-window").remove()
+        });
+    });
+
+  // about mewindow
+  $(".about")
+    .draggable({
+      scroll: true,
+      cursor: "grab",
+      containment: "main"
+    })
+
+    .on("click", function () {
+      if ($('.about-window').length === 0) {
+        $("main").append(aboutHtml);
+        $(".about-window")
+          .draggable({
+            containment: "main",
+            start: function () {
+              $('iframe').css('pointer-events', 'none');
+            },
+            stop: function () {
+              $('iframe').css('pointer-events', 'auto');
+            }
+          })
+          .resizable({
+            containment: "main",
+            minWidth: 320,
+            minHeight: 500,
+            start: function () {
+              $('iframe').css('pointer-events', 'none');
+            },
+            stop: function () {
+              $('iframe').css('pointer-events', 'auto');
+            }
+          })
+          .on("click", function () {
+            $(this).addClass('top').removeClass('bottom');
+            $(this).siblings().removeClass('top').addClass('bottom');
+          })
+      }
+      $(".about-window .close")
+        .on("click", function () {
+          $(this).parents(".about-window").remove()
         });
     });
 
