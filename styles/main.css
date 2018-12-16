@@ -150,7 +150,11 @@ ul, li, a {
   color: inherit; }
 
 main, #icon-container {
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  background-size: 40px 40px;
+  background-image: -webkit-linear-gradient(left, #eeeeee 1px, transparent 1px), -webkit-linear-gradient(top, #eeeeee 1px, transparent 1px);
+  background-image: -o-linear-gradient(left, #eeeeee 1px, transparent 1px), -o-linear-gradient(top, #eeeeee 1px, transparent 1px);
+  background-image: linear-gradient(to right, #eeeeee 1px, transparent 1px), linear-gradient(to bottom, #eeeeee 1px, transparent 1px); }
 
 #icon-container {
   height: calc( 100vh - 30px);
@@ -191,9 +195,10 @@ main, #icon-container {
   -ms-flex-pack: center;
   justify-content: center;
   height: 25%;
-  width: 100px;
-  text-align: center; }
+  text-align: center;
+  color: #363535; }
   .icon i {
+    width: 100%;
     font-size: 4.5rem;
     font-weight: normal;
     -webkit-text-stroke: 2px #ffffff; }
