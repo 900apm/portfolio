@@ -151,11 +151,13 @@ main, #icon-container {
   background-color: #ffffff; }
 
 #icon-container {
-  height: 100vh;
+  height: calc( 100vh - 30px);
   width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -163,9 +165,9 @@ main, #icon-container {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly; }
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start; }
 
 .top {
   z-index: 100 !important;
@@ -175,18 +177,29 @@ main, #icon-container {
   z-index: 20 !important;
   position: relative; }
 
-.sophie, .ascii, .piece {
-  display: inline-block;
+.icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 25%;
+  width: 100px;
   text-align: center; }
-  .sophie i, .ascii i, .piece i {
+  .icon i {
     font-size: 4.5rem;
     font-weight: normal;
     -webkit-text-stroke: 2.3px #ffffff; }
-  .sophie p, .ascii p, .piece p {
+  .icon p {
     margin: 0;
     padding: 0; }
 
-.sophie-window, .ascii-window, .piece-window {
+.window {
   z-index: 20;
   height: 500px;
   width: 810px;
@@ -195,23 +208,29 @@ main, #icon-container {
   position: absolute;
   left: 15%;
   top: 7.5%; }
-  .sophie-window h2, .ascii-window h2, .piece-window h2 {
+  .window h2 {
     text-align: center;
     font-weight: 600;
     border-bottom: 1px solid #363535;
     background-color: #ffffff;
     margin: 0;
     padding: 5px 0; }
-    .sophie-window h2:hover, .ascii-window h2:hover, .piece-window h2:hover {
+    .window h2:hover {
       cursor: -webkit-grab;
       cursor: grab; }
-    .sophie-window h2 .close, .sophie-window h2 .enlarge, .ascii-window h2 .close, .ascii-window h2 .enlarge, .piece-window h2 .close, .piece-window h2 .enlarge {
+    .window h2 .close, .window h2 .enlarge {
       background-color: #ffffff;
       position: absolute;
       right: 0;
       border: none; }
-    .sophie-window h2 .enlarge, .ascii-window h2 .enlarge, .piece-window h2 .enlarge {
+    .window h2 .enlarge {
       right: 20px; }
+
+.shutter-window {
+  height: 535px;
+  width: 575px;
+  left: 25%;
+  top: 5%; }
 
 .ascii-window {
   height: 535px;
@@ -223,6 +242,18 @@ main, #icon-container {
   height: 550px;
   width: 400px;
   left: 35%;
+  top: 2.5%; }
+
+.answers-window {
+  height: 550px;
+  width: 500px;
+  left: 30%;
+  top: 5%; }
+
+.notes-window {
+  height: 500px;
+  width: 375px;
+  left: 32.5%;
   top: 2.5%; }
 
 .fullscreen {
@@ -241,7 +272,8 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-  z-index: 30; }
+  z-index: 30;
+  height: 30px; }
 
 iframe {
   height: 94.2%;
