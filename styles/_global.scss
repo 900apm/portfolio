@@ -150,6 +150,19 @@ footer{
   text-align: center;
   z-index: 30;
   height: 30px;
+  display: flex;
+  align-items: center;
+  // justify-content: space-between;
+  .footer-container{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p, #time{
+      font-size: 1.5rem;
+    }
+  }
 }
 
 iframe{

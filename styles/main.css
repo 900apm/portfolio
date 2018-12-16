@@ -273,7 +273,27 @@ footer {
   width: 100%;
   text-align: center;
   z-index: 30;
-  height: 30px; }
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  footer .footer-container {
+    width: 95%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    footer .footer-container p, footer .footer-container #time {
+      font-size: 1.5rem; }
 
 iframe {
   height: 94.2%;
