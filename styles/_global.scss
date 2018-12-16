@@ -39,6 +39,7 @@ main{
 .sophie, .ascii, .piece{
   display: inline-block;
   text-align: center;
+
   i{
     font-size: 4.5rem;
     font-weight: normal;
@@ -52,16 +53,13 @@ main{
 
 .sophie-window, .ascii-window, .piece-window{
   z-index: 20;
-  display: inline-block;
   height: 500px;
-  width: 500px;
+  width: 810px;
   border: 1px solid $teritary-color;
   background-color: $secondary-color;
   position: absolute;
-  left: 30%;
-  top: 10%;
-  // display: none;
-  overflow: hidden;
+  left: 15%;
+  top: 7.5%;
   h2{
     text-align: center;
     font-weight: 600;
@@ -82,24 +80,25 @@ main{
       right: 20px;
     }
   }
-  .content, .ascii-content{
-    overflow-y: scroll;
-    background-color: $secondary-color;
-    height: 100%;
-    // padding: 5% 10% 10% 10%;
-  }
 }
 
-.reset-window{
-  height: 200px;
-  width: 200px;
-  position: absolute;
-  left: 45%;
-  top: 40%;
+.ascii-window{
+  height: 535px;
+  width: 575px;
+  left: 25%;
+  top: 5%;
 }
+
+.piece-window{
+  height: 550px;
+  width: 400px;
+  left: 35%;
+  top: 2.5%;
+}
+
 
 .fullscreen{
-  position: fixed;
+  position: absolute;
   height: 100%;
   width: 100%;
   top: 0;
@@ -119,7 +118,8 @@ footer{
 }
 
 iframe{
-  height: 100%;
+  // to prevent iframe from overflowing the window container
+  height: 94.2%;
   width: 100%;
   border: none;
 }
