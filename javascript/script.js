@@ -98,6 +98,9 @@ $(document).ready(function () {
       '</h2>'+
     '<p>portfolio projects go here along with description and what I used to make it</p>'+
   '</div>');
+  
+  // used to check if window is full screen or not
+  let clickCounter = 0;
 
   $(".icon").draggable({
     scroll: true,
@@ -185,17 +188,25 @@ $(document).ready(function () {
       });
     $(".shutter-window .enlarge")
       .on("click", function () {
-        if ($(this).parents(".shutter-window").height() != "100%")
+        clickCounter += 1;
+        console.log(clickCounter, clickCounter % 2)
+        if (clickCounter % 2 != 0){
           $(this).parents(".shutter-window").animate({
             top: "0",
             left: "0",
             height: "100%",
             width: "100%"
           });
-        else
+        }
+        else {
+          console.log("I am NOT full screen")
           $(this).parents(".shutter-window").animate({
-             height: "50%" 
+            top: "10%",
+            left: "25%",
+            height: "50%",
+            width: "50%"
           });
+        }
       });
   });
   
