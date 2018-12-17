@@ -19,6 +19,8 @@ ul, li, a {
   color: inherit;
 }
 
+button:focus {outline:0;}
+
 main, #icon-container{
   background-color: $primary-color;
   background-size: 7px 7px;
@@ -111,56 +113,63 @@ main, #icon-container{
   }
 }
 
+.sophie-window{
+  top: 2.5%;
+  left: 17.5%;
+  height: 500px;
+  width: 810px;
+}
+
 .shutter-window{
-  height: 535px;
-  width: 575px;
-  left: 25%;
   top: 5%;
+  left: 32.5%;
+  height: 500px;
+  width: 400px;
 }
 
 .ascii-window{
-  height: 535px;
-  width: 575px;
+  top: 7.5%;
   left: 25%;
-  top: 5%;
+  height: 533px;
+  width: 575px;
 }
 
 .piece-window{
-  height: 550px;
-  width: 400px;
-  left: 35%;
   top: 2.5%;
+  left: 32.5%;
+  height: 600px;
+  width: 400px;
 }
 
 .answers-window{
+  top: 5%;
+  left: 28%;
   height: 550px;
   width: 500px;
-  left: 30%;
-  top: 5%;
 }
 
 .notes-window{
-  height: 500px;
-  width: 375px;
-  left: 32.5%;
   top: 2.5%;
+  left: 32.5%;
+  height: 525px;
+  width: 400px;
 }
 
 .about-window{
-  height: 550px;
-  width: 600px;
-  left: 20%;
-  top: 2.5%;
+  top: 7.5%;
+  left: 28%;
+  height: 500px;
+  width: 500px;
   p{
     padding: 5% 5% 0 5%;
   }
 }
 
 .contact-window{
-  height: 200px;
-  width: 320px;
-  left: 30%;
-  top: 5%;
+  top: 10%;
+  left: 32.5%;
+  height: 300px;
+  width: 400px;
   aside{
     background: $secondary-color;
     padding: 10px;
@@ -194,22 +203,11 @@ main, #icon-container{
 }
 
 .portfolio-window{
-  height: 500px;
-  width: 375px;
-  left: 32.5%;
-  top: 2.5%;
+  top: 5%;
+  left: 17.5%;
+  height: 550px;
+  width: 810px;
 }
-
-
-// .fullscreen{
-//   position: absolute;
-//   height: 100%;
-//   width: 100%;
-//   top: 0;
-//   left: 0;
-//   bottom: 0;
-//   right: 0;
-// }
 
 footer{
   background-color: $secondary-color;

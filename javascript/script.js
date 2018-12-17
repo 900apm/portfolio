@@ -101,7 +101,8 @@ $(document).ready(function () {
   
   // used to check if window is full screen or not
   let clickCounter = 0;
-
+  
+  // makes icons draggable
   $(".icon").draggable({
     scroll: true,
     cursor: "grab",
@@ -145,9 +146,33 @@ $(document).ready(function () {
         $(this).siblings().removeClass('top').addClass('bottom');
       })
     }
+    
+    // close sophie-window button
     $(".sophie-window .close")
       .on("click", function () {
         $(this).parents(".sophie-window").remove()
+      });
+    
+    // resize sophie-window button
+    $(".sophie-window .enlarge")
+      .on("click", function () {
+        clickCounter += 1;
+        if (clickCounter % 2 != 0) {
+          $(this).parents(".sophie-window").animate({
+            top: "0",
+            left: "0",
+            height: "100%",
+            width: "100%"
+          });
+        }
+        else {
+          $(this).parents(".sophie-window").animate({
+            top: "2.5%",
+            left: "17.5%",
+            height: "500",
+            width: "810"
+          });
+        }
       });
   });
 
@@ -182,14 +207,17 @@ $(document).ready(function () {
           $(this).siblings().removeClass('top').addClass('bottom');
         })
     }
+
+    // close shutter-window button
     $(".shutter-window .close")
       .on("click", function () {
         $(this).parents(".shutter-window").remove()
       });
+
+    // resize shutter-window
     $(".shutter-window .enlarge")
       .on("click", function () {
         clickCounter += 1;
-        console.log(clickCounter, clickCounter % 2)
         if (clickCounter % 2 != 0){
           $(this).parents(".shutter-window").animate({
             top: "0",
@@ -199,15 +227,14 @@ $(document).ready(function () {
           });
         }
         else {
-          console.log("I am NOT full screen")
           $(this).parents(".shutter-window").animate({
-            top: "10%",
-            left: "25%",
-            height: "50%",
-            width: "50%"
+            top: "5%",
+            left: "32.5%",
+            height: "500",
+            width: "400"
           });
         }
-      });
+    });
   });
   
   // ASCII ASTEROIDS window
@@ -240,9 +267,33 @@ $(document).ready(function () {
         $(this).siblings().removeClass('top').addClass('bottom');
       })
     }
+
+    // close ascii-window button
     $(".ascii-window .close")
       .on("click", function () {
         $(this).parents(".ascii-window").remove()
+      });
+
+    // resize ascii-window button
+    $(".ascii-window .enlarge")
+      .on("click", function () {
+        clickCounter += 1;
+        if (clickCounter % 2 != 0) {
+          $(this).parents(".ascii-window").animate({
+            top: "0",
+            left: "0",
+            height: "100%",
+            width: "100%"
+          });
+        }
+        else {
+          $(this).parents(".ascii-window").animate({
+            top: "7.5",
+            left: "25%",
+            height: "533",
+            width: "575"
+          });
+        }
       });
   });
 
@@ -283,15 +334,35 @@ $(".piece")
           $(this).siblings().removeClass('top').addClass('bottom');
         })
     }
+
+    // close piece-window button
     $(".piece-window .close")
       .on("click", function () {
         $(this).parents(".piece-window").remove()
       });
-    // full screen 
-    // $(".piece-window .enlarge")
-    //   .on("click", function () {
-    //     $(this).parents(".piece-window").toggleClass("fullscreen")
-    //   });
+    
+    // resize piece-window button
+    $(".piece-window .enlarge")
+      .on("click", function () {
+        clickCounter += 1;
+        if (clickCounter % 2 != 0) {
+          $(this).parents(".piece-window").animate({
+            top: "0",
+            left: "0",
+            height: "100%",
+            width: "100%"
+          });
+        }
+        else {
+          $(this).parents(".piece-window").animate({
+            top: "2.5%",
+            left: "32.5%",
+            height: "600",
+            width: "400"
+          });
+        }
+      });
+
   });
   
   // Ajax Answers window
@@ -324,9 +395,33 @@ $(".piece")
           $(this).siblings().removeClass('top').addClass('bottom');
         })
     }
+
+    // close answers-window button
     $(".answers-window .close")
       .on("click", function () {
         $(this).parents(".answers-window").remove()
+      });
+    
+    // resize answers-window button
+    $(".answers-window .enlarge")
+      .on("click", function () {
+        clickCounter += 1;
+        if (clickCounter % 2 != 0) {
+          $(this).parents(".answers-window").animate({
+            top: "0",
+            left: "0",
+            height: "100%",
+            width: "100%"
+          });
+        }
+        else {
+          $(this).parents(".answers-window").animate({
+            top: "5%",
+            left: "28%",
+            height: "550",
+            width: "500"
+          });
+        }
       });
   });
 
@@ -360,9 +455,33 @@ $(".piece")
           $(this).siblings().removeClass('top').addClass('bottom');
         })
     }
+
+    // close notes-window button
     $(".notes-window .close")
       .on("click", function () {
         $(this).parents(".notes-window").remove()
+      });
+    
+    // resize notes-window button
+    $(".notes-window .enlarge")
+      .on("click", function () {
+        clickCounter += 1;
+        if (clickCounter % 2 != 0) {
+          $(this).parents(".notes-window").animate({
+            top: "0",
+            left: "0",
+            height: "100%",
+            width: "100%"
+          });
+        }
+        else {
+          $(this).parents(".notes-window").animate({
+            top: "2.5%",
+            left: "32.5%",
+            height: "525",
+            width: "400"
+          });
+        }
       });
   });
 
@@ -396,9 +515,33 @@ $(".piece")
           $(this).siblings().removeClass('top').addClass('bottom');
         })
     }
+
+    // closes about-window button
     $(".about-window .close")
       .on("click", function () {
         $(this).parents(".about-window").remove()
+      });
+    
+    // resize about-window button
+    $(".about-window .enlarge")
+      .on("click", function () {
+        clickCounter += 1;
+        if (clickCounter % 2 != 0) {
+          $(this).parents(".about-window").animate({
+            top: "0",
+            left: "0",
+            height: "100%",
+            width: "100%"
+          });
+        }
+        else {
+          $(this).parents(".about-window").animate({
+            top: "7.5%",
+            left: "28%",
+            height: "500",
+            width: "500"
+          });
+        }
       });
   });
   
@@ -432,9 +575,33 @@ $(".piece")
           $(this).siblings().removeClass('top').addClass('bottom');
         })
     }
+
+    // closes contact-window button
     $(".contact-window .close")
       .on("click", function () {
         $(this).parents(".contact-window").remove()
+      });
+
+    // resize contact-window button
+    $(".contact-window .enlarge")
+      .on("click", function () {
+        clickCounter += 1;
+        if (clickCounter % 2 != 0) {
+          $(this).parents(".contact-window").animate({
+            top: "0",
+            left: "0",
+            height: "100%",
+            width: "100%"
+          });
+        }
+        else {
+          $(this).parents(".contact-window").animate({
+            top: "10%",
+            left: "32.5%",
+            height: "300",
+            width: "400"
+          });
+        }
       });
   });
 
@@ -468,9 +635,33 @@ $(".piece")
           $(this).siblings().removeClass('top').addClass('bottom');
         })
     }
+
+    // closes portfolio-window button
     $(".portfolio-window .close")
       .on("click", function () {
         $(this).parents(".portfolio-window").remove()
+      });
+    
+    // resize portfolio-window button
+    $(".portfolio-window .enlarge")
+      .on("click", function () {
+        clickCounter += 1;
+        if (clickCounter % 2 != 0) {
+          $(this).parents(".portfolio-window").animate({
+            top: "0",
+            left: "0",
+            height: "100%",
+            width: "100%"
+          });
+        }
+        else {
+          $(this).parents(".portfolio-window").animate({
+            top: "5%",
+            left: "17.5%",
+            height: "550",
+            width: "810"
+          });
+        }
       });
   });
 
