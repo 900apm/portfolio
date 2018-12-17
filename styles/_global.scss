@@ -31,7 +31,7 @@ main, #icon-container{
 
 #icon-container{
   height: calc( 100vh - 30px);
-  width: 20%;
+  width: 25%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -58,42 +58,6 @@ main, #icon-container{
       margin: 0;
       padding: 0;
       // background: $primary-color;
-    }
-  }
-}
-
-aside{
-  position: fixed;
-  top: 5%;
-  right: 5%;
-  width: 400px;
-  background: $secondary-color;
-  padding: 10px;
-  text-align: center;
-  border: 1px solid $quaternary-color;
-  form{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    :nth-child(-n+2) {
-      width: 50%;   
-    }
-    :nth-child(3) {
-      width: 100%;   
-    }
-    input{
-      &:required {
-        box-shadow:none;
-      }
-      &:invalid {
-          box-shadow:0 0 0px red;
-      }
-    }
-    input[type=submit]{
-      border-style: none;
-      background: $primary-color;
-      margin-top: 5px;
     }
   }
 }
@@ -175,6 +139,50 @@ aside{
   p{
     padding: 5% 5% 0 5%;
   }
+}
+
+.contact-window{
+  height: 200px;
+  width: 320px;
+  left: 30%;
+  top: 5%;
+  aside{
+    background: $secondary-color;
+    padding: 10px;
+    text-align: center;
+    form{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      :nth-child(-n+2) {
+        width: 50%;   
+      }
+      :nth-child(3) {
+        width: 100%;   
+      }
+      input{
+        &:required {
+          box-shadow:none;
+        }
+        &:invalid {
+            box-shadow:0 0 0px red;
+        }
+      }
+      input[type=submit]{
+        border-style: none;
+        background: $primary-color;
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+.portfolio-window{
+  height: 500px;
+  width: 375px;
+  left: 32.5%;
+  top: 2.5%;
 }
 
 

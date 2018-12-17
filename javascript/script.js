@@ -65,11 +65,39 @@ $(document).ready(function () {
       '<h2>'+
           '<button class="enlarge">☐</button>'+
           '<button class="close">x</button>'+
-          'about me'+
+          'about'+
       '</h2>'+
     "<p> Hello! I'm Xiaoge Deng </p>"+
     "<p> Welcome to my site Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eaque assumenda saepe itaque illum provident explicabo voluptatem ducimus voluptatum nulla facere ipsam minus perspiciatis atque tempore dolore laudantium est, numquam exercitationem cupiditate? Eaque ullam molestias natus veritatis hic modi. Nesciunt perferendis fugiat dignissimos qui corrupti porro sint tenetur laudantium deleniti, amet recusandae minus quis est veritatis placeat facilis. Odit amet quidem, maiores dicta aperiam dolorum modi nihil perferendis in corrupti consectetur rem quia ipsum, nesciunt sed consequuntur illum quibusdam laborum eos ipsam! Animi dignissimos saepe veniam? Odit ullam aperiam culpa reprehenderit a debitis laudantium, veritatis voluptatem beatae inventore voluptates? Ea. </p>"+
-  '</div>'); 
+  '</div>');
+
+  let contactHtml = (
+  '<div class="contact-window window">'+
+      '<h2>'+
+          '<button class="enlarge">☐</button>'+
+          '<button class="close">x</button>'+
+          'contact'+
+      '</h2>'+
+    '<aside>'+
+      '<p>lets talk</p>'+
+      '<form action="">'+
+        '<input type="text" placeholder="name">'+
+          '<input type="email" placeholder="email">'+
+            '<input type="text" placeholder="message">'+
+              '<input type="submit">'+
+        '</form>'+
+      '</aside>'+
+  '</div>');
+
+  let portfolioHtml = (
+  '<div class="portfolio-window window">'+
+      '<h2>'+
+          '<button class="enlarge">☐</button>'+
+          '<button class="close">x</button>'+
+          'portfolio'+
+      '</h2>'+
+    '<p>portfolio projects go here along with description and what I used to make it</p>'+
+  '</div>');
   
   // sophie window
   $(".sophie")
@@ -379,13 +407,91 @@ $(document).ready(function () {
         });
     });
   
-  // aside window
-  $("aside")
+  // contact me window
+  $(".contact")
     .draggable({
       scroll: true,
       cursor: "grab",
       containment: "body"
     })
+
+    .on("click", function () {
+      if ($('.contact-window').length === 0) {
+        $("main").append(contactHtml);
+        $(".contact-window")
+          .draggable({
+            containment: "body",
+            start: function () {
+              $('iframe').css('pointer-events', 'none');
+            },
+            stop: function () {
+              $('iframe').css('pointer-events', 'auto');
+            }
+          })
+          .resizable({
+            containment: "body",
+            minWidth: 320,
+            minHeight: 200,
+            start: function () {
+              $('iframe').css('pointer-events', 'none');
+            },
+            stop: function () {
+              $('iframe').css('pointer-events', 'auto');
+            }
+          })
+          .on("click", function () {
+            $(this).addClass('top').removeClass('bottom');
+            $(this).siblings().removeClass('top').addClass('bottom');
+          })
+      }
+      $(".contact-window .close")
+        .on("click", function () {
+          $(this).parents(".contact-window").remove()
+        });
+    });
+
+  // portfolio window
+  $(".portfolio")
+    .draggable({
+      scroll: true,
+      cursor: "grab",
+      containment: "body"
+    })
+
+    .on("click", function () {
+      if ($('.portfolio-window').length === 0) {
+        $("main").append(portfolioHtml);
+        $(".portfolio-window")
+          .draggable({
+            containment: "body",
+            start: function () {
+              $('iframe').css('pointer-events', 'none');
+            },
+            stop: function () {
+              $('iframe').css('pointer-events', 'auto');
+            }
+          })
+          .resizable({
+            containment: "body",
+            minWidth: 320,
+            minHeight: 200,
+            start: function () {
+              $('iframe').css('pointer-events', 'none');
+            },
+            stop: function () {
+              $('iframe').css('pointer-events', 'auto');
+            }
+          })
+          .on("click", function () {
+            $(this).addClass('top').removeClass('bottom');
+            $(this).siblings().removeClass('top').addClass('bottom');
+          })
+      }
+      $(".portfolio-window .close")
+        .on("click", function () {
+          $(this).parents(".portfolio-window").remove()
+        });
+    });
 
   // clock that displays current time in AM or PM
   function showTime() {
