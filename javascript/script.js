@@ -183,6 +183,20 @@ $(document).ready(function () {
       .on("click", function () {
         $(this).parents(".shutter-window").remove()
       });
+    $(".shutter-window .enlarge")
+      .on("click", function () {
+        if ($(this).parents(".shutter-window").height() != "100%")
+          $(this).parents(".shutter-window").animate({
+            top: "0",
+            left: "0",
+            height: "100%",
+            width: "100%"
+          });
+        else
+          $(this).parents(".shutter-window").animate({
+             height: "50%" 
+          });
+      });
   });
   
   // ASCII ASTEROIDS window
@@ -482,7 +496,3 @@ $(".piece")
 
 // document ready closing tag
 });
-
-
-
-
