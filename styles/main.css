@@ -151,14 +151,13 @@ ul, li, a {
 
 main, #icon-container {
   background-color: #ffffff;
-  background-size: 40px 40px;
+  background-size: 7px 7px;
   background-image: -webkit-linear-gradient(left, #eeeeee 1px, transparent 1px), -webkit-linear-gradient(top, #eeeeee 1px, transparent 1px);
   background-image: -o-linear-gradient(left, #eeeeee 1px, transparent 1px), -o-linear-gradient(top, #eeeeee 1px, transparent 1px);
   background-image: linear-gradient(to right, #eeeeee 1px, transparent 1px), linear-gradient(to bottom, #eeeeee 1px, transparent 1px); }
 
-.dragged {
-  background: grey;
-  color: red; }
+.dragged i, .dragged p {
+  color: #9e9d9d; }
 
 #icon-container {
   height: calc( 100vh - 30px);
@@ -191,11 +190,11 @@ main, #icon-container {
     justify-content: center;
     height: 20%;
     text-align: center;
-    color: #363535; }
+    color: #424141; }
     #icon-container .icon i {
+      margin-bottom: 5px;
       width: 100%;
-      font-size: 4.5rem;
-      font-weight: normal;
+      font-size: 4rem;
       -webkit-text-stroke: 2px #ffffff; }
     #icon-container .icon p {
       margin: 0;
