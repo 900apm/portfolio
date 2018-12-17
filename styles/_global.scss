@@ -21,13 +21,17 @@ ul, li, a {
 
 main, #icon-container{
   background-color: $primary-color;
-  // background-size: 40px 40px;
-  // background-image: 
-  //   linear-gradient(to right, $secondary-color 1px, transparent 1px), 
-  //   linear-gradient(to bottom, $secondary-color 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, $secondary-color 1px, transparent 1px), 
+    linear-gradient(to bottom, $secondary-color 1px, transparent 1px);
   // background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 }
 
+.dragged{
+  background: grey;
+  color: red;
+}
 
 #icon-container{
   height: calc( 100vh - 30px);
@@ -42,7 +46,7 @@ main, #icon-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 25%;
+    height: 20%;
     text-align: center;
     color: $teritary-color;
 
