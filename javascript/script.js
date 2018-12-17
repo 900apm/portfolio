@@ -47,7 +47,7 @@ $(document).ready(function () {
           '<button class="close">x</button>'+
           'ajax answers'+
       '</h2>'+
-    '<iframe src="http://xiaogedeng.com/project4_Xiaoge_Amy-master/#questions"></iframe>'+
+    '<iframe src="http://xiaogedeng.com/project4_Xiaoge_Amy-master"></iframe>'+
   '</div>');
 
   let notesHtml = (
@@ -55,7 +55,7 @@ $(document).ready(function () {
       '<h2>'+
           '<button class="enlarge">☐</button>'+
           '<button class="close">x</button>'+
-          'ajax answers'+
+          'no-name notes'+
       '</h2>'+
     '<iframe src="https://no-name-notes.firebaseapp.com/"></iframe>'+
   '</div>');
@@ -378,6 +378,14 @@ $(document).ready(function () {
           $(this).parents(".about-window").remove()
         });
     });
+  
+  // aside window
+  $("aside")
+    .draggable({
+      scroll: true,
+      cursor: "grab",
+      containment: "body"
+    })
 
   // clock that displays current time in AM or PM
   function showTime() {

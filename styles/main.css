@@ -150,15 +150,11 @@ ul, li, a {
   color: inherit; }
 
 main, #icon-container {
-  background-color: #ffffff;
-  background-size: 40px 40px;
-  background-image: -webkit-linear-gradient(left, #eeeeee 1px, transparent 1px), -webkit-linear-gradient(top, #eeeeee 1px, transparent 1px);
-  background-image: -o-linear-gradient(left, #eeeeee 1px, transparent 1px), -o-linear-gradient(top, #eeeeee 1px, transparent 1px);
-  background-image: linear-gradient(to right, #eeeeee 1px, transparent 1px), linear-gradient(to bottom, #eeeeee 1px, transparent 1px); }
+  background-color: #ffffff; }
 
 #icon-container {
   height: calc( 100vh - 30px);
-  width: 25%;
+  width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,6 +170,65 @@ main, #icon-container {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: start; }
+  #icon-container .icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 25%;
+    text-align: center;
+    color: #363535; }
+    #icon-container .icon i {
+      width: 100%;
+      font-size: 4.5rem;
+      font-weight: normal;
+      -webkit-text-stroke: 2px #ffffff; }
+    #icon-container .icon p {
+      margin: 0;
+      padding: 0; }
+
+aside {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  width: 400px;
+  background: #eeeeee;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #d6d6d6; }
+  aside form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    aside form :nth-child(-n+2) {
+      width: 50%; }
+    aside form :nth-child(3) {
+      width: 100%; }
+    aside form input:required {
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+    aside form input:invalid {
+      -webkit-box-shadow: 0 0 0px red;
+      box-shadow: 0 0 0px red; }
+    aside form input[type=submit] {
+      border-style: none;
+      background: #ffffff;
+      margin-top: 5px; }
 
 .top {
   z-index: 100 !important;
@@ -182,29 +237,6 @@ main, #icon-container {
 .bottom {
   z-index: 20 !important;
   position: relative; }
-
-.icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 25%;
-  text-align: center;
-  color: #363535; }
-  .icon i {
-    width: 100%;
-    font-size: 4.5rem;
-    font-weight: normal;
-    -webkit-text-stroke: 2px #ffffff; }
-  .icon p {
-    margin: 0;
-    padding: 0; }
 
 .window {
   z-index: 20;

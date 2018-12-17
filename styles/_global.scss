@@ -21,47 +21,85 @@ ul, li, a {
 
 main, #icon-container{
   background-color: $primary-color;
-  background-size: 40px 40px;
-  background-image: 
-    linear-gradient(to right, $secondary-color 1px, transparent 1px), 
-    linear-gradient(to bottom, $secondary-color 1px, transparent 1px);
+  // background-size: 40px 40px;
+  // background-image: 
+  //   linear-gradient(to right, $secondary-color 1px, transparent 1px), 
+  //   linear-gradient(to bottom, $secondary-color 1px, transparent 1px);
+  // background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 }
 
 
 #icon-container{
   height: calc( 100vh - 30px);
-  width: 25%;
+  width: 20%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: start;
+
+  .icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 25%;
+    text-align: center;
+    color: $teritary-color;
+
+    i{
+      // margin-bottom: 5px;
+      width: 100%;
+      font-size: 4.5rem;
+      font-weight: normal;
+      -webkit-text-stroke: 2px $primary-color;
+      // background: $primary-color;
+    }
+    p{
+      margin: 0;
+      padding: 0;
+      // background: $primary-color;
+    }
+  }
+}
+
+aside{
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  width: 400px;
+  background: $secondary-color;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid $quaternary-color;
+  form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    :nth-child(-n+2) {
+      width: 50%;   
+    }
+    :nth-child(3) {
+      width: 100%;   
+    }
+    input{
+      &:required {
+        box-shadow:none;
+      }
+      &:invalid {
+          box-shadow:0 0 0px red;
+      }
+    }
+    input[type=submit]{
+      border-style: none;
+      background: $primary-color;
+      margin-top: 5px;
+    }
+  }
 }
 
 .top {z-index: 100!important; position: relative}
 .bottom {z-index: 20!important; position: relative}
-
-.icon{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 25%;
-  text-align: center;
-  color: $teritary-color;
-
-  i{
-    width: 100%;
-    font-size: 4.5rem;
-    font-weight: normal;
-    -webkit-text-stroke: 2px $primary-color;
-    // background: $primary-color;
-  }
-  p{
-    margin: 0;
-    padding: 0;
-    // background: $primary-color;
-  }
-}
 
 .window{
   z-index: 20;
