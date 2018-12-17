@@ -115,49 +115,56 @@ main, #icon-container{
 
 .sophie-window{
   top: 2.5%;
-  left: 17.5%;
+  // left: 17.5%;
+  left: calc(100% / 2 - (810px / 2));
   height: 500px;
   width: 810px;
 }
 
 .shutter-window{
   top: 5%;
-  left: 32.5%;
+  // left: 32.5%;
+  left: calc(100% / 2 - (400px / 2));
   height: 500px;
   width: 400px;
 }
 
 .ascii-window{
   top: 7.5%;
-  left: 25%;
+  // left: 25%;
+  left: calc(100% / 2 - (575px / 2));
   height: 533px;
   width: 575px;
 }
 
 .piece-window{
   top: 2.5%;
-  left: 32.5%;
+  // left: 32.5%;
+  left: calc(100% / 2 - (400px / 2));
   height: 600px;
   width: 400px;
 }
 
 .answers-window{
   top: 5%;
-  left: 28%;
+  // left: 28%;
+  left: calc(100% / 2 - (500px / 2));
   height: 550px;
   width: 500px;
 }
 
 .notes-window{
   top: 2.5%;
-  left: 32.5%;
+  // left: 32.5%;
+  left: calc(100% / 2 - (400px / 2));
   height: 525px;
   width: 400px;
 }
 
 .about-window{
   top: 7.5%;
-  left: 28%;
+  // left: 28%;
+  left: calc(100% / 2 - (500px / 2));
   height: 500px;
   width: 500px;
   p{
@@ -167,7 +174,8 @@ main, #icon-container{
 
 .contact-window{
   top: 10%;
-  left: 32.5%;
+  // left: 32.5%;
+  left: calc(100% / 2 - (400px / 2));
   height: 300px;
   width: 400px;
   aside{
@@ -204,7 +212,8 @@ main, #icon-container{
 
 .portfolio-window{
   top: 5%;
-  left: 17.5%;
+  // left: 17.5%;
+  left: calc(100% / 2 - (810px / 2));
   height: 550px;
   width: 810px;
 }
