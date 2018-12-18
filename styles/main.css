@@ -145,6 +145,11 @@ p {
   margin: 0;
   padding: 0.2rem; }
 
+h3 {
+  font-size: 2rem;
+  padding: 0;
+  margin: 10px; }
+
 ul, li, a {
   text-decoration: none;
   color: inherit; }
@@ -330,6 +335,7 @@ main, #icon-container {
     padding: 10px;
     text-align: center; }
     .contact-window aside form {
+      margin: 10px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -355,7 +361,9 @@ main, #icon-container {
         -webkit-box-shadow: 0 0 0px red;
         box-shadow: 0 0 0px red; }
       .contact-window aside form input[type=submit] {
+        font-size: 1.6rem;
         border-style: none;
+        border: 1px solid #363535;
         background: #ffffff;
         margin-top: 5px; }
 

@@ -14,6 +14,12 @@ p{
   padding: 0.2rem;
 }
 
+h3{
+  font-size: 2rem;
+  padding: 0;
+  margin: 10px;
+}
+
 ul, li, a {
   text-decoration: none;
   color: inherit;
@@ -222,6 +228,7 @@ main, #icon-container{
     padding: 10px;
     text-align: center;
     form{
+      margin: 10px;
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
@@ -239,11 +246,14 @@ main, #icon-container{
           box-shadow:none;
         }
         &:invalid {
+            // removes the red highlight
             box-shadow:0 0 0px red;
         }
       }
       input[type=submit]{
+        font-size: 1.6rem;
         border-style: none;
+        border: 1px solid $teritary-color;
         background: $primary-color;
         margin-top: 5px;
       }

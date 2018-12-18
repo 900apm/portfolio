@@ -143,7 +143,8 @@ $(document).ready(function () {
           '<div class="bar7"></div>'+
       '</top-bar>'+
     '<aside>'+
-      '<p>lets talk</p>'+
+      '<h3>lets talk</h3>'+
+      '<p>xiaoge.deng@protonmail.com</p>'+
       '<form action="">'+
         '<input type="text" placeholder="name">'+
         '<input type="email" placeholder="email">'+
@@ -638,6 +639,7 @@ $(".piece")
       $(".contact-window")
         .draggable({
           containment: "body",
+          cancel: "aside",
           start: function () {
             $('iframe').css('pointer-events', 'none');
           },
@@ -648,7 +650,7 @@ $(".piece")
         .resizable({
           containment: "body",
           minWidth: 320,
-          minHeight: 200,
+          minHeight: 300,
           start: function () {
             $('iframe').css('pointer-events', 'none');
           },
