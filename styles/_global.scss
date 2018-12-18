@@ -97,14 +97,14 @@ main, #icon-container{
     margin: 0;
     h2{
       position: relative;
-      z-index: 30;
+      z-index: 10;
       background: $secondary-color;
       border-left: 1px solid $teritary-color;
       border-right: 1px solid $teritary-color;
-      border-bottom: 1px solid $teritary-color;
+      // border-bottom: 1px solid $teritary-color;
       padding: 5px 0;
       margin: 0 auto;
-      width: 80px;
+      width: 100px;
     }
     .bar1,
     .bar2,
@@ -117,27 +117,18 @@ main, #icon-container{
       border-top: 1px solid $teritary-color;
       transform: translateY(-28px);
       position: relative;
-      top: 3px;
+      top: 2.5px;
       // width: calc(100% - 50px);
       width: 100%;
     }
-    .bar2{
-      top: 6px;
-    }
-    .bar3{
-      top: 9px;
-    }
-    .bar4{
-      top: 12px;
-    }
-    .bar5{
-      top: 15px;
-    }
-    .bar6{
-      top: 18px;
-    }
+    .bar2{top: 5.5px;}
+    .bar3{top: 8.5px;}
+    .bar4{top: 11.5px;}
+    .bar5{top: 14.5px;}
+    .bar6{top: 17.5px;}
     .bar7{
-      top: 21px;
+      top: 20.5px;
+      z-index: 30;
     }
     
     &:hover{
@@ -156,7 +147,7 @@ main, #icon-container{
       right: 0;
     }
     .enlarge{
-      right: 25px;
+      right: 27px;
     }
   }
 }
@@ -295,11 +286,12 @@ footer{
 
 iframe{
   // to get rid of ghost space
-  transform: translateY(-7px);
+  transform: translateY(-8px);
   // to prevent iframe from overflowing the window container
   height: 94.2%;
   width: 100%;
   border: none;
+  z-index: 20;
 }
 
 .icons{

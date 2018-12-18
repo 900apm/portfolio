@@ -225,14 +225,13 @@ main, #icon-container {
     margin: 0; }
     .window top-bar h2 {
       position: relative;
-      z-index: 30;
+      z-index: 10;
       background: #eeeeee;
       border-left: 1px solid #363535;
       border-right: 1px solid #363535;
-      border-bottom: 1px solid #363535;
       padding: 5px 0;
       margin: 0 auto;
-      width: 80px; }
+      width: 100px; }
     .window top-bar .bar1,
     .window top-bar .bar2,
     .window top-bar .bar3,
@@ -246,20 +245,21 @@ main, #icon-container {
       -ms-transform: translateY(-28px);
       transform: translateY(-28px);
       position: relative;
-      top: 3px;
+      top: 2.5px;
       width: 100%; }
     .window top-bar .bar2 {
-      top: 6px; }
+      top: 5.5px; }
     .window top-bar .bar3 {
-      top: 9px; }
+      top: 8.5px; }
     .window top-bar .bar4 {
-      top: 12px; }
+      top: 11.5px; }
     .window top-bar .bar5 {
-      top: 15px; }
+      top: 14.5px; }
     .window top-bar .bar6 {
-      top: 18px; }
+      top: 17.5px; }
     .window top-bar .bar7 {
-      top: 21px; }
+      top: 20.5px;
+      z-index: 30; }
     .window top-bar:hover {
       cursor: -webkit-grab;
       cursor: grab; }
@@ -274,7 +274,7 @@ main, #icon-container {
       position: absolute;
       right: 0; }
     .window top-bar .enlarge {
-      right: 25px; }
+      right: 27px; }
 
 .sophie-window {
   top: 2.5%;
@@ -397,12 +397,13 @@ footer {
       font-size: 1.5rem; }
 
 iframe {
-  -webkit-transform: translateY(-7px);
-  -ms-transform: translateY(-7px);
-  transform: translateY(-7px);
+  -webkit-transform: translateY(-8px);
+  -ms-transform: translateY(-8px);
+  transform: translateY(-8px);
   height: 94.2%;
   width: 100%;
-  border: none; }
+  border: none;
+  z-index: 20; }
 
 .icons {
   display: -webkit-box;

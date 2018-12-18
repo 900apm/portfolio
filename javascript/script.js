@@ -39,7 +39,7 @@ $(document).ready(function () {
       '<top-bar>'+
           '<button class="enlarge">□</button>'+
           '<button class="close">x</button>'+
-          '<h2>ascii</h2>'+
+          '<h2>ASCII</h2>'+
           '<div class="bar1"></div>'+
           '<div class="bar2"></div>'+
           '<div class="bar3"></div>'+
@@ -117,7 +117,7 @@ $(document).ready(function () {
           '<div class="bar7"></div>'+
       '</top-bar>'+
     "<p> Hello! I'm Xiaoge Deng </p>"+
-    "<p> Welcome to my site Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eaque assumenda saepe itaque illum provident explicabo voluptatem ducimus voluptatum nulla facere ipsam minus perspiciatis atque tempore dolore laudantium est, numquam exercitationem cupiditate? Eaque ullam molestias natus veritatis hic modi. Nesciunt perferendis fugiat dignissimos qui corrupti porro sint tenetur laudantium deleniti, amet recusandae minus quis est veritatis placeat facilis. Odit amet quidem, maiores dicta aperiam dolorum modi nihil perferendis in corrupti consectetur rem quia ipsum, nesciunt sed consequuntur illum quibusdam laborum eos ipsam! Animi dignissimos saepe veniam? Odit ullam aperiam culpa reprehenderit a debitis laudantium, veritatis voluptatem beatae inventore voluptates? Ea. </p>"+
+    "<p> Welcome to my site Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eaque assumenda saepe itaque illum provident explicabo voluptatem ducimus voluptatum nulla facere ipsam minus perspiciatis atque tempore dolore laudantium est, numquam exercitationem cupiditate? Eaque ullam molestias natus veritatis hic modi. Nesciunt perferendis fugiat dignissimos qui </p>"+
     '<div class="icons">'+
       '<i class="fab fa-twitter"></i>'+
       '<i class="fab fa-linkedin"></i>'+
