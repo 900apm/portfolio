@@ -2,102 +2,188 @@ $(document).ready(function () {
 
   let shutterHtml = (
   '<div class="shutter-window window">'+
-      '<h2>'+
-          '<button class="enlarge">☐</button>'+
+      '<top-bar>'+
+          '<button class="enlarge">□</button>'+
           '<button class="close">x</button>'+
-          'shutter'+
-      '</h2>'+
+          '<h2>shutter</h2>'+
+          '<div class="bar1"></div>'+
+          '<div class="bar2"></div>'+
+          '<div class="bar3"></div>'+
+          '<div class="bar4"></div>'+
+          '<div class="bar5"></div>'+
+          '<div class="bar6"></div>'+
+          '<div class="bar7"></div>'+
+      '</top-bar>'+
       '<iframe src="https://900apm.github.io/xiaoge_deng_project1/"></iframe>'+
   '</div>');
 
   let sophieHtml = (
   '<div class="sophie-window window">'+
-      '<h2>'+
-          '<button class="enlarge">☐</button>'+
+      '<top-bar>'+
+          '<button class="enlarge">□</button>'+
           '<button class="close">x</button>'+
-          'sophie'+
-      '</h2>'+
+          '<h2>sophie</h2>'+
+          '<div class="bar1"></div>'+
+          '<div class="bar2"></div>'+
+          '<div class="bar3"></div>'+
+          '<div class="bar4"></div>'+
+          '<div class="bar5"></div>'+
+          '<div class="bar6"></div>'+
+          '<div class="bar7"></div>'+
+      '</top-bar>'+
       '<iframe src="https://900apm.github.io/xiaoge_deng_project2/index.html"></iframe>'+
   '</div>');
 
   let asciiHtml = (
   '<div class="ascii-window window">'+
-      '<h2>'+
-          '<button class="enlarge">☐</button>'+
+      '<top-bar>'+
+          '<button class="enlarge">□</button>'+
           '<button class="close">x</button>'+
-          'ascii'+
-      '</h2>'+
+          '<h2>ascii</h2>'+
+          '<div class="bar1"></div>'+
+          '<div class="bar2"></div>'+
+          '<div class="bar3"></div>'+
+          '<div class="bar4"></div>'+
+          '<div class="bar5"></div>'+
+          '<div class="bar6"></div>'+
+          '<div class="bar7"></div>'+
+      '</top-bar>'+
     '<iframe src="https://900apm.github.io/ASCII-ASTEROIDS"></iframe>'+
   '</div>');
 
   let pieceHtml = (
   '<div class="piece-window window">'+
-      '<h2>'+
-          '<button class="enlarge">☐</button>'+
+      '<top-bar>'+
+          '<button class="enlarge">□</button>'+
           '<button class="close">x</button>'+
-          'piece by peace'+
-      '</h2>'+
+          '<h2>piece</h2>'+
+          '<div class="bar1"></div>'+
+          '<div class="bar2"></div>'+
+          '<div class="bar3"></div>'+
+          '<div class="bar4"></div>'+
+          '<div class="bar5"></div>'+
+          '<div class="bar6"></div>'+
+          '<div class="bar7"></div>'+
+      '</top-bar>'+
     '<iframe src="https://piece-by-peace.firebaseapp.com/"></iframe>'+
   '</div>');
 
   let answersHtml = (
   '<div class="answers-window window">'+
-      '<h2>'+
-          '<button class="enlarge">☐</button>'+
+      '<top-bar>'+
+          '<button class="enlarge">□</button>'+
           '<button class="close">x</button>'+
-          'ajax answers'+
-      '</h2>'+
+          '<h2>answers</h2>'+
+          '<div class="bar1"></div>'+
+          '<div class="bar2"></div>'+
+          '<div class="bar3"></div>'+
+          '<div class="bar4"></div>'+
+          '<div class="bar5"></div>'+
+          '<div class="bar6"></div>'+
+          '<div class="bar7"></div>'+
+      '</top-bar>'+
     '<iframe src="http://xiaogedeng.com/project4_Xiaoge_Amy-master"></iframe>'+
   '</div>');
 
   let notesHtml = (
   '<div class="notes-window window">'+
-      '<h2>'+
-          '<button class="enlarge">☐</button>'+
+      '<top-bar>'+
+          '<button class="enlarge">□</button>'+
           '<button class="close">x</button>'+
-          'no-name notes'+
-      '</h2>'+
+          '<h2>notes</h2>'+
+          '<div class="bar1"></div>'+
+          '<div class="bar2"></div>'+
+          '<div class="bar3"></div>'+
+          '<div class="bar4"></div>'+
+          '<div class="bar5"></div>'+
+          '<div class="bar6"></div>'+
+          '<div class="bar7"></div>'+
+      '</top-bar>'+
     '<iframe src="https://no-name-notes.firebaseapp.com/"></iframe>'+
   '</div>');
 
   let aboutHtml = (
   '<div class="about-window window">'+
-      '<h2>'+
-          '<button class="enlarge">☐</button>'+
+      '<top-bar>'+
+          '<button class="enlarge">□</button>'+
           '<button class="close">x</button>'+
-          'about'+
-      '</h2>'+
+          '<h2>about</h2>'+
+          '<div class="bar1"></div>'+
+          '<div class="bar2"></div>'+
+          '<div class="bar3"></div>'+
+          '<div class="bar4"></div>'+
+          '<div class="bar5"></div>'+
+          '<div class="bar6"></div>'+
+          '<div class="bar7"></div>'+
+      '</top-bar>'+
     "<p> Hello! I'm Xiaoge Deng </p>"+
     "<p> Welcome to my site Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eaque assumenda saepe itaque illum provident explicabo voluptatem ducimus voluptatum nulla facere ipsam minus perspiciatis atque tempore dolore laudantium est, numquam exercitationem cupiditate? Eaque ullam molestias natus veritatis hic modi. Nesciunt perferendis fugiat dignissimos qui corrupti porro sint tenetur laudantium deleniti, amet recusandae minus quis est veritatis placeat facilis. Odit amet quidem, maiores dicta aperiam dolorum modi nihil perferendis in corrupti consectetur rem quia ipsum, nesciunt sed consequuntur illum quibusdam laborum eos ipsam! Animi dignissimos saepe veniam? Odit ullam aperiam culpa reprehenderit a debitis laudantium, veritatis voluptatem beatae inventore voluptates? Ea. </p>"+
+    '<div class="icons">'+
+      '<i class="fab fa-twitter"></i>'+
+      '<i class="fab fa-linkedin"></i>'+
+      '<i class="fab fa-github-square"></i>'+
+      '<i class="fab fa-medium"></i>'+
+      '<i class="fab fa-codepen"></i>'+
+    '</div>'+
+    
   '</div>');
 
   let contactHtml = (
   '<div class="contact-window window">'+
-      '<h2>'+
-          '<button class="enlarge">☐</button>'+
+      '<top-bar>'+
+          '<button class="enlarge">□</button>'+
           '<button class="close">x</button>'+
-          'contact'+
-      '</h2>'+
+          '<h2>contact</h2>'+
+          '<div class="bar1"></div>'+
+          '<div class="bar2"></div>'+
+          '<div class="bar3"></div>'+
+          '<div class="bar4"></div>'+
+          '<div class="bar5"></div>'+
+          '<div class="bar6"></div>'+
+          '<div class="bar7"></div>'+
+      '</top-bar>'+
     '<aside>'+
       '<p>lets talk</p>'+
       '<form action="">'+
         '<input type="text" placeholder="name">'+
-          '<input type="email" placeholder="email">'+
-            '<input type="text" placeholder="message">'+
-              '<input type="submit">'+
-        '</form>'+
-      '</aside>'+
+        '<input type="email" placeholder="email">'+
+        '<input type="text" placeholder="message">'+
+        '<input type="submit" value="submit">'+
+      '</form>'+
+    '</aside>'+
   '</div>');
 
   let portfolioHtml = (
   '<div class="portfolio-window window">'+
-      '<h2>'+
-          '<button class="enlarge">☐</button>'+
+      '<top-bar>'+
+          '<button class="enlarge">□</button>'+
           '<button class="close">x</button>'+
-          'portfolio'+
-      '</h2>'+
-    '<p>portfolio projects go here along with description and what I used to make it</p>'+
+          '<h2>portfolio</h2>'+
+          '<div class="bar1"></div>'+
+          '<div class="bar2"></div>'+
+          '<div class="bar3"></div>'+
+          '<div class="bar4"></div>'+
+          '<div class="bar5"></div>'+
+          '<div class="bar6"></div>'+
+          '<div class="bar7"></div>'+
+      '</top-bar>'+
+    '<h3>Sophie</h3>'+
+    '<p>multi-page responsive website created with flexbox, sass and css grids</p>'+
+    '<h3>Shutter</h3>' +
+    '<p>single-page responsive website created with floats</p>' +
+    '<h3>ASCII ASTEROIDS</h3>' +
+    '<p>ascii text based responsive game created with javascript and jQuery</p>' +
+    '<h3>Ajax Answers</h3>' +
+    '<p>trivia game created with ajax and jService API</p>' +
+    '<h3>No-name Notes</h3>' +
+    '<p>note taking app created with react and firebase</p>' +
+    '<h3>Piece by Peace</h3>' +
+    '<p>multi-page react app created with firebase and sass</p>' +
   '</div>');
+
+
+
+  
   
   // used to check if window is full screen or not
   let clickCounter = 0;
