@@ -82,7 +82,7 @@ $(document).ready(function () {
           '<div class="bar6"></div>'+
           '<div class="bar7"></div>'+
       '</top-bar>'+
-    '<iframe src="http://xiaogedeng.com/project4_Xiaoge_Amy-master"></iframe>'+
+    '<iframe src="http://xiaogedeng.com/ajaxanswers/"></iframe>'+
   '</div>');
 
   let notesHtml = (
