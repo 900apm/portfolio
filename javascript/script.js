@@ -148,9 +148,9 @@ let contactHtml = (
     '<h3>lets talk</h3>'+
     '<p>xiaoge.deng@protonmail.com</p>'+
     '<form action="https://formspree.io/xiaoge.deng@protonmail.com" method="POST"">'+
-      '<input type="text" placeholder="name" name="name">'+
-      '<input type="email" placeholder="email" name="_replyto">'+
-      '<textarea name="message" placeholder="message"></textarea>'+
+      '<input type="text" placeholder="name" name="name" required>'+
+      '<input type="email" placeholder="email" name="_replyto" required>'+
+      '<textarea name="message" placeholder="message" required ></textarea>'+
       '<input type="submit" value="Send">'+
     '</form>'+
   '</aside>'+

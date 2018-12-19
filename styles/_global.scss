@@ -266,6 +266,9 @@ main, #icon-container{
         margin-top: 10px;
         resize: none;
         border: 1px solid $quaternary-color;
+        &:required {
+          box-shadow:none;
+        }
       }
     }
   }
