@@ -116,14 +116,16 @@ let aboutHtml = (
         '<div class="bar6"></div>'+
         '<div class="bar7"></div>'+
     '</top-bar>'+
-  "<p> Hello! I'm Xiaoge Deng </p>"+
-  "<p> Welcome to my site Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eaque assumenda saepe itaque illum provident explicabo voluptatem ducimus voluptatum nulla facere ipsam minus perspiciatis atque tempore dolore laudantium est, numquam exercitationem cupiditate? Eaque ullam molestias natus veritatis hic modi. Nesciunt perferendis fugiat dignissimos qui </p>"+
-  '<div class="icons">'+
-    '<i class="fab fa-twitter"></i>'+
-    '<i class="fab fa-linkedin"></i>'+
-    '<i class="fab fa-github-square"></i>'+
-    '<i class="fab fa-medium"></i>'+
-    '<i class="fab fa-codepen"></i>'+
+  "<p> Hi! I'm Xiaoge Deng </p>"+
+  "<p> Welcome to my site. I'm a front end developer currently based on Toronto who has an obession with VR, Bitcoin and creating beautiful websites. I like to take my work seriously but not myself. Need a hand? I've got two.</p>"+
+  
+  "<p>You can find me online by clicking on any of the icons listed below or by clicking the contact icon. You can also email me directly at xiaoge.deng@protonmail.com (fan mail only)</p>"+
+
+  '<div class="icon-social">'+
+    '<a href="https://twitter.com/ChileanRoseHair"><i class="fab fa-twitter"></i></a>'+
+    '<a href="https://www.linkedin.com/in/xiaoge-deng-5b1b56148/"><i class="fab fa-linkedin"></i></a>' +
+    '<a href="https://medium.com/@ChileanRoseHair"><i class="fab fa-medium"></i></a>' +
+    '<a href=""><i class="fab fa-codepen"></i>' +
   '</div>'+
   
 '</div>');
@@ -173,43 +175,43 @@ let portfolioHtml = (
     '<h2>Sophie</h2>'+
     '<p>Multi-page responsive website created with flexbox, SCSS and CSS grids</p>'+
     '<div class="links">'+
-      '<a href="">live link</a>'+
-      '<a href="">GitHub</a>' +
+      '<a href="https://900apm.github.io/xiaoge_deng_project2/index.html">live link</a>'+
+      '<a href="https://github.com/900apm/xiaoge_deng_project2">GitHub</a>' +
     '</div >'+
 
     '<h2>Shutter</h2>' +
     '<p>Single-page responsive website created with only floats</p>' +
     '<div class="links">'+
-      '<a href="">live link</a>'+
-      '<a href="">GitHub</a>' +
+      '<a href="https://900apm.github.io/xiaoge_deng_project1/">live link</a>'+
+      '<a href="https://github.com/900apm/xiaoge_deng_project1">GitHub</a>' +
     '</div >'+
 
     '<h2>ASCII ASTEROIDS</h2>' +
     '<p>Ascii text game created with javaScript and jQuery</p>' +
     '<div class="links">'+
-      '<a href="">live link</a>'+
-      '<a href="">GitHub</a>' +
+      '<a href="https://900apm.github.io/ASCII-ASTEROIDS/">live link</a>'+
+      '<a href="https://github.com/900apm/ASCII-ASTEROIDS">GitHub</a>' +
     '</div >'+
 
     '<h2>Ajax Answers</h2>' +
     '<p>Jeopardy based trivia game created with SCSS, Ajax queries and jService restful API</p>' +
     '<div class="links">'+
-      '<a href="">live link</a>'+
-      '<a href="">GitHub</a>' +
+      '<a href="http://xiaogedeng.com/ajaxanswers/">live link</a>'+
+      '<a href="https://github.com/900apm/project4_Xiaoge_Amy">GitHub</a>' +
     '</div >'+
 
     '<h2>No-name Notes</h2>' +
     '<p>Note taking application created with React and Firebase backend</p>' +
     '<div class="links">'+
-      '<a href="">live link</a>'+
-      '<a href="">GitHub</a>' +
+      '<a href="https://no-name-notes.firebaseapp.com/">live link</a>'+
+      '<a href="https://github.com/900apm/No-name-Notes">GitHub</a>' +
     '</div >'+
 
     '<h2>Piece by Peace</h2>' +
     '<p>Multi-page React application created with SCSS and Firebase backend</p>' +
     '<div class="links">'+
-      '<a href="">live link</a>'+
-      '<a href="">GitHub</a>' +
+      '<a href="https://piece-by-peace.firebaseapp.com/">live link</a>'+
+      '<a href="https://github.com/900apm/fawad_xiaoge_nova_project_6">GitHub</a>' +
     '</div >'+
 
   '</div >'+
