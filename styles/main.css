@@ -252,7 +252,7 @@ main, #icon-container {
       transform: translateY(-28px);
       position: relative;
       top: 2.5px;
-      width: 100%; }
+      width: calc(100% - 50px); }
     .window top-bar .bar2 {
       top: 5.5px; }
     .window top-bar .bar3 {
@@ -266,7 +266,8 @@ main, #icon-container {
     .window top-bar .bar7 {
       top: 20.5px;
       z-index: 30;
-      border-top: 1px solid #363535; }
+      border-top: 1px solid #363535;
+      width: 100%; }
     .window top-bar:hover {
       cursor: -webkit-grab;
       cursor: grab; }
@@ -374,7 +375,29 @@ main, #icon-container {
   left: calc(100% / 2 - (810px / 2));
   height: 550px;
   width: 810px;
-  text-align: center; }
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .portfolio-window .wrapper {
+    overflow-x: hidden;
+    overflow-y: scroll; }
+    .portfolio-window .wrapper .links {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .portfolio-window .wrapper .links a {
+        font-size: 1.6rem;
+        margin: 1rem 2rem;
+        padding: 0.5rem;
+        border: 1px solid #363535; }
 
 .readme-window {
   position: absolute;

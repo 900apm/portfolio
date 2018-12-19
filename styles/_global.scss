@@ -126,8 +126,8 @@ main, #icon-container{
       transform: translateY(-28px);
       position: relative;
       top: 2.5px;
-      // width: calc(100% - 50px);
-      width: 100%;
+      width: calc(100% - 50px);
+      // width: 100%;
     }
     .bar2{top: 5.5px;}
     .bar3{top: 8.5px;}
@@ -138,6 +138,7 @@ main, #icon-container{
       top: 20.5px;
       z-index: 30;
       border-top: 1px solid $teritary-color;
+      width: 100%;
     }
     
     &:hover{
@@ -271,6 +272,22 @@ main, #icon-container{
   height: 550px;
   width: 810px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  .wrapper{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    .links{
+      display: flex;
+      justify-content: center;
+      a{
+      font-size: 1.6rem;
+      margin: 1rem 2rem;
+      padding: 0.5rem;
+      border: 1px solid $teritary-color;
+      }
+    }  
+  }
 }
 
 .readme-window{

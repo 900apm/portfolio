@@ -168,18 +168,51 @@ let portfolioHtml = (
         '<div class="bar6"></div>'+
         '<div class="bar7"></div>'+
     '</top-bar>'+
-  '<h3>Sophie</h3>'+
-  '<p>multi-page responsive website created with flexbox, sass and css grids</p>'+
-  '<h3>Shutter</h3>' +
-  '<p>single-page responsive website created with floats</p>' +
-  '<h3>ASCII ASTEROIDS</h3>' +
-  '<p>ascii text based responsive game created with javascript and jQuery</p>' +
-  '<h3>Ajax Answers</h3>' +
-  '<p>trivia game created with ajax and jService API</p>' +
-  '<h3>No-name Notes</h3>' +
-  '<p>note taking app created with react and firebase</p>' +
-  '<h3>Piece by Peace</h3>' +
-  '<p>multi-page react app created with firebase and sass</p>' +
+  '<div class="wrapper">'+
+
+    '<h2>Sophie</h2>'+
+    '<p>Multi-page responsive website created with flexbox, SCSS and CSS grids</p>'+
+    '<div class="links">'+
+      '<a href="">live link</a>'+
+      '<a href="">GitHub</a>' +
+    '</div >'+
+
+    '<h2>Shutter</h2>' +
+    '<p>Single-page responsive website created with only floats</p>' +
+    '<div class="links">'+
+      '<a href="">live link</a>'+
+      '<a href="">GitHub</a>' +
+    '</div >'+
+
+    '<h2>ASCII ASTEROIDS</h2>' +
+    '<p>Ascii text game created with javaScript and jQuery</p>' +
+    '<div class="links">'+
+      '<a href="">live link</a>'+
+      '<a href="">GitHub</a>' +
+    '</div >'+
+
+    '<h2>Ajax Answers</h2>' +
+    '<p>Jeopardy based trivia game created with SCSS, Ajax queries and jService restful API</p>' +
+    '<div class="links">'+
+      '<a href="">live link</a>'+
+      '<a href="">GitHub</a>' +
+    '</div >'+
+
+    '<h2>No-name Notes</h2>' +
+    '<p>Note taking application created with React and Firebase backend</p>' +
+    '<div class="links">'+
+      '<a href="">live link</a>'+
+      '<a href="">GitHub</a>' +
+    '</div >'+
+
+    '<h2>Piece by Peace</h2>' +
+    '<p>Multi-page React application created with SCSS and Firebase backend</p>' +
+    '<div class="links">'+
+      '<a href="">live link</a>'+
+      '<a href="">GitHub</a>' +
+    '</div >'+
+
+  '</div >'+
 '</div>');
 
 let readmeHtml = (
@@ -200,13 +233,9 @@ let readmeHtml = (
     "<p>‐ windows are able to be repositioned by dragging the striped window header</p>"+
     "<p>‐ windows are able to be resized with the arrow positioned on the bottom right</p>"+
     "<p>‐ to move a window to the front, click on the desired window's header</p>" +
-    "<p>‐ buttons on the top right toggle fullscreen and close the window respectively.</p>"+
+    "<p>‐ buttons on the top right toggle fullscreen and close the window respectively</p>"+
     "<p>xiaoge.deng@protonmail.com</p>"+
 '</div>');
-
-
-  // used to check if window is full screen or not
-// let clickCounter = 0;
 
 function runOnStart() {
     // on start add read me window to the page
@@ -665,6 +694,7 @@ $(".about").on("click", function () {
     $(".about-window")
       .draggable({
         containment: "body",
+        cancel: "p, .icons",
         start: function () {
           $('iframe').css('pointer-events', 'none');
         },
@@ -788,6 +818,7 @@ $(".portfolio").on("click", function () {
     $(".portfolio-window")
       .draggable({
         containment: "body",
+        cancel: "h2, p, a",
         start: function () {
           $('iframe').css('pointer-events', 'none');
         },
@@ -823,6 +854,7 @@ $(".portfolio").on("click", function () {
     .on("click", function () {
       clickCounter += 1;
       if (clickCounter % 2 != 0) {
+        // console.log("I am big");
         $(this).parents(".portfolio-window").animate({
           top: "0",
           left: "0",
@@ -831,6 +863,7 @@ $(".portfolio").on("click", function () {
         });
       }
       else {
+        // console.log("I am small");
         $(this).parents(".portfolio-window").animate({
           top: "5%",
           left: "17.5%",
@@ -925,7 +958,7 @@ function showTime() {
   minutes = (minutes < 10) ? "0" + minutes : minutes;
   seconds = (seconds < 10) ? "0" + seconds : seconds;
 
-  var time = hours + ":" + minutes + ":" + seconds + " " + dayOrNight;
+  let time = hours + ":" + minutes + ":" + seconds + " " + dayOrNight;
   document.getElementById("time").innerText = time;
   document.getElementById("time").textContent = time;
 
