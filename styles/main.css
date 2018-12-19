@@ -160,7 +160,7 @@ button:focus {
 
 main, #icon-container {
   background-color: #ffffff;
-  background-size: 50px 50px;
+  background-size: 7px 7px;
   background-image: -webkit-linear-gradient(left, #eeeeee 1px, transparent 1px), -webkit-linear-gradient(top, #eeeeee 1px, transparent 1px);
   background-image: -o-linear-gradient(left, #eeeeee 1px, transparent 1px), -o-linear-gradient(top, #eeeeee 1px, transparent 1px);
   background-image: linear-gradient(to right, #eeeeee 1px, transparent 1px), linear-gradient(to bottom, #eeeeee 1px, transparent 1px); }
@@ -246,7 +246,7 @@ main, #icon-container {
     .window top-bar .bar6,
     .window top-bar .bar7 {
       z-index: 0;
-      border-top: 1px solid #363535;
+      border-top: 1px dotted #363535;
       -webkit-transform: translateY(-28px);
       -ms-transform: translateY(-28px);
       transform: translateY(-28px);
@@ -265,7 +265,8 @@ main, #icon-container {
       top: 17.5px; }
     .window top-bar .bar7 {
       top: 20.5px;
-      z-index: 30; }
+      z-index: 30;
+      border-top: 1px solid #363535; }
     .window top-bar:hover {
       cursor: -webkit-grab;
       cursor: grab; }
@@ -377,9 +378,9 @@ main, #icon-container {
 
 .readme-window {
   position: absolute;
-  top: 2.5%;
+  top: 3.5%;
   left: initial;
-  right: 2.5%;
+  right: 2%;
   height: 485px;
   width: 300px;
   text-align: left; }

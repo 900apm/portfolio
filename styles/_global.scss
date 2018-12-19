@@ -30,7 +30,7 @@ button:focus {outline:0;}
 
 main, #icon-container{
   background-color: $primary-color;
-  background-size: 50px 50px;
+  background-size: 7px 7px;
   background-image: 
     linear-gradient(to right, $secondary-color 1px, transparent 1px), 
     linear-gradient(to bottom, $secondary-color 1px, transparent 1px);
@@ -122,7 +122,7 @@ main, #icon-container{
     .bar6,
     .bar7,{
       z-index: 0;
-      border-top: 1px solid $teritary-color;
+      border-top: 1px dotted $teritary-color;
       transform: translateY(-28px);
       position: relative;
       top: 2.5px;
@@ -137,6 +137,7 @@ main, #icon-container{
     .bar7{
       top: 20.5px;
       z-index: 30;
+      border-top: 1px solid $teritary-color;
     }
     
     &:hover{
@@ -274,9 +275,9 @@ main, #icon-container{
 
 .readme-window{
   position: absolute;
-  top: 2.5%;
+  top: 3.5%;
   left: initial;
-  right: 2.5%;
+  right: 2%;
   height: 485px;
   width: 300px;
   text-align: left;

@@ -196,7 +196,7 @@ let readmeHtml = (
         '<div class="bar6"></div>'+
         '<div class="bar7"></div>'+
     '</top-bar>'+
-    "<p>Hi! Welcome to my site, click any icon to begin.</p>"+
+    "<p>Hello! Welcome to my site, click any icon to begin.</p>"+
     "<p>‐ windows are able to be repositioned by dragging the striped window header</p>"+
     "<p>‐ windows are able to be resized with the arrow positioned on the bottom right</p>"+
     "<p>‐ to move a window to the front, click on the desired window's header</p>" +
@@ -210,6 +210,8 @@ let readmeHtml = (
 
 function runOnStart() {
     // on start add read me window to the page
+
+    let clickCounter = 0;
     $("main").append(readmeHtml);
     $(".readme-window")
       .draggable({
@@ -262,8 +264,8 @@ function runOnStart() {
         else {
           $(".readme-window").attr("id", "left");
           $(this).parents(".readme-window").animate({
-            top: "2.5%",
-            right: "2.5%",
+            top: "3.5%",
+            right: "2%",
             height: "485",
             width: "300"
           })
@@ -795,8 +797,8 @@ $(".portfolio").on("click", function () {
       })
       .resizable({
         containment: "body",
-        minWidth: 320,
-        minHeight: 200,
+        minWidth: 500,
+        minHeight: 500,
         start: function () {
           $('iframe').css('pointer-events', 'none');
         },
