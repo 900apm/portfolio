@@ -197,10 +197,10 @@ $(document).ready(function () {
           '<div class="bar7"></div>'+
       '</top-bar>'+
       "<p>Hi! Welcome to my site, Click any icon to begin.</p>"+
+      "<p>‐ windows are able to be repositioned by dragging the striped window header</p>"+
       "<p>‐ windows are able to be resized with the arrow positioned on the bottom right</p>"+
-      "<p>‐ windows are able to be repositioned by dragging the window header</p>"+
-      "<p>‐ to move a window to the front; click on the desired window's header</p>" +
-      "<p>‐ buttons on top right toggle fullscreen and close the window respectively.</p>"+
+      "<p>‐ to move a window to the front, click on the desired window's header</p>" +
+      "<p>‐ buttons on the top right toggle fullscreen and close the window respectively.</p>"+
       "<p>xiaoge.deng@protonmail.com</p>"+
   '</div>');
 
@@ -254,7 +254,7 @@ $(document).ready(function () {
               left: "0",
               right: "0",
               height: "100%",
-              width: "100%"
+              width: "100%",
             });
           }
           else {
