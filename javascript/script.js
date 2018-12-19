@@ -768,7 +768,7 @@ $(".contact").on("click", function () {
       })
       .resizable({
         containment: "body",
-        minWidth: 320,
+        minWidth: 325,
         minHeight: 325,
         start: function () {
           $('iframe').css('pointer-events', 'none');
@@ -805,7 +805,7 @@ $(".contact").on("click", function () {
         $(this).parents(".contact-window").animate({
           top: "10%",
           left: "32.5%",
-          height: "300",
+          height: "325",
           width: "400"
         });
       }
