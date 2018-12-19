@@ -10,8 +10,9 @@ body{
 
 p{
   font-size: 1.4rem;
+  line-height: 1.5;
   margin: 0;
-  padding: 0.2rem;
+  padding: 0;
 }
 
 h3{
@@ -29,7 +30,7 @@ button:focus {outline:0;}
 
 main, #icon-container{
   background-color: $primary-color;
-  background-size: 7px 7px;
+  background-size: 50px 50px;
   background-image: 
     linear-gradient(to right, $secondary-color 1px, transparent 1px), 
     linear-gradient(to bottom, $secondary-color 1px, transparent 1px);
@@ -86,6 +87,7 @@ main, #icon-container{
   }
 }
 
+// used to bring clicked window to front by increasing z-index
 .top {z-index: 100!important; position: relative}
 .bottom {z-index: 20!important; position: relative}
 
@@ -270,6 +272,47 @@ main, #icon-container{
   text-align: center;
 }
 
+.readme-window{
+  position: absolute;
+  top: 2.5%;
+  left: initial;
+  right: 2.5%;
+  height: 485px;
+  width: 300px;
+  text-align: left;
+  p{
+    padding: 0.75rem 1.5rem;
+    &:first-of-type{
+      padding-top: none;
+    }
+    &:last-of-type{
+      padding-top: 3rem;
+      text-align: center;
+    }
+  }
+}
+
+#left{
+  left: auto !important;
+}
+
+iframe{
+  // to get rid of ghost space
+  transform: translateY(-8px);
+  // to prevent iframe from overflowing the window container
+  height: 94.2%;
+  width: 100%;
+  border: none;
+  z-index: 20;
+}
+
+.icons{
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  margin-top: 30px;
+}
+
 footer{
   background-color: $secondary-color;
   border-top: 1px solid $teritary-color;
@@ -292,21 +335,4 @@ footer{
       font-size: 1.5rem;
     }
   }
-}
-
-iframe{
-  // to get rid of ghost space
-  transform: translateY(-8px);
-  // to prevent iframe from overflowing the window container
-  height: 94.2%;
-  width: 100%;
-  border: none;
-  z-index: 20;
-}
-
-.icons{
-  display: flex;
-  justify-content: space-around;
-  font-size: 2rem;
-  margin-top: 30px;
 }

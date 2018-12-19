@@ -182,9 +182,95 @@ $(document).ready(function () {
     '<p>multi-page react app created with firebase and sass</p>' +
   '</div>');
 
+  let readmeHtml = (
+  '<div class="readme-window window">'+
+      '<top-bar>'+
+          '<button class="enlarge">□</button>'+
+          '<button class="close">x</button>'+
+          '<h2>readme</h2>'+
+          '<div class="bar1"></div>'+
+          '<div class="bar2"></div>'+
+          '<div class="bar3"></div>'+
+          '<div class="bar4"></div>'+
+          '<div class="bar5"></div>'+
+          '<div class="bar6"></div>'+
+          '<div class="bar7"></div>'+
+      '</top-bar>'+
+      "<p>Hi! Welcome to my site, Click any icon to begin.</p>"+
+      "<p>‐ windows are able to be resized with the arrow positioned on the bottom right</p>"+
+      "<p>‐ windows are able to be repositioned by dragging the window header</p>"+
+      "<p>‐ to move a window to the front; click on the desired window's header</p>" +
+      "<p>‐ buttons on top right toggle fullscreen and close the window respectively.</p>"+
+      "<p>xiaoge.deng@protonmail.com</p>"+
+  '</div>');
 
 
+
+  function runOnStart() {
+      // on start add read me window to the page
+      $("main").append(readmeHtml);
+      $(".readme-window")
+        .draggable({
+          containment: "body",
+          cancel: "p",
+          start: function () {
+            $('iframe').css('pointer-events', 'none');
+            $(this).removeAttr('id');
+          },
+          stop: function () {
+            $('iframe').css('pointer-events', 'auto');
+          }
+        })
+        .resizable({
+          containment: "body",
+          minWidth: 300,
+          minHeight: 485,
+          start: function () {
+            $('iframe').css('pointer-events', 'none');
+          },
+          stop: function () {
+            $('iframe').css('pointer-events', 'auto');
+          }
+        })
+        .on("click", function () {
+          $(this).addClass('top').removeClass('bottom');
+          $(this).siblings().removeClass('top').addClass('bottom');
+        })
+        
+
+      // close readme-window button
+      $(".readme-window .close")
+        .on("click", function () {
+          $(this).parents(".readme-window").remove()
+        });
+
+      // resize readme-window button
+      $(".readme-window .enlarge")
+        .on("click", function () {
+          clickCounter += 1;
+          if (clickCounter % 2 != 0) {
+            $(this).parents(".readme-window").animate({
+              top: "0",
+              left: "0",
+              right: "0",
+              height: "100%",
+              width: "100%"
+            });
+          }
+          else {
+            $(".readme-window").attr("id", "left");
+            $(this).parents(".readme-window").animate({
+              top: "2.5%",
+              right: "2.5%",
+              height: "485",
+              width: "300"
+            })
+          }
+        });
+    };
   
+
+  window.onload = runOnStart;
   
   // used to check if window is full screen or not
   let clickCounter = 0;
