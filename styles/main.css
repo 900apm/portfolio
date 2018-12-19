@@ -221,7 +221,7 @@ main, #icon-container {
   z-index: 101;
   height: 500px;
   width: 810px;
-  border: 1px solid #363535;
+  border: 1.5px solid #363535;
   background: #eeeeee;
   position: absolute; }
   .window top-bar {
@@ -231,7 +231,7 @@ main, #icon-container {
     margin: 0; }
     .window top-bar h2 {
       position: relative;
-      z-index: 10;
+      z-index: 20;
       background: #eeeeee;
       border-left: 1px solid #363535;
       border-right: 1px solid #363535;
@@ -265,14 +265,14 @@ main, #icon-container {
       top: 17.5px; }
     .window top-bar .bar7 {
       top: 20.5px;
-      z-index: 30;
-      border-top: 1px solid #363535;
+      z-index: 20;
+      border-top: 1.5px solid #363535;
       width: 100%; }
     .window top-bar:hover {
       cursor: -webkit-grab;
       cursor: grab; }
     .window top-bar .close, .window top-bar .enlarge {
-      z-index: 30;
+      z-index: 20;
       border: none;
       border-left: 1px solid #363535;
       position: relative;
@@ -372,9 +372,9 @@ main, #icon-container {
 
 .portfolio-window {
   top: 5%;
-  left: calc(100% / 2 - (810px / 2));
+  left: calc(100% / 2 - (400px / 2));
   height: 550px;
-  width: 810px;
+  width: 400px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -386,6 +386,8 @@ main, #icon-container {
   .portfolio-window .wrapper {
     overflow-x: hidden;
     overflow-y: scroll; }
+    .portfolio-window .wrapper p {
+      padding: 0 5rem; }
     .portfolio-window .wrapper .links {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -426,6 +428,11 @@ iframe {
   width: 100%;
   border: none;
   z-index: 20; }
+
+.wrapper {
+  -webkit-transform: translateY(-8px);
+  -ms-transform: translateY(-8px);
+  transform: translateY(-8px); }
 
 .icons {
   display: -webkit-box;

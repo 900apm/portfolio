@@ -39,7 +39,6 @@ main, #icon-container{
 }
 
 .dragged{
-  // background: grey;
   i, p{
     color: $dragged-color;
   }
@@ -95,7 +94,7 @@ main, #icon-container{
   z-index: 101;
   height: 500px;
   width: 810px;
-  border: 1px solid $teritary-color;
+  border: 1.5px solid $teritary-color;
   background: $secondary-color;
   position: absolute;
   top-bar{
@@ -105,10 +104,11 @@ main, #icon-container{
     margin: 0;
     h2{
       position: relative;
-      z-index: 10;
+      z-index: 20;
       background: $secondary-color;
       border-left: 1px solid $teritary-color;
       border-right: 1px solid $teritary-color;
+      // border-top: 1.5px solid $teritary-color;
       // border-bottom: 1px solid $teritary-color;
       padding: 5px 0;
       margin: 0 auto;
@@ -136,8 +136,8 @@ main, #icon-container{
     .bar6{top: 17.5px;}
     .bar7{
       top: 20.5px;
-      z-index: 30;
-      border-top: 1px solid $teritary-color;
+      z-index: 20;
+      border-top: 1.5px solid $teritary-color;
       width: 100%;
     }
     
@@ -145,7 +145,7 @@ main, #icon-container{
       cursor: grab;
     }
     .close, .enlarge{
-      z-index: 30;
+      z-index: 20;
       border: none;
       border-left: 1px solid $teritary-color;
       // border-bottom: 1px solid $teritary-color;
@@ -268,15 +268,18 @@ main, #icon-container{
 .portfolio-window{
   top: 5%;
   // left: 17.5%;
-  left: calc(100% / 2 - (810px / 2));
+  left: calc(100% / 2 - (400px / 2));
   height: 550px;
-  width: 810px;
+  width: 400px;
   text-align: center;
   display: flex;
   flex-direction: column;
   .wrapper{
     overflow-x: hidden;
     overflow-y: scroll;
+    p{
+      padding: 0 5rem;
+    }
     .links{
       display: flex;
       justify-content: center;
@@ -322,6 +325,10 @@ iframe{
   width: 100%;
   border: none;
   z-index: 20;
+}
+
+.wrapper{
+  transform: translateY(-8px);
 }
 
 .icons{

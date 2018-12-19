@@ -520,8 +520,8 @@ $(".piece").on("click", function () {
       })
       .resizable({
         containment: "body",
-        minWidth: 320,
-        minHeight: 500,
+        minWidth: 350,
+        minHeight: 600,
         start: function () {
           $('iframe').css('pointer-events', 'none');
         },
@@ -828,8 +828,8 @@ $(".portfolio").on("click", function () {
       })
       .resizable({
         containment: "body",
-        minWidth: 500,
-        minHeight: 500,
+        minWidth: 400,
+        minHeight: 550,
         start: function () {
           $('iframe').css('pointer-events', 'none');
         },
@@ -866,9 +866,9 @@ $(".portfolio").on("click", function () {
         // console.log("I am small");
         $(this).parents(".portfolio-window").animate({
           top: "5%",
-          left: "17.5%",
+          left: "32.5%",
           height: "550",
-          width: "810"
+          width: "400"
         });
       }
     });
@@ -967,8 +967,6 @@ function showTime() {
 }
 
 showTime();
-
-
 
 // document ready closing tag
 });
