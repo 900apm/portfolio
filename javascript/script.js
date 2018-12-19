@@ -147,11 +147,11 @@ let contactHtml = (
   '<aside>'+
     '<h3>lets talk</h3>'+
     '<p>xiaoge.deng@protonmail.com</p>'+
-    '<form action="">'+
-      '<input type="text" placeholder="name">'+
-      '<input type="email" placeholder="email">'+
-      '<input type="text" placeholder="message">'+
-      '<input type="submit" value="submit">'+
+    '<form action="https://formspree.io/xiaoge.deng@protonmail.com" method="POST"">'+
+      '<input type="text" placeholder="name" name="name">'+
+      '<input type="email" placeholder="email" name="_replyto">'+
+      '<textarea name="message" placeholder="message"></textarea>'+
+      '<input type="submit" value="Send">'+
     '</form>'+
   '</aside>'+
 '</div>');
@@ -769,7 +769,7 @@ $(".contact").on("click", function () {
       .resizable({
         containment: "body",
         minWidth: 320,
-        minHeight: 300,
+        minHeight: 325,
         start: function () {
           $('iframe').css('pointer-events', 'none');
         },

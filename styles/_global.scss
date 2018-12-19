@@ -225,20 +225,21 @@ main, #icon-container{
   top: 10%;
   // left: 32.5%;
   left: calc(100% / 2 - (400px / 2));
-  height: 300px;
+  height: 325px;
   width: 400px;
   aside{
     background: $secondary-color;
     padding: 10px;
     text-align: center;
     form{
+      font-size: 1.5rem;
       margin: 10px;
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-around;
       :nth-child(-n+2) {
-        width: 50%;
+        width: 49%;
         height: 100%;
       }
       :nth-child(3) {
@@ -246,6 +247,8 @@ main, #icon-container{
         height: 100px;
       }
       input{
+        border-style: none;
+        border: 1px solid $quaternary-color;
         &:required {
           box-shadow:none;
         }
@@ -255,11 +258,14 @@ main, #icon-container{
         }
       }
       input[type=submit]{
-        font-size: 1.6rem;
-        border-style: none;
-        border: 1px solid $teritary-color;
+        font-size: 1.5rem;
         background: $primary-color;
         margin-top: 5px;
+      }
+      textarea{
+        margin-top: 10px;
+        resize: none;
+        border: 1px solid $quaternary-color;
       }
     }
   }
