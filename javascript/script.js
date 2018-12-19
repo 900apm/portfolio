@@ -175,43 +175,43 @@ let portfolioHtml = (
     '<h2>Sophie</h2>'+
     '<p>Multi-page responsive website created with flexbox, SCSS and CSS grids</p>'+
     '<div class="links">'+
-      '<a href="https://900apm.github.io/xiaoge_deng_project2/index.html">live link</a>'+
-      '<a href="https://github.com/900apm/xiaoge_deng_project2">GitHub</a>' +
+      '<a href="https://900apm.github.io/xiaoge_deng_project2/index.html" target="_blank">External Link</a>'+
+      '<a href="https://github.com/900apm/xiaoge_deng_project2" target="_blank">GitHub</a>' +
     '</div >'+
 
     '<h2>Shutter</h2>' +
     '<p>Single-page responsive website created with only floats</p>' +
     '<div class="links">'+
-      '<a href="https://900apm.github.io/xiaoge_deng_project1/">live link</a>'+
-      '<a href="https://github.com/900apm/xiaoge_deng_project1">GitHub</a>' +
+      '<a href="https://900apm.github.io/xiaoge_deng_project1/" target="_blank">External Link</a>'+
+      '<a href="https://github.com/900apm/xiaoge_deng_project1" target="_blank">GitHub</a>' +
     '</div >'+
 
     '<h2>ASCII ASTEROIDS</h2>' +
     '<p>Ascii text game created with javaScript and jQuery</p>' +
     '<div class="links">'+
-      '<a href="https://900apm.github.io/ASCII-ASTEROIDS/">live link</a>'+
-      '<a href="https://github.com/900apm/ASCII-ASTEROIDS">GitHub</a>' +
+      '<a href="https://900apm.github.io/ASCII-ASTEROIDS/" target="_blank" >External Link</a>'+
+      '<a href="https://github.com/900apm/ASCII-ASTEROIDS" target="_blank">GitHub</a>' +
     '</div >'+
 
     '<h2>Ajax Answers</h2>' +
     '<p>Jeopardy based trivia game created with SCSS, Ajax queries and jService restful API</p>' +
     '<div class="links">'+
-      '<a href="http://xiaogedeng.com/ajaxanswers/">live link</a>'+
-      '<a href="https://github.com/900apm/project4_Xiaoge_Amy">GitHub</a>' +
+      '<a href="http://xiaogedeng.com/ajaxanswers/" target="_blank">External Link</a>'+
+      '<a href="https://github.com/900apm/project4_Xiaoge_Amy" target="_blank">GitHub</a>' +
     '</div >'+
 
     '<h2>No-name Notes</h2>' +
     '<p>Note taking application created with React and Firebase backend</p>' +
     '<div class="links">'+
-      '<a href="https://no-name-notes.firebaseapp.com/">live link</a>'+
-      '<a href="https://github.com/900apm/No-name-Notes">GitHub</a>' +
+      '<a href="https://no-name-notes.firebaseapp.com/" target="_blank">External Link</a>'+
+      '<a href="https://github.com/900apm/No-name-Notes" target="_blank">GitHub</a>' +
     '</div >'+
 
     '<h2>Piece by Peace</h2>' +
     '<p>Multi-page React application created with SCSS and Firebase backend</p>' +
     '<div class="links">'+
-      '<a href="https://piece-by-peace.firebaseapp.com/">live link</a>'+
-      '<a href="https://github.com/900apm/fawad_xiaoge_nova_project_6">GitHub</a>' +
+      '<a href="https://piece-by-peace.firebaseapp.com/" target="_blank">External Link</a>'+
+      '<a href="https://github.com/900apm/fawad_xiaoge_nova_project_6" target="_blank">GitHub</a>' +
     '</div >'+
 
   '</div >'+

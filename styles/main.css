@@ -405,6 +405,9 @@ main, #icon-container {
         margin: 1rem 2rem;
         padding: 0.5rem;
         border: 1px solid #363535; }
+    .portfolio-window .wrapper h2 {
+      margin-top: 50px;
+      text-decoration: underline; }
 
 .readme-window {
   position: absolute;
