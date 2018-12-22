@@ -221,7 +221,7 @@ main, #icon-container {
   z-index: 101;
   height: 500px;
   width: 810px;
-  border: 1.5px solid #363535;
+  border: 1px solid #363535;
   background: #eeeeee;
   position: absolute; }
   .window top-bar {
@@ -231,7 +231,7 @@ main, #icon-container {
     margin: 0; }
     .window top-bar h2 {
       position: relative;
-      z-index: 20;
+      z-index: 10;
       background: #eeeeee;
       border-left: 1px solid #363535;
       border-right: 1px solid #363535;
@@ -256,17 +256,17 @@ main, #icon-container {
     .window top-bar .bar2 {
       top: 5.5px; }
     .window top-bar .bar3 {
-      top: 8.5px; }
+      top: 8.75px; }
     .window top-bar .bar4 {
-      top: 11.5px; }
+      top: 12.25px; }
     .window top-bar .bar5 {
-      top: 14.5px; }
+      top: 15.5px; }
     .window top-bar .bar6 {
-      top: 17.5px; }
+      top: 18.5px; }
     .window top-bar .bar7 {
-      top: 20.5px;
+      top: 21.5px;
       z-index: 20;
-      border-top: 1.5px solid #363535;
+      border-top: 1px solid #363535;
       width: 100%; }
     .window top-bar:hover {
       cursor: -webkit-grab;
@@ -432,13 +432,13 @@ main, #icon-container {
   left: auto !important; }
 
 iframe {
-  -webkit-transform: translateY(-8px);
-  -ms-transform: translateY(-8px);
-  transform: translateY(-8px);
+  -webkit-transform: translateY(-6.75px);
+  -ms-transform: translateY(-6.75px);
+  transform: translateY(-6.75px);
   height: 94.2%;
   width: 100%;
   border: none;
-  z-index: 20; }
+  z-index: 102 !important; }
 
 .wrapper {
   -webkit-transform: translateY(-8px);

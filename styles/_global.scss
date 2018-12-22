@@ -94,7 +94,7 @@ main, #icon-container{
   z-index: 101;
   height: 500px;
   width: 810px;
-  border: 1.5px solid $teritary-color;
+  border: 1px solid $teritary-color;
   background: $secondary-color;
   position: absolute;
   top-bar{
@@ -104,7 +104,7 @@ main, #icon-container{
     margin: 0;
     h2{
       position: relative;
-      z-index: 20;
+      z-index: 10;
       background: $secondary-color;
       border-left: 1px solid $teritary-color;
       border-right: 1px solid $teritary-color;
@@ -130,14 +130,14 @@ main, #icon-container{
       // width: 100%;
     }
     .bar2{top: 5.5px;}
-    .bar3{top: 8.5px;}
-    .bar4{top: 11.5px;}
-    .bar5{top: 14.5px;}
-    .bar6{top: 17.5px;}
+    .bar3{top: 8.75px;}
+    .bar4{top: 12.25px;}
+    .bar5{top: 15.5px;}
+    .bar6{top: 18.5px;}
     .bar7{
-      top: 20.5px;
+      top: 21.5px;
       z-index: 20;
-      border-top: 1.5px solid $teritary-color;
+      border-top: 1px solid $teritary-color;
       width: 100%;
     }
     
@@ -332,12 +332,12 @@ main, #icon-container{
 
 iframe{
   // to get rid of ghost space
-  transform: translateY(-8px);
+  transform: translateY(-6.75px);
   // to prevent iframe from overflowing the window container
   height: 94.2%;
   width: 100%;
   border: none;
-  z-index: 20;
+  z-index: 102 !important;
 }
 
 .wrapper{
