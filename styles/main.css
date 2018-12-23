@@ -238,7 +238,6 @@ main, #icon-container {
       padding: 5px 0;
       margin: 0 auto;
       width: 100px; }
-    .window top-bar .bar1,
     .window top-bar .bar2,
     .window top-bar .bar3,
     .window top-bar .bar4,
@@ -246,25 +245,26 @@ main, #icon-container {
     .window top-bar .bar6,
     .window top-bar .bar7 {
       z-index: 0;
-      border-top: 1px dotted #363535;
+      border-top: 1px solid #838181;
       -webkit-transform: translateY(-28px);
       -ms-transform: translateY(-28px);
       transform: translateY(-28px);
       position: relative;
       top: 2.5px;
-      width: calc(100% - 50px); }
+      width: calc(100% - 10px);
+      margin: 0 auto; }
     .window top-bar .bar2 {
       top: 5.5px; }
     .window top-bar .bar3 {
-      top: 8.75px; }
+      top: 8.5px; }
     .window top-bar .bar4 {
-      top: 12.25px; }
+      top: 11.5px; }
     .window top-bar .bar5 {
-      top: 15.5px; }
+      top: 14.5px; }
     .window top-bar .bar6 {
-      top: 18.5px; }
+      top: 17.5px; }
     .window top-bar .bar7 {
-      top: 21.5px;
+      top: 22.5px;
       z-index: 20;
       border-top: 1px solid #363535;
       width: 100%; }
@@ -282,7 +282,7 @@ main, #icon-container {
       position: absolute;
       right: 0; }
     .window top-bar .enlarge {
-      right: 27px; }
+      right: 25px; }
 
 .sophie-window {
   top: 2.5%;
