@@ -374,9 +374,9 @@ $(".sophie").on("click", function () {
       else {
         $(this).parents(".sophie-window").animate({
           top: "2.5%",
-          left: "17.5%",
+          left: "32.5%",
           height: "500",
-          width: "810"
+          width: "440"
         });
       }
     });

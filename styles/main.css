@@ -219,17 +219,24 @@ main, #icon-container {
 
 .window {
   z-index: 101;
-  height: 500px;
-  width: 810px;
   border: 1px solid #363535;
   background: #eeeeee;
   position: absolute; }
+  @media only screen and (max-width: 400px) {
+    .window {
+      top: 0% !important;
+      left: 0% !important;
+      right: 0%;
+      bottom: 0%;
+      height: 100% !important;
+      width: 100% !important; } }
   .window top-bar {
     width: 100%;
     text-align: center;
     font-weight: 600;
     margin: 0; }
     .window top-bar h2 {
+      font-size: 1.4rem;
       position: relative;
       z-index: 10;
       background: #eeeeee;
@@ -275,6 +282,7 @@ main, #icon-container {
       z-index: 20;
       border: none;
       border-left: 1px solid #363535;
+      padding: 0 8px;
       position: relative;
       height: 28px;
       font-size: 1.6rem;
@@ -282,13 +290,17 @@ main, #icon-container {
       position: absolute;
       right: 0; }
     .window top-bar .enlarge {
-      right: 25px; }
+      right: 26px;
+      width: 27px; }
+      @media only screen and (max-width: 400px) {
+        .window top-bar .enlarge {
+          display: none; } }
 
 .sophie-window {
   top: 2.5%;
-  left: calc(100% / 2 - (810px / 2));
+  left: calc(100% / 2 - (400px / 2));
   height: 500px;
-  width: 810px; }
+  width: 400px; }
 
 .shutter-window {
   top: 5%;
@@ -432,9 +444,9 @@ main, #icon-container {
   left: auto !important; }
 
 iframe {
-  -webkit-transform: translateY(-6.75px);
-  -ms-transform: translateY(-6.75px);
-  transform: translateY(-6.75px);
+  -webkit-transform: translateY(-5.5px);
+  -ms-transform: translateY(-5.5px);
+  transform: translateY(-5.5px);
   height: 94.2%;
   width: 100%;
   border: none;
