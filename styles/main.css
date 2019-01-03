@@ -246,7 +246,8 @@ main, #icon-container {
       right: 0%;
       bottom: 0%;
       height: 100% !important;
-      width: 100% !important; } }
+      width: 100% !important;
+      overflow-x: hidden; } }
   .window top-bar {
     width: 100%;
     text-align: center;
@@ -315,9 +316,9 @@ main, #icon-container {
 
 .sophie-window {
   top: 2.5%;
-  left: calc(100% / 2 - (400px / 2));
-  height: 500px;
-  width: 400px; }
+  left: calc(100% / 2 - (805px / 2));
+  height: 550px;
+  width: 805px; }
 
 .shutter-window {
   top: 5%;
@@ -476,7 +477,8 @@ iframe {
       height: 96%;
       -webkit-transform: translateY(-5.5px);
       -ms-transform: translateY(-5.5px);
-      transform: translateY(-5.5px); } }
+      transform: translateY(-5.5px);
+      overflow-x: hidden; } }
 
 .wrapper {
   overflow-x: hidden;

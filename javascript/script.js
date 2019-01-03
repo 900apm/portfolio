@@ -380,7 +380,7 @@ $(".sophie").on("click", function () {
           top: "2.5%",
           left: "32.5%",
           height: "500",
-          width: "440"
+          width: "805"
         });
       }
     });

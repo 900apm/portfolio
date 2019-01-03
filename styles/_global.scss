@@ -114,6 +114,7 @@ main, #icon-container{
     bottom: 0%;
     height: 100% !important;
     width: 100% !important;
+    overflow-x: hidden;
   }
   top-bar{
     width: 100%;
@@ -190,9 +191,9 @@ main, #icon-container{
 .sophie-window{
   top: 2.5%;
   // left: 17.5%;
-  left: calc(100% / 2 - (400px / 2));
-  height: 500px;
-  width: 400px;
+  left: calc(100% / 2 - (805px / 2));
+  height: 550px;
+  width: 805px;
 }
 
 .shutter-window{
@@ -363,6 +364,7 @@ iframe{
   @media only screen and (max-width: 400px){
     height: 96%;
     transform: translateY(-5.5px);
+    overflow-x: hidden;
   }
 }
 
