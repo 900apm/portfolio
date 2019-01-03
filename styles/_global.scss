@@ -65,6 +65,8 @@ main, #icon-container{
     flex-direction: column;
     justify-content: center;
     height: 20%;
+    width: 100px;
+    padding: 10% 0%;
     text-align: center;
     color: $icon-color;
 
@@ -296,41 +298,38 @@ main, #icon-container{
   text-align: center;
   display: flex;
   flex-direction: column;
-  .wrapper{
-    overflow-x: hidden;
-    overflow-y: scroll;
-    p{
-      padding: 0 5rem;
+  p{
+    padding: 0 5rem;
+  }
+  .links{
+    display: flex;
+    justify-content: center;
+    a{
+    font-size: 1.6rem;
+    margin: 1rem 2rem;
+    padding: 0.5rem;
+    border: 1px solid $teritary-color;
     }
-    .links{
-      display: flex;
-      justify-content: center;
-      a{
-      font-size: 1.6rem;
-      margin: 1rem 2rem;
-      padding: 0.5rem;
-      border: 1px solid $teritary-color;
-      }
-    }
-    h2{
-      margin-top: 50px;
-      text-decoration: underline;
-    }
+  }
+  h2{
+    margin-top: 50px;
   }
 }
 
 .readme-window{
-  position: absolute;
   top: 3.5%;
   left: initial;
   right: 2%;
   height: 485px;
   width: 300px;
   text-align: left;
+  display: flex;
+  flex-direction: column;
   p{
     padding: 0.75rem 1.5rem;
     &:first-of-type{
-      padding-top: none;
+      padding-bottom: 2rem;
+      text-align: center;
     }
     &:last-of-type{
       padding-top: 3rem;
@@ -351,10 +350,16 @@ iframe{
   width: 100%;
   border: none;
   z-index: 102 !important;
+  @media only screen and (max-width: 400px){
+    height: 96%;
+    transform: translateY(-5.5px);
+  }
 }
 
 .wrapper{
-  transform: translateY(-8px);
+  // transform: translateY(-8px);
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .icon-social{

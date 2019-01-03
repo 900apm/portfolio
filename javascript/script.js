@@ -158,18 +158,18 @@ let contactHtml = (
 
 let portfolioHtml = (
 '<div class="portfolio-window window">'+
-    '<top-bar>'+
-        '<button class="enlarge">□</button>'+
-        '<button class="close">x</button>'+
-        '<h2>portfolio</h2>'+
-        '<div class="bar1"></div>'+
-        '<div class="bar2"></div>'+
-        '<div class="bar3"></div>'+
-        '<div class="bar4"></div>'+
-        '<div class="bar5"></div>'+
-        '<div class="bar6"></div>'+
-        '<div class="bar7"></div>'+
-    '</top-bar>'+
+  '<top-bar>'+
+    '<button class="enlarge">□</button>'+
+    '<button class="close">x</button>'+
+    '<h2>portfolio</h2>'+
+    '<div class="bar1"></div>'+
+    '<div class="bar2"></div>'+
+    '<div class="bar3"></div>'+
+    '<div class="bar4"></div>'+
+    '<div class="bar5"></div>'+
+    '<div class="bar6"></div>'+
+    '<div class="bar7"></div>'+
+  '</top-bar>'+
   '<div class="wrapper">'+
 
     '<h2>Sophie</h2>'+
@@ -219,24 +219,28 @@ let portfolioHtml = (
 
 let readmeHtml = (
 '<div class="readme-window window">'+
-    '<top-bar>'+
-        '<button class="enlarge">□</button>'+
-        '<button class="close">x</button>'+
-        '<h2>readme</h2>'+
-        '<div class="bar1"></div>'+
-        '<div class="bar2"></div>'+
-        '<div class="bar3"></div>'+
-        '<div class="bar4"></div>'+
-        '<div class="bar5"></div>'+
-        '<div class="bar6"></div>'+
-        '<div class="bar7"></div>'+
-    '</top-bar>'+
-    "<p>Hello! Welcome to my site, click any icon to begin.</p>"+
+  '<top-bar>'+
+    '<button class="enlarge">□</button>'+
+    '<button class="close">x</button>'+
+    '<h2>readme</h2>'+
+    '<div class="bar1"></div>'+
+    '<div class="bar2"></div>'+
+    '<div class="bar3"></div>'+
+    '<div class="bar4"></div>'+
+    '<div class="bar5"></div>'+
+    '<div class="bar6"></div>'+
+    '<div class="bar7"></div>'+
+  '</top-bar>'+
+  '<div class="wrapper">' +
+    "<p>Hello! Welcome to my site, click on any icon to begin.</p>"+
+    "<p>‐ this website is best viewed on a desktop</p>"+
+    "<p>‐ icons are able to be repositioned by dragging</p>" +
     "<p>‐ windows are able to be repositioned by dragging the striped window header</p>"+
     "<p>‐ windows are able to be resized with the arrow positioned on the bottom right</p>"+
     "<p>‐ to move a window to the front, click on the desired window's header</p>" +
     "<p>‐ buttons on the top right toggle fullscreen and close the window respectively</p>"+
     "<p>xiaoge.deng@protonmail.com</p>"+
+  '</div >' +
 '</div>');
 
 function runOnStart() {
