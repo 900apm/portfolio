@@ -207,9 +207,9 @@ main, #icon-container{
 .ascii-window{
   top: 7.5%;
   // left: 25%;
-  left: calc(100% / 2 - (575px / 2));
+  left: calc(100% / 2 - (500px / 2));
   height: 533px;
-  width: 575px;
+  width: 500px;
 }
 
 .piece-window{
@@ -355,9 +355,12 @@ main, #icon-container{
 
 iframe{
   // to get rid of ghost space
-  transform: translateY(-5.5px);
+  // transform: translateY(-5.5px);
   // to prevent iframe from overflowing the window container
-  height: 94.2%;
+  // height: 94.2%;
+  transform: translateY(-5.5px);
+  display:inline-block;
+  height: calc( 100% - 28px);
   width: 100%;
   border: none;
   z-index: 102 !important;

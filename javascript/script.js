@@ -503,7 +503,7 @@ $(".ascii").on("click", function () {
           top: "7.5",
           left: "25%",
           height: "533",
-          width: "575"
+          width: "500"
         });
       }
     });

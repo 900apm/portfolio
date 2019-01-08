@@ -328,9 +328,9 @@ main, #icon-container {
 
 .ascii-window {
   top: 7.5%;
-  left: calc(100% / 2 - (575px / 2));
+  left: calc(100% / 2 - (500px / 2));
   height: 533px;
-  width: 575px; }
+  width: 500px; }
 
 .piece-window {
   top: 2.5%;
@@ -468,7 +468,8 @@ iframe {
   -webkit-transform: translateY(-5.5px);
   -ms-transform: translateY(-5.5px);
   transform: translateY(-5.5px);
-  height: 94.2%;
+  display: inline-block;
+  height: calc( 100% - 28px);
   width: 100%;
   border: none;
   z-index: 102 !important; }
