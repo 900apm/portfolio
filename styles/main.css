@@ -238,7 +238,8 @@ main, #icon-container {
   z-index: 101;
   border: 1px solid #363535;
   background: #eeeeee;
-  position: absolute; }
+  position: absolute;
+  overflow: hidden !important; }
   @media only screen and (max-width: 400px) {
     .window {
       top: 0% !important;
@@ -246,8 +247,7 @@ main, #icon-container {
       right: 0%;
       bottom: 0%;
       height: 100% !important;
-      width: 100% !important;
-      overflow-x: hidden; } }
+      width: 100% !important; } }
   .window top-bar {
     width: 100%;
     text-align: center;
@@ -354,9 +354,40 @@ main, #icon-container {
   top: 7.5%;
   left: calc(100% / 2 - (500px / 2));
   height: 500px;
-  width: 500px; }
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
   .about-window p {
-    padding: 5% 5% 0 5%; }
+    padding: 10px 5%;
+    max-width: 600px;
+    margin: 0 auto; }
+  .about-window .icon-social, .about-window .icon-works {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    font-size: 2.5rem;
+    color: #424141;
+    max-width: 500px;
+    margin: 20px auto; }
+  .about-window .icon-works {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly; }
+    .about-window .icon-works a {
+      margin: 10px 5%;
+      height: 24px;
+      width: 24px; }
+      .about-window .icon-works a svg {
+        fill: #424141; }
 
 .contact-window {
   top: 10%;
@@ -453,7 +484,9 @@ main, #icon-container {
   -ms-flex-direction: column;
   flex-direction: column; }
   .readme-window p {
-    padding: 0.75rem 1.5rem; }
+    padding: 0.75rem 1.5rem;
+    max-width: 600px;
+    margin: 0 auto; }
     .readme-window p:first-of-type {
       padding-bottom: 2rem;
       text-align: center; }
@@ -469,31 +502,21 @@ iframe {
   -ms-transform: translateY(-5.5px);
   transform: translateY(-5.5px);
   display: inline-block;
-  height: calc( 100% - 28px);
+  height: calc( 100% - 30px);
   width: 100%;
   border: none;
+  overflow-x: hidden;
   z-index: 102 !important; }
   @media only screen and (max-width: 400px) {
     iframe {
       height: 96%;
       -webkit-transform: translateY(-5.5px);
       -ms-transform: translateY(-5.5px);
-      transform: translateY(-5.5px);
-      overflow-x: hidden; } }
+      transform: translateY(-5.5px); } }
 
 .wrapper {
   overflow-x: hidden;
   overflow-y: scroll; }
-
-.icon-social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  font-size: 2.5rem;
-  color: #424141;
-  margin-top: 30px; }
 
 footer {
   background-color: #eeeeee;

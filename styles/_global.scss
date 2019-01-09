@@ -59,13 +59,6 @@ main, #icon-container{
     padding-bottom: 15%;
   }
 
-  // .fa-folder {
-  //   color: #3781a6;
-  //   &:hover {
-  //     color: #67abcd;
-  //   }
-  // }
-
   .icon{
     display: flex;
     flex-direction: column;
@@ -107,6 +100,7 @@ main, #icon-container{
   border: 1px solid $teritary-color;
   background: $secondary-color;
   position: absolute;
+  overflow: hidden !important;
     @media only screen and (max-width: 400px){
     top: 0% !important;
     left: 0% !important;
@@ -114,7 +108,7 @@ main, #icon-container{
     bottom: 0%;
     height: 100% !important;
     width: 100% !important;
-    overflow-x: hidden;
+    // overflow-x: hidden;
   }
   top-bar{
     width: 100%;
@@ -242,8 +236,32 @@ main, #icon-container{
   left: calc(100% / 2 - (500px / 2));
   height: 500px;
   width: 500px;
+  display: flex;
+  flex-direction: column;
   p{
-    padding: 5% 5% 0 5%;
+    padding: 10px 5%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .icon-social, .icon-works{
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.5rem;
+    color: $icon-color;
+    max-width: 500px;
+    margin: 20px auto;
+  }
+  .icon-works{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    a{
+      margin: 10px 5%;
+      height: 24px;
+      width: 24px;
+      svg{
+        fill: $icon-color;
+      }
+    }
   }
 }
 
@@ -338,6 +356,8 @@ main, #icon-container{
   flex-direction: column;
   p{
     padding: 0.75rem 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
     &:first-of-type{
       padding-bottom: 2rem;
       text-align: center;
@@ -360,14 +380,14 @@ iframe{
   // height: 94.2%;
   transform: translateY(-5.5px);
   display:inline-block;
-  height: calc( 100% - 28px);
+  height: calc( 100% - 30px);
   width: 100%;
   border: none;
+  overflow-x: hidden;
   z-index: 102 !important;
   @media only screen and (max-width: 400px){
     height: 96%;
     transform: translateY(-5.5px);
-    overflow-x: hidden;
   }
 }
 
@@ -375,14 +395,6 @@ iframe{
   // transform: translateY(-8px);
   overflow-x: hidden;
   overflow-y: scroll;
-}
-
-.icon-social{
-  display: flex;
-  justify-content: space-around;
-  font-size: 2.5rem;
-  color: $icon-color;
-  margin-top: 30px;
 }
 
 footer{
