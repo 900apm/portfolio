@@ -140,7 +140,12 @@ html {
 body {
   font-family: "B612 Mono", monospace;
   overflow: hidden;
-  height: 100%; }
+  height: 100%;
+  background-image: -webkit-linear-gradient(transparent 0px, transparent 2px, #ffffff 2px, #ffffff 20px), -webkit-linear-gradient(left, #d6d6d6 0px, #d6d6d6 2px, #ffffff 2px, #ffffff 20px);
+  background-image: -o-linear-gradient(transparent 0px, transparent 2px, #ffffff 2px, #ffffff 20px), -o-linear-gradient(left, #d6d6d6 0px, #d6d6d6 2px, #ffffff 2px, #ffffff 20px);
+  background-image: linear-gradient(transparent 0px, transparent 2px, #ffffff 2px, #ffffff 20px), linear-gradient(to right, #d6d6d6 0px, #d6d6d6 2px, #ffffff 2px, #ffffff 20px);
+  background-position: -233px -2px;
+  background-size: 12px 12px; }
 
 p {
   font-size: 1.4rem;
@@ -160,28 +165,21 @@ ul, li, a {
 button:focus {
   outline: 0; }
 
-main, #icon-container {
-  background-color: #ffffff;
-  background-size: 7px 7px;
-  background-image: -webkit-linear-gradient(left, #eeeeee 1px, transparent 1px), -webkit-linear-gradient(top, #eeeeee 1px, transparent 1px);
-  background-image: -o-linear-gradient(left, #eeeeee 1px, transparent 1px), -o-linear-gradient(top, #eeeeee 1px, transparent 1px);
-  background-image: linear-gradient(to right, #eeeeee 1px, transparent 1px), linear-gradient(to bottom, #eeeeee 1px, transparent 1px); }
-
 .dragged i, .dragged p {
   color: #9e9d9d; }
 
 #icon-container {
-  height: calc( 100vh - 30px);
+  height: calc( 80vh - 30px);
   width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -190,7 +188,8 @@ main, #icon-container {
   justify-content: start; }
   @media only screen and (max-width: 400px) {
     #icon-container {
-      padding-bottom: 15%; } }
+      padding-bottom: 15%;
+      height: calc( 90vh - 30px); } }
   #icon-container .icon {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -202,8 +201,8 @@ main, #icon-container {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    height: 20%;
-    width: 100px;
+    height: 25%;
+    min-width: 100px;
     padding: 10% 0%;
     text-align: center;
     color: #424141; }
@@ -212,7 +211,6 @@ main, #icon-container {
         padding: 0% !important; } }
     #icon-container .icon i {
       margin-bottom: 5px;
-      width: 100%;
       font-size: 4rem;
       -webkit-text-stroke: 2px #ffffff;
       -webkit-transition: font-size 0.3s;

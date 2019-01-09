@@ -7,8 +7,15 @@ html{
 body{
   font-family: $primary-font;
   overflow: hidden;
-  // height: 100vh;
   height: 100%;
+  // background-color: $primary-color;
+  // background-size: 7px 7px;
+  // background-image: 
+  //   linear-gradient(to right, $secondary-color 1px, transparent 1px), 
+  //   linear-gradient(to bottom, $secondary-color 1px, transparent 1px);
+    background-image: linear-gradient(transparent 0px, transparent 2px, $primary-color 2px, $primary-color 20px), linear-gradient(to right, $quaternary-color 0px, $quaternary-color 2px, $primary-color 2px, $primary-color 20px);
+  background-position: -233px -2px;
+  background-size: 12px 12px;
 }
 
 p{
@@ -31,16 +38,6 @@ ul, li, a {
 
 button:focus {outline:0;}
 
-main, #icon-container{
-  background-color: $primary-color;
-  background-size: 7px 7px;
-  background-image: 
-    linear-gradient(to right, $secondary-color 1px, transparent 1px), 
-    linear-gradient(to bottom, $secondary-color 1px, transparent 1px);
-  // background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
-  // background: url("http://i62.tinypic.com/2a0mcyf.jpg");
-}
-
 .dragged{
   i, p{
     color: $dragged-color;
@@ -48,23 +45,24 @@ main, #icon-container{
 }
 
 #icon-container{
-  height: calc( 100vh - 30px);
+  height: calc( 80vh - 30px);
   width: 25%;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: start;
   @media only screen and (max-width: 400px){
     padding-bottom: 15%;
+    height: calc( 90vh - 30px);
   }
 
   .icon{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 20%;
-    width: 100px;
+    height: 25%;
+    min-width: 100px;
     padding: 10% 0%;
     text-align: center;
     color: $icon-color;
@@ -74,7 +72,6 @@ main, #icon-container{
 
     i{
       margin-bottom: 5px;
-      width: 100%;
       font-size: 4rem;
       -webkit-text-stroke: 2px $primary-color;
       transition: font-size 0.3s;
