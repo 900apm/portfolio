@@ -118,7 +118,7 @@ let aboutHtml = (
     '</top-bar>'+
     '<div class="wrapper">'+
       "<p> Hi! I'm Xiaoge Deng </p>"+
-      "<p> Welcome to my site. I'm a front end developer currently based on Toronto who loves to create beautiful and unique websites. I like to take my work seriously but not myself. Need a hand? I've got two.</p>"+
+      "<p> Welcome to my site. I'm a front end developer currently based in Toronto who loves to create beautiful and unique websites. I like to take my work seriously but not myself. Need a hand? I've got two.</p>"+
 
       "<p> Works seen on this page were created with the following skills:</p>" +
 
@@ -145,7 +145,7 @@ let aboutHtml = (
         '<a href="https://codepen.io/chileanrosehair/" target="_blank"><i class="fab fa-codepen"></i></a>' +
       '</div>'+
 
-      '<p> You reach me by clicking the contact envelope icon on the left or email me directly at xiaoge.deng@protonmail.com</p>'+
+      '<p> You reach me by clicking the contact envelope icon on the left or emailing me directly at xiaoge.deng@protonmail.com</p>'+
 
     '</div>'+
 '</div>');
