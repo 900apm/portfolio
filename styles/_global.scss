@@ -55,6 +55,7 @@ button:focus {outline:0;}
   @media only screen and (max-width: 400px){
     padding-bottom: 15%;
     height: calc( 90vh - 30px);
+    width: 100%;
   }
 
   .icon{
@@ -62,12 +63,15 @@ button:focus {outline:0;}
     flex-direction: column;
     justify-content: center;
     height: 25%;
-    min-width: 100px;
+    // min-width: 100px;
+    margin: 0 10px;
+    // background-color: blue;
     padding: 10% 0%;
     text-align: center;
     color: $icon-color;
     @media only screen and (max-width: 400px){
       padding: 0% !important;
+      margin: 0;
     }
 
     i{

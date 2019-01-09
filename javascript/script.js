@@ -145,7 +145,7 @@ let aboutHtml = (
         '<a href="https://codepen.io/chileanrosehair/" target="_blank"><i class="fab fa-codepen"></i></a>' +
       '</div>'+
 
-      '<p> You reach me by clicking the contact envelope icon on the left or emailing me directly at xiaoge.deng@protonmail.com</p>'+
+      '<p> You reach me by clicking the contact envelope icon or emailing me directly at xiaoge.deng@protonmail.com</p>'+
 
     '</div>'+
 '</div>');
@@ -199,12 +199,12 @@ let portfolioHtml = (
       '<a href="https://github.com/900apm/xiaoge_deng_project2" target="_blank">GitHub</a>' +
     '</div >'+
 
-    '<h2>Shutter</h2>' +
-    '<p>Single-page responsive website created with only floats</p>' +
-    '<div class="links">'+
-      '<a href="https://900apm.github.io/xiaoge_deng_project1/" target="_blank">External Link</a>'+
-      '<a href="https://github.com/900apm/xiaoge_deng_project1" target="_blank">GitHub</a>' +
-    '</div >'+
+    // '<h2>Shutter</h2>' +
+    // '<p>Single-page responsive website created with only floats</p>' +
+    // '<div class="links">'+
+    //   '<a href="https://900apm.github.io/xiaoge_deng_project1/" target="_blank">External Link</a>'+
+    //   '<a href="https://github.com/900apm/xiaoge_deng_project1" target="_blank">GitHub</a>' +
+    // '</div >'+
 
     '<h2>ASCII ASTEROIDS</h2>' +
     '<p>Ascii text game created with javaScript and jQuery</p>' +
@@ -213,12 +213,12 @@ let portfolioHtml = (
       '<a href="https://github.com/900apm/ASCII-ASTEROIDS" target="_blank">GitHub</a>' +
     '</div >'+
 
-    '<h2>Ajax Answers</h2>' +
-    '<p>Jeopardy based trivia game created with SCSS, Ajax queries and jService restful API</p>' +
-    '<div class="links">'+
-      '<a href="http://xiaogedeng.com/ajaxanswers/" target="_blank">External Link</a>'+
-      '<a href="https://github.com/900apm/project4_Xiaoge_Amy" target="_blank">GitHub</a>' +
-    '</div >'+
+    // '<h2>Ajax Answers</h2>' +
+    // '<p>Jeopardy based trivia game created with SCSS, Ajax queries and jService restful API</p>' +
+    // '<div class="links">'+
+    //   '<a href="http://xiaogedeng.com/ajaxanswers/" target="_blank">External Link</a>'+
+    //   '<a href="https://github.com/900apm/project4_Xiaoge_Amy" target="_blank">GitHub</a>' +
+    // '</div >'+
 
     '<h2>No-name Notes</h2>' +
     '<p>Note taking application created with React and Firebase backend</p>' +
