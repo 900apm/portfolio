@@ -352,9 +352,9 @@ button:focus {
 
 .about-window {
   top: 7.5%;
-  left: calc(100% / 2 - (500px / 2));
+  left: calc(100% / 2 - (550px / 2));
   height: 500px;
-  width: 500px;
+  width: 550px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

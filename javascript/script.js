@@ -118,7 +118,7 @@ let aboutHtml = (
     '</top-bar>'+
     '<div class="wrapper">'+
       "<p> Hi! I'm Xiaoge Deng </p>"+
-      "<p> Welcome to my site. I'm a front end developer currently based in Toronto who loves to create beautiful and unique websites. I like to take my work seriously but not myself. Need a hand? I've got two.</p>"+
+      "<p> Welcome to my site. I'm a front end developer currently based in Toronto who enjoys creating beautiful and unique websites.</p>"+
 
       "<p> Works seen on this page were created with the following skills:</p>" +
 
@@ -252,14 +252,14 @@ let readmeHtml = (
     '<div class="bar7"></div>'+
   '</top-bar>'+
   '<div class="wrapper">' +
-    "<p>Hello! Welcome to my site, click on any icon to begin.</p>"+
+    "<p>welcome to my site, click on any icon to begin.</p>"+
     "<p>‐ this website is best viewed on a desktop</p>"+
     "<p>‐ icons are able to be repositioned by dragging</p>" +
     "<p>‐ windows are able to be repositioned by dragging the striped window header</p>"+
     "<p>‐ windows are able to be resized with the arrow positioned on the bottom right</p>"+
     "<p>‐ to move a window to the front, click on the desired window's header</p>" +
     "<p>‐ buttons on the top right toggle fullscreen and close the window respectively</p>"+
-    "<p>xiaoge.deng@protonmail.com (fan mail only)</p>"+
+    "<p>xiaoge.deng@protonmail.com</p>"+
   '</div >' +
 '</div>');
 
@@ -768,7 +768,7 @@ $(".about").on("click", function () {
           top: "7.5%",
           left: "28%",
           height: "500",
-          width: "500"
+          width: "550"
         });
       }
     });
