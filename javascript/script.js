@@ -252,7 +252,7 @@ let readmeHtml = (
     '<div class="bar7"></div>'+
   '</top-bar>'+
   '<div class="wrapper">' +
-    "<p>welcome to my site, click on any icon to begin.</p>"+
+    "<p>Welcome to my site, click on any icon to begin.</p>"+
     "<p>‐ this website is best viewed on a desktop</p>"+
     "<p>‐ icons are able to be repositioned by dragging</p>" +
     "<p>‐ windows are able to be repositioned by dragging the striped window header</p>"+
