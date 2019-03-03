@@ -143,6 +143,8 @@ let aboutHtml = (
         '<a href="https://www.linkedin.com/in/xiaoge-deng-5b1b56148/" target="_blank"><i class="fab fa-linkedin"></i></a>' +
         '<a href="https://medium.com/@ChileanRoseHair" target="_blank"><i class="fab fa-medium"></i></a>' +
         '<a href="https://codepen.io/chileanrosehair/" target="_blank"><i class="fab fa-codepen"></i></a>' +
+        '<a href="https://github.com/900apm" target="_blank"><i class="fab fa-github"></i></a>' +
+        
       '</div>'+
 
       '<p> You reach me by clicking the contact envelope icon or emailing me directly at xiaoge.deng@protonmail.com</p>'+
