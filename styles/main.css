@@ -248,27 +248,25 @@ button:focus {
       bottom: 0%;
       height: 100% !important;
       width: 100% !important; } }
-  .window top-bar {
+  .window .top-bar {
     width: 100%;
     text-align: center;
     font-weight: 600;
     margin: 0; }
-    .window top-bar h2 {
+    .window .top-bar h2 {
       font-size: 1.4rem;
       position: relative;
-      z-index: 10;
+      z-index: 20;
       background: #eeeeee;
-      border-left: 1px solid #363535;
-      border-right: 1px solid #363535;
-      padding: 5px 0;
+      padding: 5px;
       margin: 0 auto;
-      width: 100px; }
-    .window top-bar .bar2,
-    .window top-bar .bar3,
-    .window top-bar .bar4,
-    .window top-bar .bar5,
-    .window top-bar .bar6,
-    .window top-bar .bar7 {
+      display: inline-block !important; }
+    .window .top-bar .bar2,
+    .window .top-bar .bar3,
+    .window .top-bar .bar4,
+    .window .top-bar .bar5,
+    .window .top-bar .bar6,
+    .window .top-bar .bar7 {
       z-index: 0;
       border-top: 1px solid #838181;
       -webkit-transform: translateY(-28px);
@@ -278,25 +276,25 @@ button:focus {
       top: 2.5px;
       width: calc(100% - 10px);
       margin: 0 auto; }
-    .window top-bar .bar2 {
+    .window .top-bar .bar2 {
       top: 5.5px; }
-    .window top-bar .bar3 {
+    .window .top-bar .bar3 {
       top: 8.5px; }
-    .window top-bar .bar4 {
+    .window .top-bar .bar4 {
       top: 11.5px; }
-    .window top-bar .bar5 {
+    .window .top-bar .bar5 {
       top: 14.5px; }
-    .window top-bar .bar6 {
+    .window .top-bar .bar6 {
       top: 17.5px; }
-    .window top-bar .bar7 {
+    .window .top-bar .bar7 {
       top: 22.5px;
       z-index: 20;
       border-top: 1px solid #363535;
       width: 100%; }
-    .window top-bar:hover {
+    .window .top-bar:hover {
       cursor: -webkit-grab;
       cursor: grab; }
-    .window top-bar .close, .window top-bar .enlarge {
+    .window .top-bar .close, .window .top-bar .enlarge {
       z-index: 20;
       border: none;
       border-left: 1px solid #363535;
@@ -307,11 +305,11 @@ button:focus {
       background: #eeeeee;
       position: absolute;
       right: 0; }
-    .window top-bar .enlarge {
+    .window .top-bar .enlarge {
       right: 26px;
       width: 27px; }
       @media only screen and (max-width: 400px) {
-        .window top-bar .enlarge {
+        .window .top-bar .enlarge {
           display: none; } }
 
 .sophie-window {
@@ -349,6 +347,9 @@ button:focus {
   left: calc(100% / 2 - (400px / 2));
   height: 525px;
   width: 400px; }
+
+.about-window .top-bar, .contact-window .top-bar, .portfolio-window .top-bar, .readme-window .top-bar {
+  height: 29px; }
 
 .about-window {
   top: 7.5%;
@@ -393,53 +394,50 @@ button:focus {
   top: 10%;
   left: calc(100% / 2 - (400px / 2));
   height: 325px;
-  width: 400px; }
-  .contact-window aside {
-    background: #eeeeee;
-    padding: 10px;
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto; }
-    .contact-window aside form {
+  width: 400px;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto; }
+  .contact-window form {
+    font-size: 1.5rem;
+    margin: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .contact-window form :nth-child(-n+2) {
+      width: 49%;
+      height: 100%; }
+    .contact-window form :nth-child(3) {
+      width: 99%;
+      height: 100px; }
+    .contact-window form input {
+      border-style: none;
+      border: 1px solid #d6d6d6; }
+      .contact-window form input:required {
+        -webkit-box-shadow: none;
+        box-shadow: none; }
+      .contact-window form input:invalid {
+        -webkit-box-shadow: 0 0 0px red;
+        box-shadow: 0 0 0px red; }
+    .contact-window form input[type=submit] {
       font-size: 1.5rem;
-      margin: 10px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      -ms-flex-pack: distribute;
-      justify-content: space-around; }
-      .contact-window aside form :nth-child(-n+2) {
-        width: 49%;
-        height: 100%; }
-      .contact-window aside form :nth-child(3) {
-        width: 99%;
-        height: 100px; }
-      .contact-window aside form input {
-        border-style: none;
-        border: 1px solid #d6d6d6; }
-        .contact-window aside form input:required {
-          -webkit-box-shadow: none;
-          box-shadow: none; }
-        .contact-window aside form input:invalid {
-          -webkit-box-shadow: 0 0 0px red;
-          box-shadow: 0 0 0px red; }
-      .contact-window aside form input[type=submit] {
-        font-size: 1.5rem;
-        background: #ffffff;
-        margin-top: 5px; }
-      .contact-window aside form textarea {
-        margin-top: 10px;
-        resize: none;
-        border: 1px solid #d6d6d6; }
-        .contact-window aside form textarea:required {
-          -webkit-box-shadow: none;
-          box-shadow: none; }
+      background: #ffffff;
+      margin-top: 5px; }
+    .contact-window form textarea {
+      margin-top: 10px;
+      resize: none;
+      border: 1px solid #d6d6d6; }
+      .contact-window form textarea:required {
+        -webkit-box-shadow: none;
+        box-shadow: none; }
 
 .portfolio-window {
   top: 5%;
@@ -468,8 +466,6 @@ button:focus {
       margin: 1rem 2rem;
       padding: 0.5rem;
       border: 1px solid #363535; }
-  .portfolio-window h2 {
-    margin-top: 50px; }
 
 .readme-window {
   top: 3.5%;
@@ -500,15 +496,14 @@ button:focus {
   left: auto !important; }
 
 iframe {
-  -webkit-transform: translateY(-5.5px);
-  -ms-transform: translateY(-5.5px);
-  transform: translateY(-5.5px);
+  -webkit-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  transform: translateY(-6px);
   display: inline-block;
-  height: calc( 100% - 30px);
+  height: calc( 100% - 27px);
   width: 100%;
   border: none;
-  overflow-x: hidden;
-  z-index: 102 !important; }
+  overflow-x: hidden; }
   @media only screen and (max-width: 400px) {
     iframe {
       height: 96%;

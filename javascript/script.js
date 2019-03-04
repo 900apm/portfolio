@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 let shutterHtml = (
 '<div class="shutter-window window">'+
-    '<top-bar>'+
+    '<div class="top-bar">'+
         '<button class="enlarge">□</button>'+
         '<button class="close">x</button>'+
         '<h2>shutter</h2>'+
@@ -13,13 +13,13 @@ let shutterHtml = (
         '<div class="bar5"></div>'+
         '<div class="bar6"></div>'+
         '<div class="bar7"></div>'+
-    '</top-bar>'+
+    '</div>'+
     '<iframe src="https://900apm.github.io/xiaoge_deng_project1/"></iframe>'+
 '</div>');
 
 let sophieHtml = (
 '<div class="sophie-window window">'+
-    '<top-bar>'+
+    '<div class="top-bar">'+
         '<button class="enlarge">□</button>'+
         '<button class="close">x</button>'+
         '<h2>sophie</h2>'+
@@ -30,16 +30,16 @@ let sophieHtml = (
         '<div class="bar5"></div>'+
         '<div class="bar6"></div>'+
         '<div class="bar7"></div>'+
-    '</top-bar>'+
+    '</div>'+
     '<iframe src="https://900apm.github.io/xiaoge_deng_project2/index.html"></iframe>'+
 '</div>');
 
 let asciiHtml = (
 '<div class="ascii-window window">'+
-    '<top-bar>'+
+    '<div class="top-bar">'+
         '<button class="enlarge">□</button>'+
         '<button class="close">x</button>'+
-        '<h2>ASCII</h2>'+
+        '<h2>ascii</h2>'+
         '<div class="bar1"></div>'+
         '<div class="bar2"></div>'+
         '<div class="bar3"></div>'+
@@ -47,13 +47,13 @@ let asciiHtml = (
         '<div class="bar5"></div>'+
         '<div class="bar6"></div>'+
         '<div class="bar7"></div>'+
-    '</top-bar>'+
+    '</div>'+
   '<iframe src="https://900apm.github.io/ASCII-ASTEROIDS"></iframe>'+
 '</div>');
 
 let pieceHtml = (
 '<div class="piece-window window">'+
-    '<top-bar>'+
+    '<div class="top-bar">'+
         '<button class="enlarge">□</button>'+
         '<button class="close">x</button>'+
         '<h2>piece</h2>'+
@@ -64,13 +64,13 @@ let pieceHtml = (
         '<div class="bar5"></div>'+
         '<div class="bar6"></div>'+
         '<div class="bar7"></div>'+
-    '</top-bar>'+
+    '</div>'+
   '<iframe src="https://piece-by-peace.firebaseapp.com/"></iframe>'+
 '</div>');
 
 let answersHtml = (
 '<div class="answers-window window">'+
-    '<top-bar>'+
+    '<div class="top-bar">'+
         '<button class="enlarge">□</button>'+
         '<button class="close">x</button>'+
         '<h2>answers</h2>'+
@@ -81,13 +81,13 @@ let answersHtml = (
         '<div class="bar5"></div>'+
         '<div class="bar6"></div>'+
         '<div class="bar7"></div>'+
-    '</top-bar>'+
+    '</div>'+
   '<iframe src="http://xiaogedeng.com/ajaxanswers/"></iframe>'+
 '</div>');
 
 let notesHtml = (
 '<div class="notes-window window">'+
-    '<top-bar>'+
+    '<div class="top-bar">'+
         '<button class="enlarge">□</button>'+
         '<button class="close">x</button>'+
         '<h2>notes</h2>'+
@@ -98,13 +98,13 @@ let notesHtml = (
         '<div class="bar5"></div>'+
         '<div class="bar6"></div>'+
         '<div class="bar7"></div>'+
-    '</top-bar>'+
+    '</div>'+
   '<iframe src="https://no-name-notes.firebaseapp.com/"></iframe>'+
 '</div>');
 
 let aboutHtml = (
 '<div class="about-window window">'+
-    '<top-bar>'+
+    '<div class="top-bar">'+
         '<button class="enlarge">□</button>'+
         '<button class="close">x</button>'+
         '<h2>about</h2>'+
@@ -115,7 +115,7 @@ let aboutHtml = (
         '<div class="bar5"></div>'+
         '<div class="bar6"></div>'+
         '<div class="bar7"></div>'+
-    '</top-bar>'+
+    '</div>'+
     '<div class="wrapper">'+
       "<p> Hi! I'm Xiaoge Deng </p>"+
       "<p> Welcome to my site. I'm a front end developer currently based in Toronto who enjoys creating beautiful and unique websites.</p>"+
@@ -154,7 +154,7 @@ let aboutHtml = (
 
 let contactHtml = (
 '<div class="contact-window window">'+
-    '<top-bar>'+
+    '<div class="top-bar">'+
         '<button class="enlarge">□</button>'+
         '<button class="close">x</button>'+
         '<h2>contact</h2>'+
@@ -165,7 +165,7 @@ let contactHtml = (
         '<div class="bar5"></div>'+
         '<div class="bar6"></div>'+
         '<div class="bar7"></div>'+
-    '</top-bar>'+
+    '</div>'+
   '<aside>'+
     '<h3>lets talk</h3>'+
     '<p>xiaoge.deng@protonmail.com</p>'+
@@ -180,18 +180,18 @@ let contactHtml = (
 
 let portfolioHtml = (
 '<div class="portfolio-window window">'+
-  '<top-bar>'+
-    '<button class="enlarge">□</button>'+
-    '<button class="close">x</button>'+
-    '<h2>portfolio</h2>'+
-    '<div class="bar1"></div>'+
-    '<div class="bar2"></div>'+
-    '<div class="bar3"></div>'+
-    '<div class="bar4"></div>'+
-    '<div class="bar5"></div>'+
-    '<div class="bar6"></div>'+
-    '<div class="bar7"></div>'+
-  '</top-bar>'+
+    '<div class="top-bar">'+
+        '<button class="enlarge">□</button>'+
+        '<button class="close">x</button>'+
+        '<h2>portfolio</h2>'+
+        '<div class="bar1"></div>'+
+        '<div class="bar2"></div>'+
+        '<div class="bar3"></div>'+
+        '<div class="bar4"></div>'+
+        '<div class="bar5"></div>'+
+        '<div class="bar6"></div>'+
+        '<div class="bar7"></div>'+
+    '</div>'+
   '<div class="wrapper">'+
 
     '<h2>Sophie</h2>'+
@@ -241,18 +241,18 @@ let portfolioHtml = (
 
 let readmeHtml = (
 '<div class="readme-window window">'+
-  '<top-bar>'+
-    '<button class="enlarge">□</button>'+
-    '<button class="close">x</button>'+
-    '<h2>readme</h2>'+
-    '<div class="bar1"></div>'+
-    '<div class="bar2"></div>'+
-    '<div class="bar3"></div>'+
-    '<div class="bar4"></div>'+
-    '<div class="bar5"></div>'+
-    '<div class="bar6"></div>'+
-    '<div class="bar7"></div>'+
-  '</top-bar>'+
+    '<div class="top-bar">'+
+        '<button class="enlarge">□</button>'+
+        '<button class="close">x</button>'+
+        '<h2>readme</h2>'+
+        '<div class="bar1"></div>'+
+        '<div class="bar2"></div>'+
+        '<div class="bar3"></div>'+
+        '<div class="bar4"></div>'+
+        '<div class="bar5"></div>'+
+        '<div class="bar6"></div>'+
+        '<div class="bar7"></div>'+
+    '</div>'+
   '<div class="wrapper">' +
     "<p>Welcome to my site, click on any icon to begin.</p>"+
     "<p>‐ this website is best viewed on a desktop</p>"+

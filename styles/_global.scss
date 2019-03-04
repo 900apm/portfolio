@@ -25,6 +25,7 @@ p{
   padding: 0;
 }
 
+
 h3{
   font-size: 2rem;
   padding: 0;
@@ -111,7 +112,7 @@ button:focus {outline:0;}
     width: 100% !important;
     // overflow-x: hidden;
   }
-  top-bar{
+  .top-bar{
     width: 100%;
     text-align: center;
     font-weight: 600;
@@ -119,15 +120,15 @@ button:focus {outline:0;}
     h2{
       font-size: 1.4rem;
       position: relative;
-      z-index: 10;
+      z-index: 20;
       background: $secondary-color;
-      border-left: 1px solid $teritary-color;
-      border-right: 1px solid $teritary-color;
+      // border-left: 1px solid $teritary-color;
+      // border-right: 1px solid $teritary-color;
       // border-top: 1.5px solid $teritary-color;
       // border-bottom: 1px solid $teritary-color;
-      padding: 5px 0;
+      padding: 5px;
       margin: 0 auto;
-      width: 100px;
+      display: inline-block !important;
     }
     // .bar1,
     .bar2,
@@ -231,6 +232,10 @@ button:focus {outline:0;}
   width: 400px;
 }
 
+.about-window, .contact-window, .portfolio-window, .readme-window{
+  .top-bar{height: 29px;}
+}
+
 .about-window{
   top: 7.5%;
   // left: 28%;
@@ -272,50 +277,46 @@ button:focus {outline:0;}
   left: calc(100% / 2 - (400px / 2));
   height: 325px;
   width: 400px;
-  aside{
-    background: $secondary-color;
-    padding: 10px;
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto;
-    form{
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  form{
+    font-size: 1.5rem;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    :nth-child(-n+2) {
+      width: 49%;
+      height: 100%;
+    }
+    :nth-child(3) {
+      width: 99%;
+      height: 100px;
+    }
+    input{
+      border-style: none;
+      border: 1px solid $quaternary-color;
+      &:required {
+        box-shadow:none;
+      }
+      &:invalid {
+          // removes the red highlight
+          box-shadow:0 0 0px red;
+      }
+    }
+    input[type=submit]{
       font-size: 1.5rem;
-      margin: 10px;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: space-around;
-      :nth-child(-n+2) {
-        width: 49%;
-        height: 100%;
-      }
-      :nth-child(3) {
-        width: 99%;
-        height: 100px;
-      }
-      input{
-        border-style: none;
-        border: 1px solid $quaternary-color;
-        &:required {
-          box-shadow:none;
-        }
-        &:invalid {
-            // removes the red highlight
-            box-shadow:0 0 0px red;
-        }
-      }
-      input[type=submit]{
-        font-size: 1.5rem;
-        background: $primary-color;
-        margin-top: 5px;
-      }
-      textarea{
-        margin-top: 10px;
-        resize: none;
-        border: 1px solid $quaternary-color;
-        &:required {
-          box-shadow:none;
-        }
+      background: $primary-color;
+      margin-top: 5px;
+    }
+    textarea{
+      margin-top: 10px;
+      resize: none;
+      border: 1px solid $quaternary-color;
+      &:required {
+        box-shadow:none;
       }
     }
   }
@@ -342,9 +343,6 @@ button:focus {outline:0;}
     padding: 0.5rem;
     border: 1px solid $teritary-color;
     }
-  }
-  h2{
-    margin-top: 50px;
   }
 }
 
@@ -381,13 +379,13 @@ iframe{
   // transform: translateY(-5.5px);
   // to prevent iframe from overflowing the window container
   // height: 94.2%;
-  transform: translateY(-5.5px);
+  transform: translateY(-6px);
   display:inline-block;
-  height: calc( 100% - 30px);
+  height: calc( 100% - 27px);
   width: 100%;
   border: none;
   overflow-x: hidden;
-  z-index: 102 !important;
+  // z-index: 102 !important;
   @media only screen and (max-width: 400px){
     height: 96%;
     transform: translateY(-5.5px);
