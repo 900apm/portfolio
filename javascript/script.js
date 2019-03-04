@@ -166,7 +166,6 @@ let contactHtml = (
         '<div class="bar6"></div>'+
         '<div class="bar7"></div>'+
     '</div>'+
-  '<aside>'+
     '<h3>lets talk</h3>'+
     '<p>xiaoge.deng@protonmail.com</p>'+
     '<form action="https://formspree.io/xiaoge.deng@protonmail.com" method="POST"">'+
@@ -175,7 +174,6 @@ let contactHtml = (
       '<textarea name="message" placeholder="message" required ></textarea>'+
       '<input type="submit" value="Send">'+
     '</form>'+
-  '</aside>'+
 '</div>');
 
 let portfolioHtml = (
@@ -193,13 +191,18 @@ let portfolioHtml = (
         '<div class="bar7"></div>'+
     '</div>'+
   '<div class="wrapper">'+
+  
+    '<div class="icon-portfolio">'+
+      '<i class="far fa-file-image"></i>'+
+      '<p>sophie.png</p>'+
+    '</div>'+
 
-    '<h2>Sophie</h2>'+
-    '<p>Multi-page responsive website created with flexbox, SCSS and CSS grids</p>'+
+    '<p>PSD conversion of a multi-page responsive website. Created with flexbox, CSS grids, SCSS and BEM naming convention.</p>'+
+
     '<div class="links">'+
       '<a href="https://900apm.github.io/xiaoge_deng_project2/index.html" target="_blank">External Link</a>'+
       '<a href="https://github.com/900apm/xiaoge_deng_project2" target="_blank">GitHub</a>' +
-    '</div >'+
+    '</div>'+
 
     // '<h2>Shutter</h2>' +
     // '<p>Single-page responsive website created with only floats</p>' +
@@ -208,8 +211,15 @@ let portfolioHtml = (
     //   '<a href="https://github.com/900apm/xiaoge_deng_project1" target="_blank">GitHub</a>' +
     // '</div >'+
 
-    '<h2>ASCII ASTEROIDS</h2>' +
-    '<p>Ascii text game created with javaScript and jQuery</p>' +
+    '<div class="icon-portfolio">'+
+      '<i class="far fa-file-code"></i>'+
+      '<p>ASCII.js</p>'+
+    '</div>'+
+
+    '<p>ASCII text based game created exclusively with ASCII art and HTML text. Done with javaScript, jQuery and by dynamically adding elements to the DOM.</p>' +
+
+    "<p>Player must avoid the incoming obstacles to increase their highscore. Difficluty progresses with time. Player's are able to toggle hitboxes and colour.</p>" +
+
     '<div class="links">'+
       '<a href="https://900apm.github.io/ASCII-ASTEROIDS/" target="_blank" >External Link</a>'+
       '<a href="https://github.com/900apm/ASCII-ASTEROIDS" target="_blank">GitHub</a>' +
@@ -222,15 +232,31 @@ let portfolioHtml = (
     //   '<a href="https://github.com/900apm/project4_Xiaoge_Amy" target="_blank">GitHub</a>' +
     // '</div >'+
 
-    '<h2>No-name Notes</h2>' +
-    '<p>Note taking application created with React and Firebase backend</p>' +
+    '<div class="icon-portfolio">'+
+      '<i class="far fa-sticky-note"></i>'+
+      '<p>No-name</p>'+
+      '<p>Notes</p>'+
+    '</div>'+
+
+    '<p>Lightweight note taking application created with SCSS, React and Firebase backend.</p>' +
+
+    '<p>Users are able to write and removes notes as well as delete all notes.</p>' +
+
     '<div class="links">'+
       '<a href="https://no-name-notes.firebaseapp.com/" target="_blank">External Link</a>'+
       '<a href="https://github.com/900apm/No-name-Notes" target="_blank">GitHub</a>' +
     '</div >'+
 
-    '<h2>Piece by Peace</h2>' +
-    '<p>Multi-page React application created with SCSS and Firebase backend</p>' +
+    '<div class="icon-portfolio">'+
+      '<i class="fas fa-peace"></i>'+
+      '<p>Piece by</p>'+
+      '<p>Peace</p>'+
+    '</div>'+
+
+    '<p>Homophone word trivia game created with React, SCSS, Regex, datamuse API and Firebase backend.</p>'+
+    
+    '<p>The player must match the correct word to the defintion. Difficulty is adjusted with time. Total of 10 questions.</p>' +
+
     '<div class="links">'+
       '<a href="https://piece-by-peace.firebaseapp.com/" target="_blank">External Link</a>'+
       '<a href="https://github.com/900apm/fawad_xiaoge_nova_project_6" target="_blank">GitHub</a>' +

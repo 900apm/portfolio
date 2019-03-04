@@ -396,7 +396,6 @@ button:focus {
   height: 325px;
   width: 400px;
   text-align: center;
-  max-width: 600px;
   margin: 0 auto; }
   .contact-window form {
     font-size: 1.5rem;
@@ -452,8 +451,41 @@ button:focus {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
+  .portfolio-window .icon-portfolio {
+    background: white;
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 15px auto;
+    border: 4px double black; }
+    .portfolio-window .icon-portfolio i {
+      font-size: 2rem;
+      margin-bottom: 5px;
+      font-size: 4rem;
+      -webkit-text-stroke: 2px #ffffff; }
+      @media only screen and (max-width: 400px) {
+        .portfolio-window .icon-portfolio i {
+          font-size: 3.5rem;
+          -webkit-text-stroke: 1.7px #ffffff; } }
+    .portfolio-window .icon-portfolio p {
+      margin: 0 auto; }
   .portfolio-window p {
-    padding: 0 5rem; }
+    width: 80%;
+    max-width: 600px;
+    margin: 15px auto; }
   .portfolio-window .links {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -463,7 +495,7 @@ button:focus {
     justify-content: center; }
     .portfolio-window .links a {
       font-size: 1.6rem;
-      margin: 1rem 2rem;
+      margin: 0rem 2rem 4rem 2rem;
       padding: 0.5rem;
       border: 1px solid #363535; }
 
@@ -502,8 +534,7 @@ iframe {
   display: inline-block;
   height: calc( 100% - 27px);
   width: 100%;
-  border: none;
-  overflow-x: hidden; }
+  border: none; }
   @media only screen and (max-width: 400px) {
     iframe {
       height: 96%;
