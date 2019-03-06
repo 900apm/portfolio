@@ -151,7 +151,8 @@ p {
   font-size: 1.4rem;
   line-height: 1.5;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  color: #363535; }
 
 h3 {
   font-size: 2rem;
@@ -366,28 +367,51 @@ button:focus {
     padding: 10px 5%;
     max-width: 600px;
     margin: 0 auto; }
-  .about-window .icon-social, .about-window .icon-works {
+    .about-window p.centered {
+      text-align: center;
+      padding-top: 20px; }
+    .about-window p.icon-works-description {
+      text-align: center;
+      max-width: 400px;
+      padding: 30px 5% 10px 5%; }
+  .about-window .icon-works {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #424141;
-    max-width: 500px;
-    margin: 20px auto; }
-  .about-window .icon-works {
+    margin: 20px auto;
+    margin-top: 0;
+    max-width: 350px;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly; }
     .about-window .icon-works a {
-      margin: 10px 5%;
-      height: 24px;
-      width: 24px; }
+      margin: 10px 4%;
+      height: 40px;
+      width: 40px;
+      background-color: #ffffff;
+      border: 4px double #363535;
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
       .about-window .icon-works a svg {
-        fill: #424141; }
+        display: block;
+        margin: 5px auto;
+        fill: #424141;
+        height: 70%;
+        width: 70%; }
 
 .contact-window {
   top: 10%;
@@ -569,11 +593,17 @@ footer {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
-    footer .footer-container p, footer .footer-container #time {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+    footer .footer-container .icon-social {
+      font-size: 1.6rem;
+      margin: 0 20px 0 0; }
+    footer .footer-container #time {
       font-size: 1.5rem; }
+    footer .footer-container p {
+      position: absolute;
+      left: 10px; }
 
 .ui-icon-gripsmall-diagonal-se {
   background-position: -46px -16px;

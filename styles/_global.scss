@@ -23,6 +23,7 @@ p{
   line-height: 1.5;
   margin: 0;
   padding: 0;
+  color: $teritary-color;
 }
 
 
@@ -250,24 +251,51 @@ button:focus {outline:0;}
     padding: 10px 5%;
     max-width: 600px;
     margin: 0 auto;
+    &.centered{
+      text-align: center;
+      padding-top: 20px;
+
+    }
+    &.icon-works-description{
+      text-align: center;
+      max-width: 400px;
+      padding: 30px 5% 10px 5%;
+    }
+    // .whitesmoke{
+    //   background-color: $teritary-color;
+    //   transition: color 0.3s;
+    //   &:hover{
+    //     color: $secondary-color;
+    //   }
+    // }
   }
-  .icon-social, .icon-works{
+
+  .icon-works{
     display: flex;
     justify-content: space-around;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: $icon-color;
-    max-width: 500px;
     margin: 20px auto;
-  }
-  .icon-works{
+    margin-top: 0;
+    max-width: 350px;
     flex-wrap: wrap;
     justify-content: space-evenly;
     a{
-      margin: 10px 5%;
-      height: 24px;
-      width: 24px;
+      margin: 10px 4%;
+      height: 40px;
+      width: 40px;
+      background-color: $primary-color;
+      border: 4px double $teritary-color;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       svg{
+        display: block;
+        margin: 5px auto;
         fill: $icon-color;
+        height: 70%;
+        width: 70%;
       }
     }
   }
@@ -445,9 +473,17 @@ footer{
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    p, #time{
+    justify-content: flex-end;
+    .icon-social{
+      font-size: 1.6rem;
+      margin: 0 20px 0 0;
+    }
+    #time{
       font-size: 1.5rem;
+    }
+    p{
+      position: absolute;
+      left: 10px;
     }
   }
 }
