@@ -166,6 +166,7 @@ let contactHtml = (
         '<div class="bar6"></div>'+
         '<div class="bar7"></div>'+
     '</div>'+
+    '<aside>'+
     '<h3>lets talk</h3>'+
     '<p>xiaoge.deng@protonmail.com</p>'+
     '<form action="https://formspree.io/xiaoge.deng@protonmail.com" method="POST"">'+
@@ -174,6 +175,7 @@ let contactHtml = (
       '<textarea name="message" placeholder="message" required ></textarea>'+
       '<input type="submit" value="Send">'+
     '</form>'+
+    '</aside>'+
 '</div>');
 
 let portfolioHtml = (

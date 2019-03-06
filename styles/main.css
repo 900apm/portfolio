@@ -397,46 +397,49 @@ button:focus {
   width: 400px;
   text-align: center;
   margin: 0 auto; }
-  .contact-window form {
-    font-size: 1.5rem;
-    margin: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-pack: distribute;
-    justify-content: space-around; }
-    .contact-window form :nth-child(-n+2) {
-      width: 49%;
-      height: 100%; }
-    .contact-window form :nth-child(3) {
-      width: 99%;
-      height: 100px; }
-    .contact-window form input {
-      border-style: none;
-      border: 1px solid #d6d6d6; }
-      .contact-window form input:required {
-        -webkit-box-shadow: none;
-        box-shadow: none; }
-      .contact-window form input:invalid {
-        -webkit-box-shadow: 0 0 0px red;
-        box-shadow: 0 0 0px red; }
-    .contact-window form input[type=submit] {
+  .contact-window aside {
+    max-width: 600px;
+    margin: 0 auto; }
+    .contact-window aside form {
       font-size: 1.5rem;
-      background: #ffffff;
-      margin-top: 5px; }
-    .contact-window form textarea {
-      margin-top: 10px;
-      resize: none;
-      border: 1px solid #d6d6d6; }
-      .contact-window form textarea:required {
-        -webkit-box-shadow: none;
-        box-shadow: none; }
+      margin: 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+      .contact-window aside form :nth-child(-n+2) {
+        width: 49%;
+        height: 100%; }
+      .contact-window aside form :nth-child(3) {
+        width: 99%;
+        height: 100px; }
+      .contact-window aside form input {
+        border-style: none;
+        border: 1px solid #d6d6d6; }
+        .contact-window aside form input:required {
+          -webkit-box-shadow: none;
+          box-shadow: none; }
+        .contact-window aside form input:invalid {
+          -webkit-box-shadow: 0 0 0px red;
+          box-shadow: 0 0 0px red; }
+      .contact-window aside form input[type=submit] {
+        font-size: 1.5rem;
+        background: #ffffff;
+        margin-top: 5px; }
+      .contact-window aside form textarea {
+        margin-top: 10px;
+        resize: none;
+        border: 1px solid #d6d6d6; }
+        .contact-window aside form textarea:required {
+          -webkit-box-shadow: none;
+          box-shadow: none; }
 
 .portfolio-window {
   top: 5%;
@@ -470,7 +473,7 @@ button:focus {
     -ms-flex-align: center;
     align-items: center;
     margin: 15px auto;
-    border: 4px double black; }
+    border: 4px double #363535; }
     .portfolio-window .icon-portfolio i {
       font-size: 2rem;
       margin-bottom: 5px;
@@ -577,22 +580,22 @@ footer {
       font-size: 1.5rem; }
 
 .ui-icon-gripsmall-diagonal-se {
-  background-position: -47px -16px;
-  background-color: white;
+  background-position: -46px -16px;
+  background-color: transparent;
   width: 17px;
-  border: 1px solid black;
   position: absolute;
   right: -1px;
   bottom: -1px; }
 
 ::-webkit-scrollbar-track {
-  border-left: 1px solid black;
-  background-color: #ffffff; }
+  border-left: 1px solid #363535;
+  background-color: #eeeeee; }
 
 ::-webkit-scrollbar {
-  width: 16px; }
+  width: 14px; }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #eeeeee;
-  border: 1px solid black;
-  border-right: none; }
+  background-color: #d5d5d5;
+  border-left: 1px solid #363535;
+  -webkit-box-shadow: 0 -1px 0 0 #363535, 0 1px 0 0 #363535;
+  box-shadow: 0 -1px 0 0 #363535, 0 1px 0 0 #363535; }

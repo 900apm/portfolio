@@ -279,43 +279,47 @@ button:focus {outline:0;}
   width: 400px;
   text-align: center;
   margin: 0 auto;
-  form{
-    font-size: 1.5rem;
-    margin: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    :nth-child(-n+2) {
-      width: 49%;
-      height: 100%;
-    }
-    :nth-child(3) {
-      width: 99%;
-      height: 100px;
-    }
-    input{
-      border-style: none;
-      border: 1px solid $quaternary-color;
-      &:required {
-        box-shadow:none;
-      }
-      &:invalid {
-          // removes the red highlight
-          box-shadow:0 0 0px red;
-      }
-    }
-    input[type=submit]{
+  aside{
+    max-width: 600px;
+    margin: 0 auto;
+    form{
       font-size: 1.5rem;
-      background: $primary-color;
-      margin-top: 5px;
-    }
-    textarea{
-      margin-top: 10px;
-      resize: none;
-      border: 1px solid $quaternary-color;
-      &:required {
-        box-shadow:none;
+      margin: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-around;
+      :nth-child(-n+2) {
+        width: 49%;
+        height: 100%;
+      }
+      :nth-child(3) {
+        width: 99%;
+        height: 100px;
+      }
+      input{
+        border-style: none;
+        border: 1px solid $quaternary-color;
+        &:required {
+          box-shadow:none;
+        }
+        &:invalid {
+            // removes the red highlight
+            box-shadow:0 0 0px red;
+        }
+      }
+      input[type=submit]{
+        font-size: 1.5rem;
+        background: $primary-color;
+        margin-top: 5px;
+      }
+      textarea{
+        margin-top: 10px;
+        resize: none;
+        border: 1px solid $quaternary-color;
+        &:required {
+          box-shadow:none;
+        }
       }
     }
   }
@@ -340,7 +344,7 @@ button:focus {outline:0;}
     justify-content: center;
     align-items: center;
     margin: 15px auto;
-    border: 4px double black;
+    border: 4px double $teritary-color;
     i{
       font-size: 2rem;
       margin-bottom: 5px;
@@ -449,26 +453,28 @@ footer{
 // scrollbar
 
 .ui-icon-gripsmall-diagonal-se {
-    background-position: -47px -16px;
-    background-color: white;
+    background-position: -46px -16px;
+    background-color: transparent;
     width: 17px;
-    border: 1px solid black;
     position: absolute;
     right: -1px;
     bottom: -1px;
 }
 
 ::-webkit-scrollbar-track{
-	border-left: 1px solid black;
-	background-color: $primary-color;
+	border-left: 1px solid $teritary-color;
+	background-color: $secondary-color;
 }
 
 ::-webkit-scrollbar{
-	width: 16px;
+  // width: 16px;
+  width: 14px;
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color: $secondary-color;
-  border: 1px solid black;
-  border-right: none;
+  background-color: darken($secondary-color,10);
+
+  border-left: 1px solid $teritary-color;
+  box-shadow: 0 -1px 0 0 $teritary-color,
+  0 1px 0 0 $teritary-color;
 }
