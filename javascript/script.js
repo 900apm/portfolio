@@ -173,7 +173,7 @@ let contactHtml = (
       '<input type="text" placeholder="name" name="name" required>'+
       '<input type="email" placeholder="email" name="_replyto" required>'+
       '<textarea name="message" placeholder="message" required ></textarea>'+
-      '<input type="submit" value="Send">'+
+      '<input type="submit" value="send">'+
     '</form>'+
     '</aside>'+
 '</div>');
@@ -824,7 +824,7 @@ $(".contact").on("click", function () {
       .resizable({
         containment: "body",
         minWidth: 325,
-        minHeight: 325,
+        minHeight: 350,
         start: function () {
           $('iframe').css('pointer-events', 'none');
         },
@@ -860,8 +860,8 @@ $(".contact").on("click", function () {
         $(this).parents(".contact-window").animate({
           top: "10%",
           left: "32.5%",
-          height: "325",
-          width: "400"
+          height: "350",
+          width: "325"
         });
       }
     });

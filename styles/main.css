@@ -392,9 +392,9 @@ button:focus {
 
 .contact-window {
   top: 10%;
-  left: calc(100% / 2 - (400px / 2));
-  height: 325px;
-  width: 400px;
+  left: calc(100% / 2 - (325px / 2));
+  height: 350px;
+  width: 325px;
   text-align: center;
   margin: 0 auto; }
   .contact-window aside {
@@ -419,27 +419,24 @@ button:focus {
         height: 100%; }
       .contact-window aside form :nth-child(3) {
         width: 99%;
-        height: 100px; }
+        height: 150px; }
       .contact-window aside form input {
         border-style: none;
         border: 1px solid #d6d6d6; }
         .contact-window aside form input:required {
-          -webkit-box-shadow: none;
-          box-shadow: none; }
+          outline: none; }
         .contact-window aside form input:invalid {
           -webkit-box-shadow: 0 0 0px red;
           box-shadow: 0 0 0px red; }
       .contact-window aside form input[type=submit] {
         font-size: 1.5rem;
-        background: #ffffff;
-        margin-top: 5px; }
+        background: #ffffff; }
       .contact-window aside form textarea {
-        margin-top: 10px;
+        margin: 4px 0 4px 0;
         resize: none;
         border: 1px solid #d6d6d6; }
         .contact-window aside form textarea:required {
-          -webkit-box-shadow: none;
-          box-shadow: none; }
+          outline: none; }
 
 .portfolio-window {
   top: 5%;
@@ -455,7 +452,7 @@ button:focus {
   -ms-flex-direction: column;
   flex-direction: column; }
   .portfolio-window .icon-portfolio {
-    background: white;
+    background: #ffffff;
     display: inline-block;
     height: 120px;
     width: 120px;

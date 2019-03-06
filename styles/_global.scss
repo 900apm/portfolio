@@ -274,9 +274,9 @@ button:focus {outline:0;}
 .contact-window{
   top: 10%;
   // left: 32.5%;
-  left: calc(100% / 2 - (400px / 2));
-  height: 325px;
-  width: 400px;
+  left: calc(100% / 2 - (325px / 2));
+  height: 350px;
+  width: 325px;
   text-align: center;
   margin: 0 auto;
   aside{
@@ -295,13 +295,13 @@ button:focus {outline:0;}
       }
       :nth-child(3) {
         width: 99%;
-        height: 100px;
+        height: 150px;
       }
       input{
         border-style: none;
         border: 1px solid $quaternary-color;
         &:required {
-          box-shadow:none;
+          outline: none;
         }
         &:invalid {
             // removes the red highlight
@@ -311,14 +311,13 @@ button:focus {outline:0;}
       input[type=submit]{
         font-size: 1.5rem;
         background: $primary-color;
-        margin-top: 5px;
       }
       textarea{
-        margin-top: 10px;
+        margin: 4px 0 4px 0;
         resize: none;
         border: 1px solid $quaternary-color;
         &:required {
-          box-shadow:none;
+          outline: none;
         }
       }
     }
@@ -335,7 +334,7 @@ button:focus {outline:0;}
   display: flex;
   flex-direction: column;
   .icon-portfolio{
-    background: white;
+    background: $primary-color;
     display: inline-block;
     height: 120px;
     width: 120px;
