@@ -473,7 +473,7 @@ footer{
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color: darken($secondary-color,10);
+  background-color: darken($secondary-color,7);
 
   border-left: 1px solid $teritary-color;
   box-shadow: 0 -1px 0 0 $teritary-color,
