@@ -242,9 +242,9 @@ button:focus {outline:0;}
 .about-window{
   top: 7.5%;
   // left: 28%;
-  left: calc(100% / 2 - (550px / 2));
+  left: calc(100% / 2 - (450px / 2));
   height: 500px;
-  width: 550px;
+  width: 450px;
   display: flex;
   flex-direction: column;
   p{
@@ -254,7 +254,6 @@ button:focus {outline:0;}
     &.centered{
       text-align: center;
       padding-top: 20px;
-
     }
     &.icon-works-description{
       text-align: center;

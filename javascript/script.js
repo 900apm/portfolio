@@ -117,8 +117,10 @@ let aboutHtml = (
         '<div class="bar7"></div>'+
     '</div>'+
     '<div class="wrapper">'+
-      '<p class="centered">	ᕦ( ͡■ ͜ʖ ͡■ )つ</p>'+
-      "<p> Hello and welcome to my site! My name is Xiaoge and I'm a front end developer currently based in Toronto. I enjoy creating beautiful and unique websites and learning about new technology. I'm a big fan of ascii text art, css, and <a href='https://www.color-hex.com/color/f5f5f5' target='_blank'><span class='whitesmoke'>#f5f5f5</span></a>.</p>"+
+      '<p class="centered">	ᕦ( ͡° ͜ʖ ͡° )つ──☆*・ﾟᴡᴇʟᴄᴏᴍᴇ</p>'+
+      "<p>Hello and welcome to my site! My name is Xiaoge and I'm a front end developer currently based in Toronto. I love creating beautiful and unique websites and learning about new technology. I'm a big fan of ascii text art, css, and <a href='https://www.color-hex.com/color/f5f5f5' target='_blank'><span class='whitesmoke'>#f5f5f5</span></a>.</p>"+
+
+      "<p>When I'm not busy praciticing my front end abilites, I enjoy learning to create <a href='https://www.youtube.com/watch?v=agX5a9s15_8' target='_blank'>VR games</a>, writing <a href='https://medium.com/altcoin-magazine/a-bottom-up-guide-to-bitcoin-no-prior-knowledge-necessary-eeb3d74249f6' target='_blank'>articles</a> about bitcoin, and playing with my chilean rose hair.</p>"+
 
       '<p> You reach me by clicking the contact envelope icon or emailing me directly at xiaoge.deng@protonmail.com</p>' +
 
@@ -788,7 +790,7 @@ $(".about").on("click", function () {
           top: "7.5%",
           left: "28%",
           height: "500",
-          width: "550"
+          width: "450"
         });
       }
     });
