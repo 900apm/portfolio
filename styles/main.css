@@ -484,7 +484,7 @@ button:focus {
       margin: 0 auto; }
   .portfolio-window p {
     width: 80%;
-    max-width: 600px;
+    max-width: 500px;
     margin: 15px auto; }
   .portfolio-window .links {
     display: -webkit-box;
@@ -575,3 +575,6 @@ footer {
     justify-content: space-between; }
     footer .footer-container p, footer .footer-container #time {
       font-size: 1.5rem; }
+
+.ui-icon {
+  background-image: url("&#x2198;") !important; }

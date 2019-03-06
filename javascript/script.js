@@ -279,7 +279,8 @@ let readmeHtml = (
         '<div class="bar6"></div>'+
         '<div class="bar7"></div>'+
     '</div>'+
-  '<div class="wrapper">' +
+  
+  '<div class="wrapper" >' +
     "<p>Welcome to my site, click on any icon to begin.</p>"+
     "<p>‐ this website is best viewed on a desktop</p>"+
     "<p>‐ icons are able to be repositioned by dragging</p>" +
@@ -1021,6 +1022,7 @@ function showTime() {
 }
 
 showTime();
+
 
 // document ready closing tag
 });
