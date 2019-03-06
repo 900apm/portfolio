@@ -3,8 +3,8 @@ $(document).ready(function () {
 let shutterHtml = (
 '<div class="shutter-window window">'+
     '<div class="top-bar">'+
-        '<button class="enlarge">□</button>'+
-        '<button class="close">x</button>'+
+        '<button class="enlarge">☐</button>'+
+        '<button class="close">×</button>'+
         '<h2>shutter</h2>'+
         '<div class="bar1"></div>'+
         '<div class="bar2"></div>'+
@@ -20,8 +20,8 @@ let shutterHtml = (
 let sophieHtml = (
 '<div class="sophie-window window">'+
     '<div class="top-bar">'+
-        '<button class="enlarge">□</button>'+
-        '<button class="close">x</button>'+
+        '<button class="enlarge">☐</button>'+
+        '<button class="close">×</button>'+
         '<h2>sophie</h2>'+
         '<div class="bar1"></div>'+
         '<div class="bar2"></div>'+
@@ -37,8 +37,8 @@ let sophieHtml = (
 let asciiHtml = (
 '<div class="ascii-window window">'+
     '<div class="top-bar">'+
-        '<button class="enlarge">□</button>'+
-        '<button class="close">x</button>'+
+        '<button class="enlarge">☐</button>'+
+        '<button class="close">×</button>'+
         '<h2>ascii</h2>'+
         '<div class="bar1"></div>'+
         '<div class="bar2"></div>'+
@@ -54,8 +54,8 @@ let asciiHtml = (
 let pieceHtml = (
 '<div class="piece-window window">'+
     '<div class="top-bar">'+
-        '<button class="enlarge">□</button>'+
-        '<button class="close">x</button>'+
+        '<button class="enlarge">☐</button>'+
+        '<button class="close">×</button>'+
         '<h2>piece</h2>'+
         '<div class="bar1"></div>'+
         '<div class="bar2"></div>'+
@@ -71,8 +71,8 @@ let pieceHtml = (
 let answersHtml = (
 '<div class="answers-window window">'+
     '<div class="top-bar">'+
-        '<button class="enlarge">□</button>'+
-        '<button class="close">x</button>'+
+        '<button class="enlarge">☐</button>'+
+        '<button class="close">×</button>'+
         '<h2>answers</h2>'+
         '<div class="bar1"></div>'+
         '<div class="bar2"></div>'+
@@ -88,7 +88,7 @@ let answersHtml = (
 let notesHtml = (
 '<div class="notes-window window">'+
     '<div class="top-bar">'+
-        '<button class="enlarge">□</button>'+
+        '<button class="enlarge">☐</button>'+
         '<button class="close">x</button>'+
         '<h2>notes</h2>'+
         '<div class="bar1"></div>'+
@@ -105,8 +105,8 @@ let notesHtml = (
 let aboutHtml = (
 '<div class="about-window window">'+
     '<div class="top-bar">'+
-        '<button class="enlarge">□</button>'+
-        '<button class="close">x</button>'+
+        '<button class="enlarge">☐</button>'+
+        '<button class="close">×</button>'+
         '<h2>about</h2>'+
         '<div class="bar1"></div>'+
         '<div class="bar2"></div>'+
@@ -155,8 +155,8 @@ let aboutHtml = (
 let contactHtml = (
 '<div class="contact-window window">'+
     '<div class="top-bar">'+
-        '<button class="enlarge">□</button>'+
-        '<button class="close">x</button>'+
+        '<button class="enlarge">☐</button>'+
+        '<button class="close">×</button>'+
         '<h2>contact</h2>'+
         '<div class="bar1"></div>'+
         '<div class="bar2"></div>'+
@@ -181,8 +181,8 @@ let contactHtml = (
 let portfolioHtml = (
 '<div class="portfolio-window window">'+
     '<div class="top-bar">'+
-        '<button class="enlarge">□</button>'+
-        '<button class="close">x</button>'+
+        '<button class="enlarge">☐</button>'+
+        '<button class="close">×</button>'+
         '<h2>portfolio</h2>'+
         '<div class="bar1"></div>'+
         '<div class="bar2"></div>'+
@@ -270,8 +270,8 @@ let portfolioHtml = (
 let readmeHtml = (
 '<div class="readme-window window">'+
     '<div class="top-bar">'+
-        '<button class="enlarge">□</button>'+
-        '<button class="close">x</button>'+
+        '<button class="enlarge">☐</button>'+
+        '<button class="close">×</button>'+
         '<h2>readme</h2>'+
         '<div class="bar1"></div>'+
         '<div class="bar2"></div>'+

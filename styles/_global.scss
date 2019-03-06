@@ -176,7 +176,9 @@ button:focus {outline:0;}
     }
     .enlarge{
       right: 26px;
-      width: 27px;
+      // width: 27px;
+      // -webkit-text-stroke: 0.5px $secondary-color;
+
       @media only screen and (max-width: 400px){
         display: none;
       }

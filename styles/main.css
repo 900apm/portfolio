@@ -306,8 +306,7 @@ button:focus {
       position: absolute;
       right: 0; }
     .window .top-bar .enlarge {
-      right: 26px;
-      width: 27px; }
+      right: 26px; }
       @media only screen and (max-width: 400px) {
         .window .top-bar .enlarge {
           display: none; } }
