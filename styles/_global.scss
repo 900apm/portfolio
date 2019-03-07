@@ -263,13 +263,9 @@ button:focus {outline:0;}
       max-width: 400px;
       padding: 30px 5% 10px 5%;
     }
-    // .whitesmoke{
-    //   background-color: $teritary-color;
-    //   transition: color 0.3s;
-    //   &:hover{
-    //     color: $secondary-color;
-    //   }
-    // }
+  }
+  a{
+    text-decoration: underline;
   }
 
   .icon-works{
@@ -517,10 +513,12 @@ footer{
 
 .asciiart{
   &::before{
+    text-decoration: underline;
     content: "ASCII art";
   }
   &:hover::before{
-    content: "ᕦ( ͡° ͜ʖ ͡° )つ"
+    text-decoration: none;
+    content: "( ͡° ͜ʖ ͡°)"
   }
 }
 
@@ -553,11 +551,13 @@ footer{
 }
 
 // rainbow
-.rainbow{
+.cascade{
+  text-decoration: underline;
   background: $secondary-color;
   transition: text-shadow 0.3s;
 
   &:hover{
+    text-decoration: none;
     text-shadow: 
     0px 2px lighten($teritary-color,15),
     0px 4px lighten($teritary-color,30),
