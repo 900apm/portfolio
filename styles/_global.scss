@@ -18,6 +18,12 @@ body{
   background-size: 12px 12px;
 }
 
+.wrapper{
+  // transform: translateY(-8px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 p{
   font-size: 1.4rem;
   line-height: 1.5;
@@ -430,26 +436,13 @@ button:focus {outline:0;}
 }
 
 iframe{
-  // to get rid of ghost space
-  // transform: translateY(-5.5px);
-  // to prevent iframe from overflowing the window container
-  // height: 94.2%;
-  transform: translateY(-6px);
   display:inline-block;
-  height: calc( 100% - 27px);
+  height: calc( 100% - 28px);
   width: 100%;
   border: none;
-  // z-index: 102 !important;
-  @media only screen and (max-width: 400px){
-    height: 96%;
-    transform: translateY(-5.5px);
-  }
-}
-
-.wrapper{
-  // transform: translateY(-8px);
-  overflow-x: hidden;
-  overflow-y: auto;
+  // // @media only screen and (max-width: 400px){
+  //   height: calc( 100% - 28px);
+  // }
 }
 
 footer{

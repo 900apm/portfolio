@@ -147,6 +147,10 @@ body {
   background-position: -233px -2px;
   background-size: 12px 12px; }
 
+.wrapper {
+  overflow-x: hidden;
+  overflow-y: auto; }
+
 p {
   font-size: 1.4rem;
   line-height: 1.5;
@@ -550,23 +554,10 @@ button:focus {
   left: auto !important; }
 
 iframe {
-  -webkit-transform: translateY(-6px);
-  -ms-transform: translateY(-6px);
-  transform: translateY(-6px);
   display: inline-block;
-  height: calc( 100% - 27px);
+  height: calc( 100% - 28px);
   width: 100%;
   border: none; }
-  @media only screen and (max-width: 400px) {
-    iframe {
-      height: 96%;
-      -webkit-transform: translateY(-5.5px);
-      -ms-transform: translateY(-5.5px);
-      transform: translateY(-5.5px); } }
-
-.wrapper {
-  overflow-x: hidden;
-  overflow-y: auto; }
 
 footer {
   background-color: #f5f5f5;
