@@ -510,3 +510,60 @@ footer{
   box-shadow: 0 -1px 0 0 $teritary-color,
   0 1px 0 0 $teritary-color;
 }
+
+//css effects used in about window
+
+// ascii art
+
+.asciiart{
+  &::before{
+    content: "ASCII art";
+  }
+  &:hover::before{
+    content: "ᕦ( ͡° ͜ʖ ͡° )つ"
+  }
+}
+
+// whitesmoke effect
+@mixin sweep-hover($direction){
+	&:before {
+		content: "";
+		position: absolute;
+		z-index:-1;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		transform: scaleX(0);
+		background: black;
+		transform-origin: ($direction);
+		transition: all 0.5s;
+	}
+	&:hover:before{transform: scaleX(1);}
+}
+
+.whitesmoke{
+  transition: all 0.3s;
+  position: relative;
+  @include sweep-hover(left);
+  &:hover{ 
+    color: $secondary-color;
+    text-shadow: none;
+  }
+}
+
+// rainbow
+.rainbow{
+  background: $secondary-color;
+  transition: text-shadow 0.3s;
+
+  &:hover{
+    text-shadow: 
+    0px 2px lighten($teritary-color,15),
+    0px 4px lighten($teritary-color,30),
+    0px 6px lighten($teritary-color,45)
+    ;
+  }
+}
+
+

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
 
@@ -623,3 +624,48 @@ footer {
   border-left: 1px solid #363535;
   -webkit-box-shadow: 0 -1px 0 0 #363535, 0 1px 0 0 #363535;
   box-shadow: 0 -1px 0 0 #363535, 0 1px 0 0 #363535; }
+
+.asciiart::before {
+  content: "ASCII art"; }
+
+.asciiart:hover::before {
+  content: "ᕦ( ͡° ͜ʖ ͡° )つ"; }
+
+.whitesmoke {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative; }
+  .whitesmoke:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    background: black;
+    -webkit-transform-origin: left;
+    -ms-transform-origin: left;
+    transform-origin: left;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+  .whitesmoke:hover:before {
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1); }
+  .whitesmoke:hover {
+    color: #f5f5f5;
+    text-shadow: none; }
+
+.rainbow {
+  background: #f5f5f5;
+  -webkit-transition: text-shadow 0.3s;
+  -o-transition: text-shadow 0.3s;
+  transition: text-shadow 0.3s; }
+  .rainbow:hover {
+    text-shadow: 0px 2px #5d5b5b, 0px 4px #838181, 0px 6px #a9a7a7; }
