@@ -251,6 +251,7 @@ button:focus {
       width: 100% !important; } }
   .window .top-bar {
     width: 100%;
+    height: 29px;
     text-align: center;
     font-weight: 600;
     margin: 0; }
@@ -347,9 +348,6 @@ button:focus {
   left: calc(100% / 2 - (400px / 2));
   height: 525px;
   width: 400px; }
-
-.about-window .top-bar, .contact-window .top-bar, .portfolio-window .top-bar, .readme-window .top-bar {
-  height: 29px; }
 
 .about-window {
   top: 7.5%;
@@ -536,6 +534,8 @@ button:focus {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
+  .readme-window .top-bar {
+    height: 27px; }
   .readme-window p {
     padding: 0.75rem 1.5rem;
     max-width: 600px;
@@ -596,6 +596,11 @@ footer {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end; }
+    @media only screen and (max-width: 400px) {
+      footer .footer-container {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; } }
     footer .footer-container .icon-social {
       font-size: 1.6rem;
       margin: 0 20px 0 0; }
@@ -604,6 +609,9 @@ footer {
     footer .footer-container p {
       position: absolute;
       left: 10px; }
+      @media only screen and (max-width: 400px) {
+        footer .footer-container p {
+          display: none; } }
 
 .ui-icon-gripsmall-diagonal-se {
   background-position: -46px -16px;

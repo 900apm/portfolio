@@ -115,6 +115,7 @@ button:focus {outline:0;}
   }
   .top-bar{
     width: 100%;
+    height: 29px;
     text-align: center;
     font-weight: 600;
     margin: 0;
@@ -233,10 +234,6 @@ button:focus {outline:0;}
   left: calc(100% / 2 - (400px / 2));
   height: 525px;
   width: 400px;
-}
-
-.about-window, .contact-window, .portfolio-window, .readme-window{
-  .top-bar{height: 29px;}
 }
 
 .about-window{
@@ -413,6 +410,9 @@ button:focus {outline:0;}
   text-align: left;
   display: flex;
   flex-direction: column;
+  .top-bar{
+    height: 27px;
+  }
   p{
     padding: 0.75rem 1.5rem;
     max-width: 600px;
@@ -473,6 +473,9 @@ footer{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    @media only screen and (max-width: 400px){
+      justify-content: space-between;
+    }
     .icon-social{
       font-size: 1.6rem;
       margin: 0 20px 0 0;
@@ -483,6 +486,9 @@ footer{
     p{
       position: absolute;
       left: 10px;
+      @media only screen and (max-width: 400px){
+        display: none;
+      }
     }
   }
 }
