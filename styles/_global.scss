@@ -512,15 +512,38 @@ footer{
 // ascii art
 
 .asciiart{
-  &::before{
+  .a, .s, .c, .i1, .i2{
     text-decoration: underline;
-    content: "ASCII art";
+    transition: transform 0.3s;
+    display: inline-block;
   }
-  &:hover::before{
-    text-decoration: none;
-    content: "( ͡° ͜ʖ ͡°)"
+  &:hover{
+    .a, .s, .c, .i1, .i2{
+      text-decoration: none;
+      color: $orange;
+    }
+    .a{
+      transform: translate(35px,-0.5px) rotate(90deg) scale(1.1);
+    }
+    .s{
+      text-transform: lowercase;
+      transform: translate(2px,0px) rotate(90deg);
+      color: $green;
+    }
+    .c{
+      transform: translate(0px,0px);
+    }
+    .i1{
+      transform: translate(-5px,0px);
+    }
+    .i2{
+      transform: translate(-8px,0px);
+      
+      
+    }
   }
 }
+
 
 // whitesmoke effect
 @mixin sweep-hover($direction){

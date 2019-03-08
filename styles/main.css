@@ -1,4 +1,3 @@
-@charset "UTF-8";
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
 
@@ -627,13 +626,45 @@ footer {
   -webkit-box-shadow: 0 -1px 0 0 #363535, 0 1px 0 0 #363535;
   box-shadow: 0 -1px 0 0 #363535, 0 1px 0 0 #363535; }
 
-.asciiart::before {
+.asciiart .a, .asciiart .s, .asciiart .c, .asciiart .i1, .asciiart .i2 {
   text-decoration: underline;
-  content: "ASCII art"; }
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  -o-transition: transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  display: inline-block; }
 
-.asciiart:hover::before {
+.asciiart:hover .a, .asciiart:hover .s, .asciiart:hover .c, .asciiart:hover .i1, .asciiart:hover .i2 {
   text-decoration: none;
-  content: "( ͡° ͜ʖ ͡°)"; }
+  color: #ED9121; }
+
+.asciiart:hover .a {
+  -webkit-transform: translate(35px, -0.5px) rotate(90deg) scale(1.1);
+  -ms-transform: translate(35px, -0.5px) rotate(90deg) scale(1.1);
+  transform: translate(35px, -0.5px) rotate(90deg) scale(1.1); }
+
+.asciiart:hover .s {
+  text-transform: lowercase;
+  -webkit-transform: translate(2px, 0px) rotate(90deg);
+  -ms-transform: translate(2px, 0px) rotate(90deg);
+  transform: translate(2px, 0px) rotate(90deg);
+  color: #228B22; }
+
+.asciiart:hover .c {
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px); }
+
+.asciiart:hover .i1 {
+  -webkit-transform: translate(-5px, 0px);
+  -ms-transform: translate(-5px, 0px);
+  transform: translate(-5px, 0px); }
+
+.asciiart:hover .i2 {
+  -webkit-transform: translate(-8px, 0px);
+  -ms-transform: translate(-8px, 0px);
+  transform: translate(-8px, 0px); }
 
 .whitesmoke {
   -webkit-transition: all 0.3s;

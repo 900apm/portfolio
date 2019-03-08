@@ -118,7 +118,7 @@ let aboutHtml = (
     '</div>'+
     '<div class="wrapper">'+
       '<p class="centered">	Hello and welcome to my site!</p>'+
-      "<p>My name is Xiaoge and I'm a front end developer currently based in Toronto. I love creating beautiful and unique websites and learning about new technology. I'm a big fan of <span class='asciiart'></span>, <span class='cascade'>CSS</span> and <a class='whitesmoke' href='https://www.color-hex.com/color/f5f5f5' target='_blank'><span class='whitesmoke'>#f5f5f5</span></a>.</p>"+
+      "<p>My name is Xiaoge and I'm a front end developer currently based in Toronto. I love creating beautiful and unique websites and learning about new technology. I'm a big fan of <span class='asciiart'><span class='a'>A</span><span class='s'>S</span><span class='c'>C</span><span class='i1'>I</span><span class='i2'>I</span></span> art, <span class='cascade'>CSS</span> and <a class='whitesmoke' href='https://www.color-hex.com/color/f5f5f5' target='_blank'><span class='whitesmoke'>#f5f5f5</span></a>.</p>"+
 
       "<p>When I'm not busy praciticing my front end abilites, I enjoy creating <a href='https://www.youtube.com/watch?v=agX5a9s15_8' target='_blank'>VR games</a>, writing <a href='https://medium.com/altcoin-magazine/a-bottom-up-guide-to-bitcoin-no-prior-knowledge-necessary-eeb3d74249f6' target='_blank'>articles</a> about bitcoin and playing with my chilean rose hair.</p>"+
 
@@ -211,7 +211,7 @@ let portfolioHtml = (
 
     '<p>ASCII text based game created exclusively with ASCII art and HTML text. Done with javaScript, jQuery and by dynamically adding elements to the DOM.</p>' +
 
-    "<p>Player must avoid the incoming obstacles to increase their highscore. Difficluty progresses with time. Player's are able to toggle hitboxes and colour.</p>" +
+    "<p>Player must avoid the incoming obstacles to increase their highscore. Difficluty progresses with time. Player's are able to toggle hitboxes and colour. Â clickable easter egg may or may not be included.</p>" +
 
     '<div class="links">'+
       '<a href="https://900apm.github.io/ASCII-ASTEROIDS/" target="_blank" >External Link</a>'+
@@ -231,7 +231,7 @@ let portfolioHtml = (
       '<p>Notes</p>'+
     '</div>'+
 
-    '<p>Lightweight note taking application created with SCSS, React and Firebase backend.</p>' +
+    '<p>Lightweight note taking application created with SCSS, React and Firebase database.</p>' +
 
     '<p>Users are able to write and removes notes as well as delete all notes.</p>' +
 
@@ -248,7 +248,7 @@ let portfolioHtml = (
 
     '<p>Homophone word trivia game created with React, SCSS, Regex, datamuse API and Firebase backend.</p>'+
     
-    '<p>The player must match the correct word to the defintion. Difficulty is adjusted with time. Total of 10 questions.</p>' +
+    '<p>The player must match the correct word to the defintion. Difficulty is adjusted with time. Total of 10 questions. Try to make it on the leaderboard!</p>' +
 
     '<div class="links">'+
       '<a href="https://piece-by-peace.firebaseapp.com/" target="_blank">External Link</a>'+
