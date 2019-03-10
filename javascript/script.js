@@ -211,7 +211,7 @@ let portfolioHtml = (
 
     '<p>ASCII text based game created exclusively with ASCII art and HTML text. Done with javaScript, jQuery and by dynamically adding elements to the DOM.</p>' +
 
-    "<p>Player must avoid the incoming obstacles to increase their highscore. Difficluty progresses with time. Player's are able to toggle hitboxes and colour. Â clickable easter egg may or may not be included.</p>" +
+    "<p>Player must avoid the incoming obstacles to increase their highscore. Difficulty progresses with time. Player's are able to toggle hitboxes and colour. Â clickable easter egg may or may not be included.</p>" +
 
     '<div class="links">'+
       '<a href="https://900apm.github.io/ASCII-ASTEROIDS/" target="_blank" >External Link</a>'+

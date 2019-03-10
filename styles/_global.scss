@@ -263,9 +263,9 @@ button:focus {outline:0;}
       max-width: 400px;
       padding: 30px 5% 10px 5%;
     }
-  }
-  a{
-    text-decoration: underline;
+    a{
+      text-decoration: underline;
+    }
   }
 
   .icon-works{
@@ -523,7 +523,7 @@ footer{
       color: $orange;
     }
     .a{
-      transform: translate(35px,-0.5px) rotate(90deg) scale(1.1);
+      transform: translate(35px,0px) rotate(90deg) scale(1.1);
     }
     .s{
       text-transform: lowercase;
