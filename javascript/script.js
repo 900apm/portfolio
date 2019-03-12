@@ -184,6 +184,18 @@ let portfolioHtml = (
         '<div class="bar7"></div>'+
     '</div>'+
   '<div class="wrapper">'+
+
+    '<div class="icon-portfolio">'+
+      '<i class="far fa-file-image"></i>'+
+      '<p>shutter.psd</p>'+
+    '</div>'+
+
+    '<p>PSD conversion of a single-page responsive website. Positioned entirely with floats and clearfix.</p>'+
+
+    '<div class="links">'+
+      '<a href="https://900apm.github.io/xiaoge_deng_project1/index.html" target="_blank">External Link</a>'+
+      '<a href="https://github.com/900apm/xiaoge_deng_project1" target="_blank">GitHub</a>' +
+    '</div>'+
   
     '<div class="icon-portfolio">'+
       '<i class="far fa-file-image"></i>'+
@@ -197,47 +209,18 @@ let portfolioHtml = (
       '<a href="https://github.com/900apm/xiaoge_deng_project2" target="_blank">GitHub</a>' +
     '</div>'+
 
-    // '<h2>Shutter</h2>' +
-    // '<p>Single-page responsive website created with only floats</p>' +
-    // '<div class="links">'+
-    //   '<a href="https://900apm.github.io/xiaoge_deng_project1/" target="_blank">External Link</a>'+
-    //   '<a href="https://github.com/900apm/xiaoge_deng_project1" target="_blank">GitHub</a>' +
-    // '</div >'+
-
     '<div class="icon-portfolio">'+
       '<i class="far fa-file-code"></i>'+
       '<p>ASCII.js</p>'+
     '</div>'+
 
-    '<p>ASCII text based game created exclusively with ASCII art and HTML text. Done with javaScript, jQuery and by dynamically adding elements to the DOM.</p>' +
+    '<p>ASCII text based game created exclusively with ASCII art and HTML text. Created with JavaScript, jQuery and by dynamically adding elements to the DOM.</p>' +
 
     "<p>Player must avoid the incoming obstacles to increase their highscore. Difficulty progresses with time. Player's are able to toggle hitboxes and colour. Â clickable easter egg may or may not be included.</p>" +
 
     '<div class="links">'+
       '<a href="https://900apm.github.io/ASCII-ASTEROIDS/" target="_blank" >External Link</a>'+
       '<a href="https://github.com/900apm/ASCII-ASTEROIDS" target="_blank">GitHub</a>' +
-    '</div >'+
-
-    // '<h2>Ajax Answers</h2>' +
-    // '<p>Jeopardy based trivia game created with SCSS, Ajax queries and jService restful API</p>' +
-    // '<div class="links">'+
-    //   '<a href="http://xiaogedeng.com/ajaxanswers/" target="_blank">External Link</a>'+
-    //   '<a href="https://github.com/900apm/project4_Xiaoge_Amy" target="_blank">GitHub</a>' +
-    // '</div >'+
-
-    '<div class="icon-portfolio">'+
-      '<i class="far fa-sticky-note"></i>'+
-      '<p>No-name</p>'+
-      '<p>Notes</p>'+
-    '</div>'+
-
-    '<p>Lightweight note taking application created with SCSS, React and Firebase database.</p>' +
-
-    '<p>Users are able to write and removes notes as well as delete all notes.</p>' +
-
-    '<div class="links">'+
-      '<a href="https://no-name-notes.firebaseapp.com/" target="_blank">External Link</a>'+
-      '<a href="https://github.com/900apm/No-name-Notes" target="_blank">GitHub</a>' +
     '</div >'+
 
     '<div class="icon-portfolio">'+
@@ -253,6 +236,21 @@ let portfolioHtml = (
     '<div class="links">'+
       '<a href="https://piece-by-peace.firebaseapp.com/" target="_blank">External Link</a>'+
       '<a href="https://github.com/900apm/fawad_xiaoge_nova_project_6" target="_blank">GitHub</a>' +
+    '</div >'+
+
+    '<div class="icon-portfolio">'+
+      '<i class="far fa-star"></i>'+
+      '<p>Ajax</p>'+
+      '<p>Answers</p>'+
+    '</div>'+
+
+    '<p>Jeopardy inspired trivia game created using the jService API. JavaScript, SCSS, adobe illustrator and some pair programming.</p>' +
+
+    '<p>Choose a category and try your best to guess the correct answer. There are hundreds of unique categories avaliable.</p>' +
+
+    '<div class="links">'+
+      '<a href="http://xiaogedeng.com/ajaxanswers/" target="_blank">External Link</a>'+
+      '<a href="https://github.com/900apm/project4_Xiaoge_Amy" target="_blank">GitHub</a>' +
     '</div >'+
 
   '</div >'+
@@ -665,74 +663,74 @@ $(".answers").on("click", function () {
       else {
         $(this).parents(".answers-window").animate({
           top: "5%",
-          left: "28%",
-          height: "550",
-          width: "500"
+          left: "32.5%",
+          height: "500",
+          width: "320"
         });
       }
     });
 });
 
 // no-name notes window
-$(".notes").on("click", function () {
-  let clickCounter = 0;
-  if ($('.notes-window').length === 0) {
-    $("main").append(notesHtml);
-    $(".notes-window")
-      .draggable({
-        containment: "body",
-        start: function () {
-          $('iframe').css('pointer-events', 'none');
-        },
-        stop: function () {
-          $('iframe').css('pointer-events', 'auto');
-        }
-      })
-      .resizable({
-        containment: "body",
-        minWidth: 320,
-        minHeight: 500,
-        start: function () {
-          $('iframe').css('pointer-events', 'none');
-        },
-        stop: function () {
-          $('iframe').css('pointer-events', 'auto');
-        }
-      })
-      .on("click", function () {
-        $(this).addClass('top').removeClass('bottom');
-        $(this).siblings().removeClass('top').addClass('bottom');
-      })
-  }
+// $(".notes").on("click", function () {
+//   let clickCounter = 0;
+//   if ($('.notes-window').length === 0) {
+//     $("main").append(notesHtml);
+//     $(".notes-window")
+//       .draggable({
+//         containment: "body",
+//         start: function () {
+//           $('iframe').css('pointer-events', 'none');
+//         },
+//         stop: function () {
+//           $('iframe').css('pointer-events', 'auto');
+//         }
+//       })
+//       .resizable({
+//         containment: "body",
+//         minWidth: 320,
+//         minHeight: 500,
+//         start: function () {
+//           $('iframe').css('pointer-events', 'none');
+//         },
+//         stop: function () {
+//           $('iframe').css('pointer-events', 'auto');
+//         }
+//       })
+//       .on("click", function () {
+//         $(this).addClass('top').removeClass('bottom');
+//         $(this).siblings().removeClass('top').addClass('bottom');
+//       })
+//   }
 
   // close notes-window button
-  $(".notes-window .close")
-    .on("click", function () {
-      $(this).parents(".notes-window").remove()
-    });
+//   $(".notes-window .close")
+//     .on("click", function () {
+//       $(this).parents(".notes-window").remove()
+//     });
   
-  // resize notes-window button
-  $(".notes-window .enlarge")
-    .on("click", function () {
-      clickCounter += 1;
-      if (clickCounter % 2 != 0) {
-        $(this).parents(".notes-window").animate({
-          top: "0",
-          left: "0",
-          height: "100%",
-          width: "100%"
-        });
-      }
-      else {
-        $(this).parents(".notes-window").animate({
-          top: "2.5%",
-          left: "32.5%",
-          height: "525",
-          width: "400"
-        });
-      }
-    });
-});
+//   // resize notes-window button
+//   $(".notes-window .enlarge")
+//     .on("click", function () {
+//       clickCounter += 1;
+//       if (clickCounter % 2 != 0) {
+//         $(this).parents(".notes-window").animate({
+//           top: "0",
+//           left: "0",
+//           height: "100%",
+//           width: "100%"
+//         });
+//       }
+//       else {
+//         $(this).parents(".notes-window").animate({
+//           top: "2.5%",
+//           left: "32.5%",
+//           height: "525",
+//           width: "400"
+//         });
+//       }
+//     });
+// });
 
 // about me window
 $(".about").on("click", function () {

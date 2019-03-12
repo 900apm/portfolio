@@ -208,12 +208,15 @@ button:focus {
     -ms-flex-pack: center;
     justify-content: center;
     height: 25%;
+    min-width: 100px;
     margin: 0 10px;
     padding: 10% 0%;
     text-align: center;
     color: #424141; }
     @media only screen and (max-width: 400px) {
       #icon-container .icon {
+        font-size: 1.4rem;
+        min-width: 80px;
         padding: 0% !important;
         margin: 0; } }
     #icon-container .icon i {
@@ -318,17 +321,17 @@ button:focus {
         .window .top-bar .enlarge {
           display: none; } }
 
-.sophie-window {
-  top: 2.5%;
-  left: calc(100% / 2 - (805px / 2));
-  height: 550px;
-  width: 805px; }
-
 .shutter-window {
   top: 5%;
   left: calc(100% / 2 - (400px / 2));
   height: 500px;
   width: 400px; }
+
+.sophie-window {
+  top: 2.5%;
+  left: calc(100% / 2 - (805px / 2));
+  height: 550px;
+  width: 805px; }
 
 .ascii-window {
   top: 7.5%;
@@ -344,15 +347,9 @@ button:focus {
 
 .answers-window {
   top: 5%;
-  left: calc(100% / 2 - (500px / 2));
-  height: 550px;
-  width: 500px; }
-
-.notes-window {
-  top: 2.5%;
-  left: calc(100% / 2 - (400px / 2));
-  height: 525px;
-  width: 400px; }
+  left: calc(100% / 2 - (320px / 2));
+  height: 500px;
+  width: 320px; }
 
 .about-window {
   top: 7.5%;
@@ -482,8 +479,8 @@ button:focus {
   .portfolio-window .icon-portfolio {
     background: #ffffff;
     display: inline-block;
-    height: 120px;
-    width: 120px;
+    height: 125px;
+    width: 125px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
