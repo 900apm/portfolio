@@ -231,9 +231,9 @@ button:focus {outline:0;}
 .answers-window{
   top: 5%;
   // left: 28%;
-  left: calc(100% / 2 - (320px / 2));
+  left: calc(100% / 2 - (400px / 2));
   height: 500px;
-  width: 320px;
+  width: 400px;
 }
 
 // .notes-window{
@@ -438,6 +438,7 @@ iframe{
   height: calc( 100% - 28px);
   width: 100%;
   border: none;
+  overflow-x: hidden;
   // // @media only screen and (max-width: 400px){
   //   height: calc( 100% - 28px);
   // }

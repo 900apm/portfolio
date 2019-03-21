@@ -122,7 +122,7 @@ let aboutHtml = (
 
       "<p>When I'm not busy praciticing my front end abilites, I enjoy creating <a href='https://www.youtube.com/watch?v=agX5a9s15_8' target='_blank'>VR games</a>, writing <a href='https://medium.com/altcoin-magazine/a-bottom-up-guide-to-bitcoin-no-prior-knowledge-necessary-eeb3d74249f6' target='_blank'>articles</a> about bitcoin and playing with my chilean rose hair.</p>"+
 
-      '<p> You reach me by clicking the contact envelope icon or emailing me directly at xiaoge.deng@protonmail.com</p>' +
+      '<p> You can reach me by clicking the contact envelope icon or emailing me directly at xiaoge.deng@protonmail.com</p>' +
 
       "<p class='icon-works-description'> Works seen on this page were created with the following skills:</p>"+
 
@@ -185,17 +185,17 @@ let portfolioHtml = (
     '</div>'+
   '<div class="wrapper">'+
 
-    '<div class="icon-portfolio">'+
-      '<i class="far fa-file-image"></i>'+
-      '<p>shutter.psd</p>'+
-    '</div>'+
+    // '<div class="icon-portfolio">'+
+    //   '<i class="far fa-file-image"></i>'+
+    //   '<p>shutter.psd</p>'+
+    // '</div>'+
 
-    '<p>PSD conversion of a single-page responsive website. Positioned entirely with floats and clearfix.</p>'+
+    // '<p>PSD conversion of a single-page responsive website. Positioned entirely with floats and clearfix.</p>'+
 
-    '<div class="links">'+
-      '<a href="https://900apm.github.io/xiaoge_deng_project1/index.html" target="_blank">External Link</a>'+
-      '<a href="https://github.com/900apm/xiaoge_deng_project1" target="_blank">GitHub</a>' +
-    '</div>'+
+    // '<div class="links">'+
+    //   '<a href="https://900apm.github.io/xiaoge_deng_project1/index.html" target="_blank">External Link</a>'+
+    //   '<a href="https://github.com/900apm/xiaoge_deng_project1" target="_blank">GitHub</a>' +
+    // '</div>'+
   
     '<div class="icon-portfolio">'+
       '<i class="far fa-file-image"></i>'+
@@ -246,7 +246,7 @@ let portfolioHtml = (
 
     '<p>Jeopardy inspired trivia game created using the jService API. JavaScript, SCSS, adobe illustrator and some pair programming.</p>' +
 
-    '<p>Choose a category and try your best to guess the correct answer. There are hundreds of unique categories avaliable.</p>' +
+    '<p>Choose a category and guess the correct answer. Show the correct answer when you are ready or browse more questions. There are hundreds of unique categories avaliable.</p>' +
 
     '<div class="links">'+
       '<a href="http://xiaogedeng.com/ajaxanswers/" target="_blank">External Link</a>'+
@@ -665,7 +665,7 @@ $(".answers").on("click", function () {
           top: "5%",
           left: "32.5%",
           height: "500",
-          width: "320"
+          width: "400"
         });
       }
     });
