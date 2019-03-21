@@ -347,9 +347,9 @@ button:focus {
 
 .answers-window {
   top: 5%;
-  left: calc(100% / 2 - (400px / 2));
+  left: calc(100% / 2 - (750px / 2));
   height: 500px;
-  width: 400px; }
+  width: 750px; }
 
 .about-window {
   top: 7.5%;
