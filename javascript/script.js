@@ -337,10 +337,9 @@ function runOnStart() {
           });
         }
         else {
-          $(".readme-window").attr("id", "left");
           $(this).parents(".readme-window").animate({
             top: "3.5%",
-            right: "2%",
+            left: $(this).parent().width() / 2 - 300 / 2,
             height: "485",
             width: "300"
           })
@@ -418,7 +417,7 @@ $(".sophie").on("click", function () {
       else {
         $(this).parents(".sophie-window").animate({
           top: "2.5%",
-          left: "12.5%",
+          left: $(this).parent().width() / 2 - 805 / 2,
           height: "500",
           width: "805"
         });
@@ -480,7 +479,7 @@ $(".shutter").on("click", function () {
       else {
         $(this).parents(".shutter-window").animate({
           top: "5%",
-          left: "32.5%",
+          left: $(this).parent().width() / 2 - 400 / 2,
           height: "500",
           width: "400"
         });
@@ -541,9 +540,9 @@ $(".ascii").on("click", function () {
       else {
         $(this).parents(".ascii-window").animate({
           top: "7.5",
-          left: "25%",
-          height: "533",
-          width: "500"
+          left: $(this).parent().width() / 2 - 840 / 2,
+          height: "520",
+          width: "840"
         });
       }
     });
@@ -602,7 +601,7 @@ $(".piece").on("click", function () {
       else {
         $(this).parents(".piece-window").animate({
           top: "2.5%",
-          left: "32.5%",
+          left: $(this).parent().width() / 2 - 400 / 2,
           height: "600",
           width: "400"
         });
@@ -663,7 +662,7 @@ $(".answers").on("click", function () {
       else {
         $(this).parents(".answers-window").animate({
           top: "5%",
-          left: "20%",
+          left: $(this).parent().width() / 2 - 750 / 2,
           height: "500",
           width: "750"
         });
@@ -786,7 +785,7 @@ $(".about").on("click", function () {
       else {
         $(this).parents(".about-window").animate({
           top: "7.5%",
-          left: "28%",
+          left: $(this).parent().width() / 2 - 450 / 2,
           height: "500",
           width: "450"
         });
@@ -848,7 +847,7 @@ $(".contact").on("click", function () {
       else {
         $(this).parents(".contact-window").animate({
           top: "10%",
-          left: "32.5%",
+          left: $(this).parent().width() / 2 - 325 / 2,
           height: "350",
           width: "325"
         });
@@ -912,7 +911,7 @@ $(".portfolio").on("click", function () {
         // console.log("I am small");
         $(this).parents(".portfolio-window").animate({
           top: "5%",
-          left: "32.5%",
+          left: $(this).parent().width() / 2 - 400 / 2,
           height: "550",
           width: "400"
         });
@@ -974,10 +973,9 @@ $(".readme").on("click", function () {
         });
       }
       else {
-        $(".readme-window").attr("id", "left");
         $(this).parents(".readme-window").animate({
-          top: "2.5%",
-          right: "2.5%",
+          top: "3.5%",
+          left: $(this).parent().width() / 2 - 300 / 2,
           height: "485",
           width: "300"
         });

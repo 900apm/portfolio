@@ -335,9 +335,9 @@ button:focus {
 
 .ascii-window {
   top: 7.5%;
-  left: calc(100% / 2 - (500px / 2));
-  height: 533px;
-  width: 500px; }
+  left: calc(100% / 2 - (840px / 2));
+  height: 520px;
+  width: 840px; }
 
 .piece-window {
   top: 2.5%;
@@ -526,11 +526,9 @@ button:focus {
 
 .readme-window {
   top: 3.5%;
-  left: initial;
-  right: 2%;
+  left: calc(100% / 2 - (300px / 2));
   height: 485px;
   width: 300px;
-  text-align: left;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
