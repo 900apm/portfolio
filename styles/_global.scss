@@ -66,15 +66,14 @@ button:focus {outline:0;}
     width: 100%;
   }
 
+  // .icon is used to ensure even spacing between icons
   .icon{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 25%;
-    min-width: 100px;
-    margin: 0 10px;
-    // background-color: blue;
-    padding: 10% 0%;
+    height: 20%;
+    min-width: 90px;
+    margin: 10px;
     text-align: center;
     color: $icon-color;
     @media only screen and (max-width: 400px){
@@ -93,11 +92,15 @@ button:focus {outline:0;}
         font-size: 3.5rem;
         -webkit-text-stroke: 1.7px $primary-color;
       }
-    }
-    p{
-      margin: 0;
-      padding: 0;
-      // background: $secondary-color;
+      p{
+        margin-top: 5px;
+        position: absolute;
+        width: 90px;
+        font-family: $primary-font;
+        font-weight: 400;
+        font-size: 1.4rem;
+        -webkit-text-stroke: 0.2px $teritary-color;
+      }
     }
   }
 }
@@ -147,7 +150,7 @@ button:focus {outline:0;}
     .bar4,
     .bar5,
     .bar6,
-    .bar7,{
+    .bar7{
       z-index: 0;
       border-top: 1px solid lighten($teritary-color, 30);
       transform: translateY(-28px);
@@ -269,6 +272,7 @@ button:focus {outline:0;}
       text-decoration: underline;
     }
   }
+  
 
   .icon-works{
     display: flex;
