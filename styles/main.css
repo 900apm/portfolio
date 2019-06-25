@@ -194,8 +194,11 @@ button:focus {
   justify-content: flex-start; }
   @media only screen and (max-width: 400px) {
     #icon-container {
-      padding-bottom: 15%;
-      height: calc( 90vh - 30px);
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin: 5vh 0 0 0;
+      height: 80vh;
       width: 100%; } }
   #icon-container .icon {
     display: -webkit-box;
@@ -210,14 +213,15 @@ button:focus {
     justify-content: center;
     height: 90px;
     width: 90px;
-    margin: 10px;
+    margin: 2vh;
     text-align: center;
     color: #424141; }
     @media only screen and (max-width: 400px) {
       #icon-container .icon {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         min-width: 80px;
         padding: 0% !important;
+        min-height: 20vh;
         margin: 0; } }
     #icon-container .icon i {
       margin-bottom: 5px;

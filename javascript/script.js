@@ -120,7 +120,7 @@ let aboutHtml = (
       '<p class="centered">	Hello and welcome to my site!</p>'+
       "<p>My name is Xiaoge and I'm a front end developer currently based in Toronto. I love creating beautiful and unique websites and learning about new technology. I'm a big fan of <span class='asciiart'><span class='a'>A</span><span class='s'>S</span><span class='c'>C</span><span class='i1'>I</span><span class='i2'>I</span></span> art, <span class='cascade'>CSS</span> and <a class='whitesmoke' href='https://www.color-hex.com/color/f5f5f5' target='_blank'><span class='whitesmoke'>#f5f5f5</span></a>.</p>"+
 
-      "<p>When I'm not busy praciticing my front end abilites, I enjoy creating <a href='https://www.youtube.com/watch?v=agX5a9s15_8' target='_blank'>VR games</a>, writing <a href='https://medium.com/altcoin-magazine/a-bottom-up-guide-to-bitcoin-no-prior-knowledge-necessary-eeb3d74249f6' target='_blank'>articles</a> about bitcoin and playing with my chilean rose hair.</p>"+
+      "<p>When I'm not busy praciticing my front end abilites, I enjoy creating <a href='https://900apm.itch.io/43-sqft-apartment' target='_blank'>VR games</a>, writing <a href='https://medium.com/altcoin-magazine/a-bottom-up-guide-to-bitcoin-no-prior-knowledge-necessary-eeb3d74249f6' target='_blank'>articles</a> about bitcoin and playing with my chilean rose hair.</p>"+
 
       '<p> You can reach me by clicking the contact envelope icon or emailing me directly at xiaoge.deng@protonmail.com</p>' +
 
