@@ -173,7 +173,7 @@ button:focus {
 .dragged i, .dragged p {
   color: #9e9d9d; }
 
-#icon-container {
+#icon-container, #portfolio-icon-container {
   margin: 30px 0px 0px 20px;
   height: calc( 80vh - 30px);
   width: 20%;
@@ -193,14 +193,14 @@ button:focus {
   -ms-flex-pack: start;
   justify-content: flex-start; }
   @media only screen and (max-width: 400px) {
-    #icon-container {
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
+    #icon-container, #portfolio-icon-container {
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
       margin: 5vh 0 0 0;
       height: 80vh;
       width: 100%; } }
-  #icon-container .icon {
+  #icon-container .icon, #portfolio-icon-container .icon {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -217,13 +217,13 @@ button:focus {
     text-align: center;
     color: #424141; }
     @media only screen and (max-width: 400px) {
-      #icon-container .icon {
+      #icon-container .icon, #portfolio-icon-container .icon {
         font-size: 1.3rem;
         min-width: 80px;
         padding: 0% !important;
         min-height: 20vh;
         margin: 0; } }
-    #icon-container .icon i {
+    #icon-container .icon i, #portfolio-icon-container .icon i {
       margin-bottom: 5px;
       font-size: 4rem;
       -webkit-text-stroke: 2px #ffffff;
@@ -231,10 +231,10 @@ button:focus {
       -o-transition: font-size 0.3s;
       transition: font-size 0.3s; }
       @media only screen and (max-width: 400px) {
-        #icon-container .icon i {
+        #icon-container .icon i, #portfolio-icon-container .icon i {
           font-size: 3.5rem;
           -webkit-text-stroke: 1.7px #ffffff; } }
-      #icon-container .icon i p {
+      #icon-container .icon i p, #portfolio-icon-container .icon i p {
         margin-top: 5px;
         position: absolute;
         width: 90px;
@@ -472,7 +472,7 @@ button:focus {
         .contact-window aside form textarea:required {
           outline: none; }
 
-.portfolio-window {
+.portfolio-window, .freelance-window {
   top: 7.5%;
   left: calc(100% / 2 - (400px / 2));
   height: 550px;
@@ -485,7 +485,7 @@ button:focus {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
-  .portfolio-window .icon-portfolio {
+  .portfolio-window .icon-portfolio, .portfolio-window .freelance-wrapper, .freelance-window .icon-portfolio, .freelance-window .freelance-wrapper {
     background: #ffffff;
     display: inline-block;
     height: 125px;
@@ -505,33 +505,45 @@ button:focus {
     align-items: center;
     margin: 15px auto;
     border: 4px double #363535; }
-    .portfolio-window .icon-portfolio i {
+    .portfolio-window .icon-portfolio i, .portfolio-window .freelance-wrapper i, .freelance-window .icon-portfolio i, .freelance-window .freelance-wrapper i {
       font-size: 2rem;
       margin-bottom: 5px;
       font-size: 4rem;
       -webkit-text-stroke: 2px #ffffff; }
       @media only screen and (max-width: 400px) {
-        .portfolio-window .icon-portfolio i {
+        .portfolio-window .icon-portfolio i, .portfolio-window .freelance-wrapper i, .freelance-window .icon-portfolio i, .freelance-window .freelance-wrapper i {
           font-size: 3.5rem;
           -webkit-text-stroke: 1.7px #ffffff; } }
-    .portfolio-window .icon-portfolio p {
+    .portfolio-window .icon-portfolio p, .portfolio-window .freelance-wrapper p, .freelance-window .icon-portfolio p, .freelance-window .freelance-wrapper p {
       margin: 0 auto; }
-  .portfolio-window p {
+  .portfolio-window p, .freelance-window p {
     width: 80%;
     max-width: 500px;
     margin: 15px auto; }
-  .portfolio-window .links {
+  .portfolio-window .links, .freelance-window .links {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
-    .portfolio-window .links a {
+    .portfolio-window .links a, .freelance-window .links a {
       font-size: 1.6rem;
       margin: 0rem 2rem 4rem 2rem;
       padding: 0.5rem;
       border: 1px solid #363535; }
+  .portfolio-window .freelance-wrapper, .freelance-window .freelance-wrapper {
+    height: 50px;
+    width: 200px; }
+  .portfolio-window .freelance-link, .freelance-window .freelance-link {
+    font-size: 1.5rem; }
+  .portfolio-window .divider, .freelance-window .divider {
+    border-bottom: 1px solid darkgray;
+    width: 90%;
+    margin: 3rem auto; }
+
+.freelance-window {
+  top: 5%; }
 
 .readme-window {
   top: 10%;
@@ -555,6 +567,12 @@ button:focus {
     .readme-window p:last-of-type {
       padding-top: 3rem;
       text-align: center; }
+
+.sparkcapture-window {
+  top: 2%;
+  left: calc(100% / 2 - (950px / 2));
+  height: 600px;
+  width: 950px; }
 
 #left {
   left: auto !important; }

@@ -256,6 +256,47 @@ let portfolioHtml = (
   '</div >'+
 '</div>');
 
+let freelanceHtml = (
+'<div class="freelance-window window">'+
+    '<div class="top-bar">'+
+        '<button class="enlarge">☐</button>'+
+        '<button class="close">×</button>'+
+        '<h2>freelance</h2>'+
+        '<div class="bar1"></div>'+
+        '<div class="bar2"></div>'+
+        '<div class="bar3"></div>'+
+        '<div class="bar4"></div>'+
+        '<div class="bar5"></div>'+
+        '<div class="bar6"></div>'+
+        '<div class="bar7"></div>'+
+    '</div>'+
+  '<div class="wrapper">'+
+
+    '<div class="freelance-wrapper">' +
+      '<a class="freelance-link" target="_blank" href="https://www.sparkcapture.com">sparkcapture.com</a>'+
+    '</div >'+
+    '<p>Designed and developed a multipage responsive website featuring a working image gallery for photos as well as popup modals for videos. The site also includes interactive image sliders to compare different packages. Created with SCSS, JavaScript and jQuery</p>'+
+
+    // '<div class="links">'+
+    //   '<a href="https://www.sparkcapture.com" target="_blank">External Link</a>'+
+    // '</div>'+
+
+    '<div class="divider"></div>'+
+
+    '<div class="freelance-wrapper">' +
+      '<a class="freelance-link" target="_blank" href="https://dumbmoney.ca">dumbmoney.ca</a>'+
+    '</div >'+
+
+    '<p>Designed and developed a custom wordpress theme specifically for dumbmoney.ca. Created with PHP, SCSS, JavaScript and jQuery. Users are able to register and purchase web courses through learndash and woocommerce and returning users are able to login.</p>' +
+
+
+    // '<div class="links">'+
+    //   '<a href="https://dumbmoney.ca" target="_blank" >External Link</a>'+
+    // '</div >'+
+
+  '</div >'+
+'</div>');
+
 let readmeHtml = (
 '<div class="readme-window window">'+
     '<div class="top-bar">'+
@@ -282,6 +323,7 @@ let readmeHtml = (
     "<p>xiaoge.deng@protonmail.com</p>"+
   '</div >' +
 '</div>');
+
 
 function runOnStart() {
     // on start add read me window to the page
@@ -425,12 +467,12 @@ $(".sophie").on("click", function () {
     });
 });
 
-// shutter window
-$(".shutter").on("click", function () {
+// sparkcapture window
+  $(".sparkcapture").on("click", function () {
   let clickCounter = 0;
-  if ($('.shutter-window').length === 0) {
-    $("main").append(shutterHtml);
-    $(".shutter-window")
+    if ($('.sparkcapture-window').length === 0) {
+      $("main").append(sparkcaptureHtml);
+      $(".sparkcapture-window")
       .draggable({
         containment: "body",
         start: function () {
@@ -458,18 +500,18 @@ $(".shutter").on("click", function () {
       })
   }
 
-  // close shutter-window button
-  $(".shutter-window .close")
+  // close sparkcapture-window button
+    $(".sparkcapture-window .close")
     .on("click", function () {
-      $(this).parents(".shutter-window").remove()
+      $(this).parents(".sparkcapture-window").remove()
     });
 
-  // resize shutter-window
-  $(".shutter-window .enlarge")
+  // resize sparkcapture-window
+    $(".sparkcapture-window .enlarge")
     .on("click", function () {
       clickCounter += 1;
       if (clickCounter % 2 != 0){
-        $(this).parents(".shutter-window").animate({
+        $(this).parents(".sparkcapture-window").animate({
           top: "0",
           left: "0",
           height: "100%",
@@ -477,11 +519,11 @@ $(".shutter").on("click", function () {
         });
       }
       else {
-        $(this).parents(".shutter-window").animate({
-          top: "5%",
-          left: $(this).parent().width() / 2 - 400 / 2,
-          height: "500",
-          width: "400"
+        $(this).parents(".sparkcapture-window").animate({
+          top: "2%",
+          left: $(this).parent().width() / 2 - 950 / 2,
+          height: "600",
+          width: "950"
         });
       }
   });
@@ -910,6 +952,134 @@ $(".portfolio").on("click", function () {
       else {
         // console.log("I am small");
         $(this).parents(".portfolio-window").animate({
+          top: "5%",
+          left: $(this).parent().width() / 2 - 400 / 2,
+          height: "550",
+          width: "400"
+        });
+      }
+    });
+});
+
+// newportfolio window
+  $(".newportfolio").on("click", function () {
+  let clickCounter = 0;
+    if ($('.newportfolio-window').length === 0) {
+      $("main").append(newportfolioHtml);
+      $(".newportfolio-window")
+      .draggable({
+        containment: "body",
+        cancel: "h2, p, a",
+        start: function () {
+          $('iframe').css('pointer-events', 'none');
+        },
+        stop: function () {
+          $('iframe').css('pointer-events', 'auto');
+        }
+      })
+      .resizable({
+        containment: "body",
+        minWidth: 400,
+        minHeight: 550,
+        start: function () {
+          $('iframe').css('pointer-events', 'none');
+        },
+        stop: function () {
+          $('iframe').css('pointer-events', 'auto');
+        }
+      })
+      .on("click", function () {
+        $(this).addClass('top').removeClass('bottom');
+        $(this).siblings().removeClass('top').addClass('bottom');
+      })
+  }
+
+  // closes freelance-window button
+    $(".newportfolio-window .close")
+    .on("click", function () {
+      $(this).parents(".newportfolio-window").remove()
+    });
+  
+  // resize portfolio-window button
+    $(".newportfolio-window .enlarge")
+    .on("click", function () {
+      clickCounter += 1;
+      if (clickCounter % 2 != 0) {
+        // console.log("I am big");
+        $(this).parents(".newportfolio-window").animate({
+          top: "0",
+          left: "0",
+          height: "100%",
+          width: "100%"
+        });
+      }
+      else {
+        // console.log("I am small");
+        $(this).parents(".newportfolio-window").animate({
+          top: "5%",
+          left: $(this).parent().width() / 2 - 400 / 2,
+          height: "550",
+          width: "400"
+        });
+      }
+    });
+});
+
+// freelance window
+  $(".freelance").on("click", function () {
+  let clickCounter = 0;
+    if ($('.freelance-window').length === 0) {
+      $("main").append(freelanceHtml);
+      $(".freelance-window")
+      .draggable({
+        containment: "body",
+        cancel: "h2, p, a",
+        start: function () {
+          $('iframe').css('pointer-events', 'none');
+        },
+        stop: function () {
+          $('iframe').css('pointer-events', 'auto');
+        }
+      })
+      .resizable({
+        containment: "body",
+        minWidth: 400,
+        minHeight: 550,
+        start: function () {
+          $('iframe').css('pointer-events', 'none');
+        },
+        stop: function () {
+          $('iframe').css('pointer-events', 'auto');
+        }
+      })
+      .on("click", function () {
+        $(this).addClass('top').removeClass('bottom');
+        $(this).siblings().removeClass('top').addClass('bottom');
+      })
+  }
+
+  // closes freelance-window button
+    $(".freelance-window .close")
+    .on("click", function () {
+      $(this).parents(".freelance-window").remove()
+    });
+  
+  // resize portfolio-window button
+    $(".freelance-window .enlarge")
+    .on("click", function () {
+      clickCounter += 1;
+      if (clickCounter % 2 != 0) {
+        // console.log("I am big");
+        $(this).parents(".freelance-window").animate({
+          top: "0",
+          left: "0",
+          height: "100%",
+          width: "100%"
+        });
+      }
+      else {
+        // console.log("I am small");
+        $(this).parents(".freelance-window").animate({
           top: "5%",
           left: $(this).parent().width() / 2 - 400 / 2,
           height: "550",

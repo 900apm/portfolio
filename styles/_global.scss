@@ -52,7 +52,7 @@ button:focus {outline:0;}
   }
 }
 
-#icon-container{
+#icon-container, #portfolio-icon-container{
   margin: 30px 0px 0px 20px;
   height: calc( 80vh - 30px);
   width: 20%;
@@ -62,7 +62,7 @@ button:focus {outline:0;}
   align-items: center;
   justify-content: flex-start;
   @media only screen and (max-width: 400px){
-    justify-content: center;
+    justify-content: flex-start;
     margin: 5vh 0 0 0;
     height: 80vh;
     width: 100%;
@@ -107,6 +107,10 @@ button:focus {outline:0;}
       }
     }
   }
+}
+
+#portfolio-icon-container{
+  
 }
 
 // used to bring clicked window to front by increasing z-index
@@ -362,7 +366,7 @@ button:focus {outline:0;}
   }
 }
 
-.portfolio-window{
+.portfolio-window, .freelance-window{
   top: 7.5%;
   // left: 17.5%;
   left: calc(100% / 2 - (400px / 2));
@@ -371,7 +375,7 @@ button:focus {outline:0;}
   text-align: center;
   display: flex;
   flex-direction: column;
-  .icon-portfolio{
+  .icon-portfolio, .freelance-wrapper{
     background: $primary-color;
     display: inline-block;
     height: 125px;
@@ -411,6 +415,26 @@ button:focus {outline:0;}
     border: 1px solid $teritary-color;
     }
   }
+
+  .freelance-wrapper{
+    height: 50px;
+    width: 200px;
+  }
+
+  .freelance-link{
+    font-size: 1.5rem;
+  }
+
+  .divider{
+    border-bottom: 1px solid darken($secondary-color,30%);
+    width: 90%;
+    margin: 3rem auto;
+  }
+
+}
+
+.freelance-window{
+  top: 5%;
 }
 
 .readme-window{
@@ -435,6 +459,15 @@ button:focus {outline:0;}
     }
   }
 }
+
+.sparkcapture-window{
+  top: 2%;
+  // left: 17.5%;
+  left: calc(100% / 2 - (950px / 2));
+  height: 600px;
+  width: 950px;
+}
+
 
 #left{
   left: auto !important;
