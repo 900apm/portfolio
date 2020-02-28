@@ -258,9 +258,9 @@ button:focus {outline:0;}
 .about-window{
   top: 7.5%;
   // left: 28%;
-  left: calc(100% / 2 - (450px / 2));
+  left: calc(100% / 2 - (320px / 2));
   height: 500px;
-  width: 450px;
+  width: 320px;
   display: flex;
   flex-direction: column;
   p{
@@ -369,12 +369,13 @@ button:focus {outline:0;}
 .portfolio-window, .freelance-window{
   top: 7.5%;
   // left: 17.5%;
-  left: calc(100% / 2 - (400px / 2));
+  left: calc(100% / 2 - (420px / 2));
   height: 550px;
-  width: 400px;
+  width: 420px;
   text-align: center;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   .icon-portfolio, .freelance-wrapper{
     background: $primary-color;
     display: inline-block;
@@ -521,7 +522,8 @@ header{
     }
   }
 }
-// scrollbar
+
+// custom scrollbar
 
 .ui-icon-gripsmall-diagonal-se {
     background-position: -46px -16px;

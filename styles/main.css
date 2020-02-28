@@ -362,9 +362,9 @@ button:focus {
 
 .about-window {
   top: 7.5%;
-  left: calc(100% / 2 - (450px / 2));
+  left: calc(100% / 2 - (320px / 2));
   height: 500px;
-  width: 450px;
+  width: 320px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -474,9 +474,9 @@ button:focus {
 
 .portfolio-window, .freelance-window {
   top: 7.5%;
-  left: calc(100% / 2 - (400px / 2));
+  left: calc(100% / 2 - (420px / 2));
   height: 550px;
-  width: 400px;
+  width: 420px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -484,7 +484,8 @@ button:focus {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  margin: 0 auto; }
   .portfolio-window .icon-portfolio, .portfolio-window .freelance-wrapper, .freelance-window .icon-portfolio, .freelance-window .freelance-wrapper {
     background: #ffffff;
     display: inline-block;
